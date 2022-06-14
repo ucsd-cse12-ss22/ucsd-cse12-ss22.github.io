@@ -1,1 +1,1 @@
-# ucsd-cse12-ss22.github.io
+The course website for UCSD CSE 12, Summer Session 1 2022
