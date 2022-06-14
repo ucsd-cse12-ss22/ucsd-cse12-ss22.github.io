@@ -1,12 +1,15 @@
 ---
 layout: page
 title: CSE 12 Summer Session 1 2022
-doodle: "/doodle.png"
+doodle: "/logo.png"
 ---
+
+# TODO: FAQs
+# This website is under development. If you happen to see this website before the quarter starts do NOT assume what you see is accurate.
 
 # Basic Data Structures and Object-Oriented Design
 
-<a href="TODO">Sophia Krause-Levy</a> (Instructor)
+<a href="https://www.linkedin.com/in/skrauselevy/">Sophia Krause-Levy</a> (Instructor)
 
 This course focuses on two main topics: The basics of organizing data for
 efficient computation, and the design of programs that use collections,
@@ -38,7 +41,7 @@ complete for the course. You are responsible for checking this schedule and
 completing work by the deadlines given, which are always at 11pm local San
 Diego time on the listed date.
 
-<iframe width="100%" height="800px" style="border: none; border-top: 1px solid grey; border-spacing: 2px" src="https://docs.google.com/spreadsheets/d/1jNgfoLp_a67GOMKXDpEn-yRncWWhE6WKqaS4v2xweKU/edit#gid=1638030103&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+<iframe width="100%" height="800px" style="border: none; border-top: 1px solid grey; border-spacing: 2px" src="https://docs.google.com/spreadsheets/d/1jNgfoLp_a67GOMKXDpEn-yRncWWhE6WKqaS4v2xweKU/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 
 ## Basic Course Components
 <a id="basics"></a>
@@ -89,24 +92,19 @@ href="https://piazza.com/ucsd/summer2022/cse12/staff" target="_blank">Piazza
 Staff page</a>. Our “home base” is in B260 in the CSE building (basement), but
 you can work in any lab. You should use <a href="https://autograder.ucsd.edu"
 target="_blank">Autograder</a> to ask for help in open lab hours. In addition,
-Professor Joe and the four TAs each hold individual weekly office hours that
+Professor Sophia and the two TAs each hold individual weekly office hours that
 you can attend. You can use either of these resources whether you're looking
 for help on an assignment or material covered in class. The schedule for both
 office hours and lab hours are below. For office hours, the room number is
 noted on the event itself.
 
-<iframe src="https://calendar.google.com/calendar/u/1?cid=Y184Z2tlMnVoYWxyZnBrYzlrYzVha2VjMmM4MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?src=c_8gke2uhalrfpkc9kc5akec2c80%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
 ### <a id="b:materials" href="#b:materials">Materials</a>
 
 There is no required textbook for the course. 
 
-There is a ZyBook available that has been used in the past. You can purchase a
-subscription and use it at your convenience; it serves as a useful reference
-and is organized in the order material is presented in this course, and there
-will be links to relevant ZyBooks sections in with the course schedule. There
-is also a significant amount of reference material at the end of the book for
-review of Java concepts. To get access to the book:
+There is a stepik online textbook available and it is free. It serves as a useful reference and there will be links to relevant stepik sections in with the course schedule.
 
 1. Sign in or create an account at <a href="http://learn.zybooks.com">learn.zybooks.com</a>
 2. Enter zyBook code: UCSDCSE12PolitzWinter2019
@@ -114,6 +112,8 @@ review of Java concepts. To get access to the book:
 
 We may use other on-line resources during the quarter that may be required
 reading or activities. These will all be free and linked from the schedule.
+
+TodododOD
 
 Online discussion and Q&A for the class will be available on Piazza: sign up to
 <a href="https://piazza.com/class/l3oedrn1kia73m" target="_blank">join the class here</a>
@@ -148,87 +148,46 @@ participation score will be dropped when calculating your overall engagement
 average.
 
 Earn engagement points by:
-* __In class participation via iClickers__  In Weeks 1 through 10 (starting with the second lecture of the quarter), you will
-earn credit for attending and participating in lecture (2 points each) and discussion section (1 point each, up to a maximum
-of 2 points per week).
-Clicker questions will be graded for participation only and not for correctness of the response.
-Full credit for clicker points for a given day will be
-awarded for clicking in at least 80% of the time that day. Forgetting your clicker counts as missing a class, so please
-remember to bring it!
- We have you
-respond to problems in lecture because there’s quite a bit of evidence that
-sitting and listening passively [probably isn’t the best way to
-teach or learn
-science](https://www.nature.com/news/why-we-are-teaching-science-wrong-and-how-to-make-it-right-1.17963). <a id="p:clicker-ai"></a>
+* __In class participation via iClickers__  In Weeks 1 through 5 (starting with the second lecture of the quarter), you will earn credit for attending and participating in lecture (2 points each) and discussion section (1 point each, up to a maximum
+of 8 points per week). Clicker questions will be graded for participation only and not for correctness of the response. Full credit for clicker points for a given day will be
+awarded for clicking in at least 80% of the time that day. Forgetting your clicker counts as missing a class, so please remember to bring it! We have you respond to problems in lecture because there’s quite a bit of evidence that sitting and listening passively [probably isn’t the best way to teach or learn science](https://www.nature.com/news/why-we-are-teaching-science-wrong-and-how-to-make-it-right-1.17963). <a id="p:clicker-ai"></a>
  _Do not attempt to falsify iClicker or discussion participation or review quiz submissions; this would be considered a violation of academic integrity._
 
-* __Weekly (P)review quiz__ Online quizzes review the week's material and preview some upcoming examples each week. You can
-submit your answers to each quiz as many times as you like. The latest submission before 11pm on Tuesday will count towards
-your engagement score. Each weekly review quiz will be worth 6 points.  Review quizzes will stay available even after the
+* __Weekly (P)review quiz__ Online quizzes review the week's material and preview some upcoming examples each week. You can submit your answers to each quiz as many times as you like. The latest submission before 11pm on Tuesday will count towards your engagement score. Each weekly review quiz will be worth 6 points.  Review quizzes will stay available even after the
 deadline; in the past, students have found working through them to be helpful when studying for exams.
 <a id="p:quiz-ai"></a>
-_The review quiz must be completed independently and individually. You may refer to your class notes and resources linked from
-this website,
-but not to other references. You may not share information about the review quiz with others, take the review quiz in someone
+_The review quiz must be completed independently and individually. You may refer to your class notes and resources linked from this website, but not to other references. You may not share information about the review quiz with others, take the review quiz in someone
 else's name, or ask anyone for prior knowledge about the review quiz._
 
 
-We encourage you to find your preferred method for staying engaged with the course.  There are lots of ways to earn
-full credit for a week's engagement.  For example: (1) attending all lectures (for the section in which you're enrolled); or
-(2) attending two lectures and two discussion sections; or (3) answering all questions on the review quiz correctly; or (4)
+We encourage you to find your preferred method for staying engaged with the course.  There are lots of ways to earn full credit for a week's engagement.  For example: (1) attending all lectures (for the section in which you're enrolled); or (2) attending two lectures and two discussion sections; or (3) answering all questions on the review quiz correctly; or (4)
 attending two lectures and getting two answers correct on the review  quiz; etc.
 
-<a id="b:exams"></a>
-<h3>Exams</h3>
+## <a id="b:exams" href="#b:exams">Exams</a>
 
-There will be two exams during the quarter, held in class during Week 4
 
-**Friday 2/1/2019**
+There will be four tests during the quarter and a final exam. The tests will be held during lecture on Wednesdays weeks 2, 3, 4, and 5. The final exam will be held on Friday July 29th @11:30am.
 
-and Week 8
+Seats will be assigned for all exam sessions and announced beforehand, and you must bring your school ID to the exam. All work on exams is to be done on your own, and you are not allowed to use any electronics or study aids during the exam (aside from those needed for University-approved academic accommodations). You may not speak to any other student in the exam room while the exam is in progress (including after you hand in your own exam).  You may not share any information about the exam with any student who has not yet taken it (including students in future quarters of CSE12).
 
-**Wednesday 2/27/2019**
+* All 50% of your exam points come from your final exam score.
 
-of the Winter quarter.  The final exams depend on your section:
+* The final exam will be split into four sections, roughly corresponding to the material covered by each test, and each worth 25% of your exam score
 
-**A Section: Monday March 18, 8am**
+* The score you get on each test contributes to your final exam score in the relevant category, up to a maximum of 10% of the 25% for that section. You can’t score more than 25% on each section of the final exam with this additional contribution. 
 
-**B Section: Wednesday March 20, 3pm**
+* If you get a lower score on the final exam than the average of your test scores minus 20%, you instead earn that score on the final.
 
-Seats will be assigned for all exam sessions and announced beforehand, and you
-must bring your school ID to the exam. All work on exams is to be done on your
-own, and you are not allowed to use any electronics or study aids during the
-exam (aside from those needed for University-approved academic accommodations).
-You may not speak to any other student in the exam room while the exam is in
-progress (including after you hand in your own exam).  You may not share any
-information about the exam with any student who has not yet taken it (including
-students in future quarters of CSE12).
+This means that each test contributes to your final exam score, but if you miss or do poorly on a test you can always make up the credit by doing well on the corresponding section of the final exam.
 
-The first two exams will each be worth 8% of your final grade. The final exam
-will be worth 24% of your final grade. The final exam will have a specific
-structure – it will be broken into three parts corresponding to material from
-the first exam, the second exam, and the remainder of the course. Your grade
-for each midterm will be the *maximum* of the midterm grade and the score you
-get on the corresponding part of the final exam.
 
-For example, if you get 50% of the points for midterm 1 and 100% of the points
-for midterm 2, and then score a 75% on part 1 of the final, 25% on part 2, and
-100% on part 3, you would get:
+**Example:** A student scores 50%, 60%, 0%, and 80% on the four tests. On the final exam, they score 10/25, 20/25, 20/25, 15/25 on each of the four sections. Their final exam score would be (10 + 5) + (20 + 6) + (20 + 0) + (15 + 8) for a total of 83/100 on the exam.
 
-- MAX(0.5, 0.75) * 8 = 6 points for midterm 1 (0.75 was higher, so the final
-  increased the midterm score!)
-- MAX(1, 0.25) * 8 = 8 points for midterm 2 (0.25 was lower, so the original
-  midterm score was used)
-- 0.75 * 8 + 0.25 * 8 + 1 * 8 = 16 points for the final exam (the score on
-  the final exam is the same regardless of how the midterms went)
-- A total of 30 out of 40 exam points towards your final grade
+**Example:** A student scores 60%, 70%, 80%, and 90% on the tests, and then skips the final. Their final exam grade will be 55%.
 
-This policy also covers what happens if you miss a midterm for any reason. If
-you are absent for a midterm, you get a 0 initially, and then whatever score
-you get on the final for that section will be applied to your midterm grade.
-There are no make-up midterms, and the final exam policy is governed by the
-[university's
-policies](https://senate.ucsd.edu/operating-procedures/educational-policies/courses/epc-policies-on-courses/policy-exams-including-midterms-final-exams-and-religious-accommodations-for-exams/).
+**Example:** A student scores 100%, 100%, 100%, and 100% on the tests, and then gets only 5/25 of the credit in each portion of the final exam. Their final exam grade will be 80%.
+
+**Make-up Exams:** There are no make-up exams given. If you miss one of the tests, your score for that test is a 0 and you don’t earn credit towards that part of the final exam ahead of time. Note that this doesn’t necessarily impact your final grade, since you can still earn all of the credit on the final exam itself. Similarly, if you miss or skip the final, the average-replacement policy applies.
 
 ## <a id="programming" href="#programming">Programming</a>
 
@@ -407,11 +366,7 @@ Piazza is an online discussion board where we can make announcements and student
 
 For each assignment, you will find a Frequently Asked Questions post, where we will answer all common questions we receive in office hours and via (private) Piazza posts. If you ask a question that's already answered in that post, we'll likely just send you a link to that post. That post will be updated as new important questions and answers come in.
 
-When answering questions, be polite, be clear, and assume the best intentions of the person asking. If it turns out you make a
-mistake or were wrong, admit it with a smile (emoji are great for this 😊), and make sure the correct information is clear.
-Above all, keep in mind that the course is a community whose goal is to foster a positive learning environment for everyone.
-For public discussion, note that answers from your classmates are not official! They could be downright wrong or misleading,
-completely by accident. “My classmate said so on Piazza” is not a legitimate justification in most arguments, though they may
+When answering questions, be polite, be clear, and assume the best intentions of the person asking. If it turns out you make a mistake or were wrong, admit it with a smile (emoji are great for this 😊), and make sure the correct information is clear. Above all, keep in mind that the course is a community whose goal is to foster a positive learning environment for everyone. For public discussion, note that answers from your classmates are not official! They could be downright wrong or misleading, completely by accident. “My classmate said so on Piazza” is not a legitimate justification in most arguments, though they may
 indeed lead you in helpful directions.
 
 
@@ -421,13 +376,15 @@ indeed lead you in helpful directions.
 Your grade will be computed from:
 
 <ul>
-  <li>50% programming assignments</li>
-  <li>40% exams</li>
+  <li>40% programming assignments</li>
+  <li>50% exams</li>
   <li>10% engagement</li>
 </ul>
 
+
+TODO: closed or open or mix per assignment
 There are **3 closed** and **5 open** PAs. We will use an _ordered
-weighting_ to assign the 50 PA points.
+weighting_ to assign the 40 PA points.
 
 For the 3 closed PAs, we will order them from highest to lowest in terms of
 percentage scored on the PA itself, and then assign the proportions of the
@@ -437,9 +394,7 @@ following points to each:
 - 7% middle
 - 5% lowest
 
-For the 5 open PAs, we will order them from highest to lowest in terms of
-percentage scored on the PA itself, and then assign the proportions of the
-following points to each:
+For the 5 open PAs, we will order them from highest to lowest in terms of percentage scored on the PA itself, and then assign the proportions of the following points to each:
 
 - 8% highest scoring
 - 7% 2nd highest scoring
@@ -505,24 +460,17 @@ We may adjust the above scale to be more lenient (depending on the overall class
 not adjust the scale to make it harder to get a better grade.
 In addition, you must pass the final exam in order to pass the course.
 
-<b>Late and Makeup Work</b> In general, work cannot be handed in late for
-credit. We will drop the lowest weekly engagement score to account for
-personal events and constraints that make you miss those deadlines.
+<b>Late and Makeup Work</b> In general, work cannot be handed in late for credit. We will drop the lowest weekly engagement score to account for personal events and constraints that make you miss those deadlines.
 
 Programming work that is late follows the resubmission policy in <a href="#p:grading">the programming grades section</a>.
 
-<b>Regrades</b> Mistakes sometimes occur in grading. Once grades are posted,
-we will allow a short period for you to request a fix to your grade
-(announced along with the release of grades), with a clear argument for why a
-mistake was made. If you don't make a request in the given period, the grade
-you were initially given is final. All regrades should be made through
-Gradescope's interface.
+<b>Regrades</b> Mistakes sometimes occur in grading. Once grades are posted, we will allow a short period for you to request a fix to your grade (announced along with the release of grades), with a clear argument for why a mistake was made. If you don't make a request in the given period, the grade you were initially given is final. All regrades should be made through Gradescope's interface.
 
 ## <a id="policies" href="#policies">Other Policies</a>
 
 <a id="p:community"></a>
 <h3>The CSE 12 Community</h3>
-CSE 12 is a large course: there are 19 people on the instructional team and over 300 students.  We are all here because we are excited about Computer Science and want to ensure a productive, interesting, and useful quarter.
+CSE 12 is a large course: there are 9 people on the instructional team and over 100 students.  We are all here because we are excited about Computer Science and want to ensure a productive, interesting, and useful quarter.
 
 At UC San Diego, we agree to hold ourselves to the <a href="https://ucsd.edu/about/principles.html" target="_blank">Principles of Community</a> of respect, inclusion, and integrity.  This translates to all our interactions in this course, and beyond.
 
@@ -535,71 +483,6 @@ Before you post a question or answer, consider:
 - Is it a question that's been asked before, that you could find via searching?
 
 If you make a post that violates these guidelines, we may make it private and remind you of these guidelines. Overall, our goal is to make the public content on Piazza constructive and relevant for everyone.
-
-<a id="p:research-consent"></a>
-<h3>Consent to Participate in Educational Research</h3>
-<h4>Investigating the Impact of Pedagogical Choices on University Student Learning and Engagement</h4>
-
-<h5>Who is conducting the study, why you have been asked to participate, how you were selected, and what is the approximate number of participants in the study?</h5>
-
-<p>Gabriele Wienhausen, Director of the Teaching and Learning Commons, together with her education research colleagues is conducting a research study to find out more about how pedagogical choices affect student learning and experience in the classroom. You have been asked to participate in this study because you are a student in a class that is being studied or used as a control. There will be approximately 500,000 participants in this study.</p>
-
-<h5>Why is this study being done?</h5>
-
-<p>The purpose of this study is to create knowledge that has the potential to improve the learning and educational experience of students at UC San Diego and beyond.</p>
-
-<h5>What will happen to you in this study and which procedures are standard of care and which are experimental?</h5>
-
-<p>If you agree to be in this study, the following will happen:
-Your data from this class including grades, homework and exam submissions, and survey responses will be included in the analysis to determine the effectiveness of the pedagogical techniques used in this course compared to other similar courses.</p>
-
-<h5>How much time will each study procedure take, what is your total time commitment, and how long will the study last?</h5>
-
-<p>Your participation involves only agreeing to let us use your data in our analysis. It will require no time on your part above the time you put into this course without agreeing to the study.</p>
-
-<h5>What risks are associated with this study?</h5>
-
-<p>Participation in this study may involve some added risks or discomforts. These include the following:
-
-A potential for the loss of confidentiality. We will not share your personally identifying data with people outside our research team. Data will only be kept in anonymized form for research purposes. Course data will not used for this research study until after final grades have been posted and will be rendered confidential by removing any identifiers before analysis. Your instructor will not know whether or not you are participating in this study until after final grades have been posted. Data from students who opt out of the study will be removed prior to data analysis. Research records will be kept confidential to the extent allowed by law. Research records may be reviewed by the UCSD Institutional Review Board.
-Since this is an investigational study, there may be some unknown risks that are currently unforeseeable. You will be informed of any significant new findings.</p>
-
-<h5>What are the alternatives to participating in this study?</h5>
-
-<p>The alternatives to participation in this study are not to participate. If you choose to opt-out of participating in this research study, we will exclude your data from analysis. Whether you participate will have no impact on your experience or grade in the associated class as the professor will not know who is or is not participating in the study until after final grades are assigned.</p>
-
-<h5>What benefits can be reasonably expected?</h5>
-
-<p>There is no direct benefit to you for participating in the study. The investigator, however, may learn more about how to improve student learning, and society may benefit from this knowledge.</p>
-
-<h5>Can you choose to not participate or withdraw from the study without penalty or loss of benefits?</h5>
-
-<p>Participation in research is entirely voluntary. You may refuse to participate or withdraw or refuse to answer specific questions in an interview or on a questionnaire at any time without penalty or loss of benefits to which you are entitled. If you decide that you no longer wish to continue in this study before the end of the quarter, simply respond to the online opt-out form here: <a href="https://goo.gl/forms/JSBRjEmkES6W6xYc2" target="_blank">https://goo.gl/forms/JSBRjEmkES6W6xYc2</a>. If you decide to opt out after the quarter has ended, you must contact Ying Xiong (yix184@ucsd.edu) and give the quarter and the course from which you would like your data withdrawn.
-
-You will be told if any important new information is found during the course of this study that may affect your wanting to continue.
-</p>
-
-<h5>Can you be withdrawn from the study without your consent?</h5>
-
-<p>The PI may remove you from the study without your consent if the PI feels it is in your best interest or the best interest of the study. You may also be withdrawn from the study if you do not follow the instructions given you by the study personnel.</p>
-
-<h5>Will you be compensated for participating in this study?</h5>
-
-<p>You will not be compensated for participating in this study.</p>
-
-<h5>Are there any costs associated with participating in this study?</h5>
-
-<p>There will be no cost to you for participating in this study.</p>
-
-<h5>Who can you call if you have questions?</h5>
-
-<p>Gabriele Wienhausen and/or her colleague has explained this study to you and answered your questions. If you have other questions or research-related problems, you may reach Gabriele Wienhausen at gwienhausen@ucsd.edu or (858) 534-3958.
-
-You may call the Human Research Protections Program Office at 858-246-HRPP (858-246-4777) to inquire about your rights as a research subject or to report research-related problems.</p>
-
-<h5>Your Consent</h5>
-
-<p>If you consent to participate in this study and are at least 18 years old, no action is needed. If you DO NOT consent to participate in this study, or you choose to opt-out at any time during the quarter, please submit this form online at <a href="https://goo.gl/forms/JSBRjEmkES6W6xYc2" target="_blank">https://goo.gl/forms/JSBRjEmkES6W6xYc2</a>. Your instructor will not have access to the list of students who opted out until after grades are posted. Note that you must separately opt-out of the study for each course involved in this study.</p>
 
 <a id = "p:ucsdsupport"></a>
 
