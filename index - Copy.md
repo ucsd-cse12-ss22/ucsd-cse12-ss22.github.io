@@ -6,13 +6,23 @@ doodle: "/logo.jpg"
 
 ### __This website is under development. If you happen to see this website before the quarter starts do NOT assume what you see is accurate.__
 
+# TODO: FAQs
+
+
 # Basic Data Structures and Object-Oriented Design
 
 <a href="https://www.linkedin.com/in/skrauselevy/">Sophia Krause-Levy</a> (Instructor)
 
-This course focuses on two main topics: The basics of organizing data for efficient computation, and the design of programs that use collections, classes, and interfaces.
+This course focuses on two main topics: The basics of organizing data for
+efficient computation, and the design of programs that use collections,
+classes, and interfaces.
 
-Each week, we will explore topics in these areas interactively during lectures. You will read beyond what we explore in lecture, complete programming assignments to hone your coding and program design skills, and take exams that test your understanding of what you've learned. After, you'll be better at designing and understanding programs and the structure of data they work over.
+Each week, we will explore topics in these areas interactively during lectures.
+You will read beyond what we explore in lecture, complete programming
+assignments to hone your coding and program design skills, and take exams that
+test your understanding of what you've learned. After, you'll be better at
+designing and understanding programs and the structure of data they work
+over.
 
 Basics: <a href="#b:lec">Lecture</a>, <a href="#b:disc">Discussion</a>,
 <a href="#programming">Programming Assignments</a>, and <a
@@ -151,7 +161,7 @@ attending two lectures and getting two answers correct on the review  quiz; etc.
 
 There will be four tests during the quarter and a final exam. The tests will be held during lecture on Wednesdays weeks 2, 3, 4, and 5. The final exam will be held on Friday July 29th @11:30am.
 
-Seats will be assigned for all exam sessions and announced beforehand, and you must bring your school ID to the exam. All work on exams is to be done on your own, and you are not allowed to use any electronics or study aids during the exam (aside from those needed for University-approved academic accommodations). You may not speak to any other student in the exam room while the exam is in progress (including after you hand in your own exam).  You may not share any information about the exam with any student who has not yet taken it (including students in future quarters of CSE12). When the time is called, you must stop writing. You may not discuss the contents of any quiz or exam with ANYONE ELSE until the instructors explicitly state that it is OK to do so.
+Seats will be assigned for all exam sessions and announced beforehand, and you must bring your school ID to the exam. All work on exams is to be done on your own, and you are not allowed to use any electronics or study aids during the exam (aside from those needed for University-approved academic accommodations). You may not speak to any other student in the exam room while the exam is in progress (including after you hand in your own exam).  You may not share any information about the exam with any student who has not yet taken it (including students in future quarters of CSE12).
 
 * All 50% of your exam points come from your final exam score.
 
@@ -178,42 +188,109 @@ Most weeks, you will be working on a programming assignment for this class.
 There are several specific policies in place regarding programming
 assignments, and you should pay careful attention to them.
 
-__Academic Integrity__
-The goal of CSE 12 will be a turning point for most of you on understanding how different strategies to solve a problem may result in vastly different efficiency. Future instructors, employers, and colleagues will expect that you will attain a certain proficiency in data structures. Using unauthorized aids in doing your work will prevent you from attaining the proficiencies that others will expect. Meeting or not meeting these expectations relate directly to getting internships, retaining employment, and success in your future studies.
-
-
-The basic rule for CSE 12 is: Work hard. Start early. Make use of the expertise of the CSE 12 staff to learn what you need to know to really do well in the course. Don't cheat.
-If you do cheat, we will enforce the UCSD Policy on Integrity of Scholarship (see the General Catalog or the corresponding web page, scroll 2/3 of the way down). This means: You will get a reduced grade in this course (in many cases an F), and the Dean of your college could put you on probation or suspend you or dismiss you from UCSD.
-
-
-__What counts as cheating?__
-In CSE 12, you can read books, surf the web, talk to your friends and the CSE 12 staff to get help understanding the concepts you need to know to solve your PA problems. However, you must write your program alone for all PAs except where otherwise indicated. Specifically:
-On PAs you MAY:
-* Consult any resources provided in class or in the textbook.
-* Ask tutors, TAs, and instructors for help.  
-* Help your peers debug, or provide debugging assistance to your peers.  Note that this can involve looking at code, but you should not directly copy any code.  Keep your own code closed when helping your peers.  __You must explicitly acknowledge anyone you received help from (outside of course staff) in your header comment at the top of your file.__
-* Search/consult the web for general documentation, for example, how to use Java APIs.
-
-
-On PAs you may __NOT__:
-* Search/consult the web for solutions to the PAs, including algorithms or code.
-* Copy code from anywhere (except the textbook and class materials like slides--with attribution).  
-* Have anyone else completed your assignment (or any part of it). 
-
-We do electronically check every program that is turned in. In recent quarters, we also found out that people unintentionally post their codes on public GitHub repos and it is a violation of the AI policy! We report all these cases to the academic integrity office. If you want to share your work with future employers or simply want to save a copy of your work, you can post them privately on your GitHub account!
-
-
-Receiving a grade on a PA doesn't mean that you have passed the plagiarism checking. We can report cheating cases any time during the quarter, even after we submit your final letter grade. So the safest bet is don't cheat!
-
-
-To reinforce these points, every student in CSE 12 must read, understand, and sign the Integrity of Scholarship Agreement. You must sign an integrity statement before completing any of the assignments or labs. 
-
 ### <a id="p:open-closed" href="#p:open-closed">Collaboration</a>
 
- The main goal of the programming assignments is for you to become a better programmer.  You must experience writing your own code for this to really happen.
-Pair programming on PAs is strongly encouraged when it is permitted.
-You may discuss your assignment with other students, and you may help them debug, but all code that you submit must be written by you alone.  
- 
+**This is not the same collaboration policy you have seen in your other
+programming courses. Read it carefully.**
+
+In your professional programming life, some of your work will be highly
+collaborative with lots of expert advice available from senior developers and
+from sites like StackOverflow. This is a common case in companies, in
+academia, and on open-source projects. It's a great way to get exposed to new
+techniques, share knowledge, and generally enjoy teamwork. In contrast, some
+of your work will involve figuring out programming problems on your own,
+where you are the first person to encounter an issue, or the first person to
+try using a new library in the context of your application. You should get
+experience in both types of situations; we might call the former kind of
+problem **open to collaboration** and the latter **closed to collaboration**.
+
+In terms of courses, this split also makes sense. Programming assignments
+serve (at least) two roles. First and foremost, they are a mechanism for you
+to learn! By directly applying the techniques and skills we discuss in class,
+you get practice and become a better programmer. Second, they are an
+assessment mechanism – as instructional staff we use them to evaluate your
+understanding of concepts as demonstrated by your programs. Open
+collaboration can reduce frustration while learning and give you chances to
+enjoy collaboration and lots of help, but may not let us accurately evaluate
+your understanding. Closed assignments are an opportunity for
+you to demonstrate what you know by way of programming.
+
+There are two types of assignments in this course, **open** and **closed**:
+
+- **Open** assignments, for which you can talk to anyone else
+  in the course, post snippets of code on Piazza, get lots of help from TAs,
+  and generally come up with solutions collaboratively. TAs will be happy to
+  look at your code and suggest approaches and fixes.
+  
+  There are a few restrictions:
+  - Any code that you didn't write must be cited in the README file that goes
+    along with your submission
+
+    **Example:** On an open assignment, you and another
+    student chat online about the solution, you figure out a particular
+    helper method together. Your README should say “The FOO function was
+    developed in collaboration with Firstname Lastname”
+
+    **Example:** On an open assignment, a student posts the
+    recursive method calls they used to solve a problem you were
+    struggling with. Your README should say “I used the code from
+    https://piazza.com/class/id-of-post”.
+
+  - Anyone you work with in-person must be noted in your README
+
+    **Example:** You and another student sit next to each other in the lab,
+    and point out mistakes and errors to one another as you work through
+    the assignment. As a result, your solutions are substantially similar.
+    Your README should say “I collaborated with Firstname Lastname to
+    develop my solution.”
+  - You cannot share an entire repository of code or paste an entire solution
+    into Piazza. Keep snippets to reasonable, descriptive chunks of code; think
+    a dozen lines or so to get the point across.
+  - You still _cannot_ use code that you find online (no copying code
+    from StackOverflow or blogs online), or get assistance or code from
+    students outside of this offering of the class. All the code that is
+    handed in should be developed by you or someone in the class.
+  - You are responsible for _understanding_ all the code you have written.
+    All of the programming problems on the PAs may show up on exams, where
+    you will need to have a thorough understanding of the PA to answer the
+    questions.
+
+
+  This doesn't mean the staff will be handing out answers. We'll mostly
+  respond with leading questions and advice, and you shouldn't expect a
+  direct answer to questions like “am I done?” or “is my code right?”
+
+  There is no guarantee the assistance you get from your classmates is
+  correct. It is your responsibility to use your judgment to avoid using an
+  idea on Piazza that is wrong, or doesn't work with your solution; we won't
+  necessarily tell you one way or another while the assignment is out.
+
+  If we see that you used code from other students and didn't cite it in the
+  README, the penalty will range from a point deduction to an academic
+  integrity violation, depending on the severity. Always cite your work!
+
+- **Closed** assignments, where you cannot collaborate with others.
+  You can ask clarification questions and report potential issues as private
+  posts on Piazza or to staff members. However, staff will not look at your
+  code or comment on it. Lab/office hours these weeks are for conceptual
+  questions or for questions about past assignments only, no code assistance.
+  Treat these assignments like take-home exams.
+
+  On closed assignments:
+    - You cannot look at or use anyone else's code in any way.
+    - You cannot discuss the assignment, even in general terms, with anyone
+      other than the course staff.
+    - You should expect that staff members will politely say “The course
+      policy says I can't help with that” if you ask a question about your
+      algorithm or code.
+    - You cannot post publicly about the assignment on Piazza or elsewhere
+      online.
+    - All of the examples in the open section above would be
+      academic integrity violations.
+
+Programming assignments will explicitly list whether they are open or closed
+collaboration.
+
 You should be familiar with [the UCSD
 guidelines](http://senate.ucsd.edu/Operating-Procedures/Senate-Manual/Appendices/2)
 on academic integrity as well.
@@ -257,8 +334,6 @@ understand where your solution was incorrect or incomplete, and resubmit!
 
 <h3>Working and getting help in the lab</h3>
 
-We expect that ALL STUDENTS WILL NEED HELP at some point in this course.  If you find yourself needing help, this is not a cause for embarrassment.  It is completely expected. Please seek help early and often through any (or all) of the following resources.
-
 You have <a href="https://sdacs.ucsd.edu/~icc/index.php" target="_blank">computer accounts</a> for the labs in the CSE building.  Even if you choose to work on your programming assignments on
 your own computer, you can work in these labs. The type of programming assignment you are working on will determine whether you can <a href="#pa:pa-collab">collaborate with other students</a> in the lab.
 
@@ -277,10 +352,10 @@ Expect to have about 5 minutes with a tutor (or TA or instructor): you probably 
 
 Piazza is an online discussion board where we can make announcements and students can ask questions. Both we (the course staff) and your classmates can answer your questions. There are a few kinds of questions you should ask on Piazza:
 
-- Private questions about portions of your programming assignment solution.  Please see a tutor during our tutoring session or post these questions privately.
+- Private questions about closed programming assignments for clarification
 - Private questions about your grade / account
-- Public questions about programming assignments
-- Public questions about the content of lecture, discussion, and any readings
+- Public questions about open programming assignments
+- Public questions about the content of lecture, discussion, lab, and any readings
 
 For each assignment, you will find a Frequently Asked Questions post, where we will answer all common questions we receive in office hours and via (private) Piazza posts. If you ask a question that's already answered in that post, we'll likely just send you a link to that post. That post will be updated as new important questions and answers come in.
 
@@ -300,13 +375,22 @@ Your grade will be computed from:
 </ul>
 
 
-For the 5 PAs, we will order them from highest to lowest in terms of percentage scored on the PA itself, and then assign the proportions of the following points to each:
+TODO: closed or open or mix per assignment
+There are **2 closed** and **3 open** PAs. We will use an _ordered
+weighting_ to assign the 40 PA points.
+
+For the 2 closed PAs, we will order them from highest to lowest in terms of
+percentage scored on the PA itself, and then assign the proportions of the
+following points to each:
 
 - 10% highest scoring
-- 9%
+- 8% lowest scoring
+
+For the 3 open PAs, we will order them from highest to lowest in terms of percentage scored on the PA itself, and then assign the proportions of the following points to each:
+
+- 10% highest scoring
 - 8% middle scoring
-- 7%
-- 6% lowest scoring
+- 4% lowest scoring
 
 **Example**: You score:
 
@@ -316,15 +400,15 @@ For the 5 PAs, we will order them from highest to lowest in terms of percentage 
 - PA4:  80%
 - PA5: 100%
 
-The PAs would be ordered 100% (PA5), 90% (PA1), 80% (PA4), 70% (PA3), 50% (PA2).
+The closed PAs would be ordered 80% (PA4), 50% (PA2).
 
-The points would be:
+The points would be 0.8 * 10 + 0.5 * 8 = 8 + 4 = 12 points
 
-* = 1.00 * 10 + 0.90 * 9 + 0.80 * 8 + 0.70 * 7 + 0.50 * 6 
-* = 10 + 8.1 + 6.4 + 4.9 + 3 
-* = 32.4 points
+The open PAs would be ordered 100% (PA5), 90% (PA1), 70% (PA3).
 
-The total points (of 40 points) for PAs would be 32.4/40.
+The points would be 1.00 * 10 + 0.90 * 8 + 0.70 * 4 = 10 + 7.2 + 2.8 = 20 points.
+
+The total points (of 40 points) for PAs would be 32/40.
 
 After your weighted average is calculated, letter grades will be assigned
 based on the following grading scale:
@@ -360,9 +444,9 @@ based on the following grading scale:
 
 We may adjust the above scale to be more lenient (depending on the overall class performance), but we guarantee that we will
 not adjust the scale to make it harder to get a better grade.
-__In addition, you must pass the final exam in order to pass the course and score at least 55% on the overall PA portion of this course, you will receive an F for the course, regardless of your overall average.__
+In addition, you must pass the final exam in order to pass the course.
 
-<b>Late and Makeup Work</b> In general, work cannot be handed in late for credit. 
+<b>Late and Makeup Work</b> In general, work cannot be handed in late for credit. We will drop the lowest weekly engagement score to account for personal events and constraints that make you miss those deadlines.
 
 Programming work that is late follows the resubmission policy in <a href="#p:grading">the programming grades section</a>.
 
@@ -438,25 +522,3 @@ right away.  We will work to provide you with the accommodations you need,
 but you must first provide a current Authorization for Accommodation (AFA) letter issued by the OSD.  
 You are required to present your AFA letters to Faculty (please make arrangements to contact me privately)
 and to the OSD Liaison in the CSE department in advance so that accommodations may be arranged.
-
-### Basic Needs/Food Insecurities
-If you are experiencing any basic needs insecurities (food, housing, financial resources), there are resources available on campus to help, including The Hub and the Triton Food Pantry.  Please visit http://thehub.ucsd.edu/. for more information.
-
-
-## <a id="faqs" href="#faqs">Frequently Asked Questions</a>
-
-__Do I have to participate if I’m on the waitlist?__
-
-Yes, you’re responsible for everything as if you’re a normally-enrolled student while you’re on the waitlist, including any submission deadlines, and your work will be graded as usual.
-
-__I have a question about enrollments and the waitlist.__
-
-Please contact <a href="https://cse.ucsd.edu/undergraduate/undergraduate/advising/cse-student-affairs-office-hours" target="_blank">CSE student affairs</a>, who can give the best advice and information about the enrollment process. They are friendly and helpful and know much more about timing and any updates you will see through the registration system.
-
-There is some useful advice at <a href="https://cse.ucsd.edu/undergraduate/courses/enrolling-cse-courses" target="_blank">Enrolling in CSE Courses</a> that likely summarizes a lot of what they would tell you to get you started.
-
-__Will the course be in-person or remote? Is attendance required?__
-
-The content of the course is primarily delivered in-person. Attendance is not required, but is highly recommended. Studies (by UCSD faculty) have shown that attendance and participation in lecture leads to better student performance and higher grades.
-
-All of the exams, including the final exam will be in-person exams.
