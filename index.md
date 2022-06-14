@@ -33,7 +33,7 @@ complete for the course. You are responsible for checking this schedule and
 completing work by the deadlines given, which are always at 11pm local San
 Diego time on the listed date.
 
-<iframe width="100%" height="800px" style="border: none; border-top: 1px solid grey; border-spacing: 2px" src="https://docs.google.com/spreadsheets/d/1jNgfoLp_a67GOMKXDpEn-yRncWWhE6WKqaS4v2xweKU/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTux7TSQqT3UwSqhxtazdFTAB2-IjkoxMwSQ_iU0tisnuBv63bezJN66l4drybUPxfWpdRmmUBV-Cg7/pubhtml?gid=1638030103&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 
 ## Basic Course Components
 <a id="basics"></a>
