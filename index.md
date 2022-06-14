@@ -33,7 +33,7 @@ complete for the course. You are responsible for checking this schedule and
 completing work by the deadlines given, which are always at 11pm local San
 Diego time on the listed date.
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTux7TSQqT3UwSqhxtazdFTAB2-IjkoxMwSQ_iU0tisnuBv63bezJN66l4drybUPxfWpdRmmUBV-Cg7/pubhtml?gid=1638030103&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+<iframe width="100%" height="800px" style="border: none; border-top: 1px solid grey; border-spacing: 2px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTux7TSQqT3UwSqhxtazdFTAB2-IjkoxMwSQ_iU0tisnuBv63bezJN66l4drybUPxfWpdRmmUBV-Cg7/pubhtml?gid=1638030103&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 
 ## Basic Course Components
 <a id="basics"></a>
@@ -90,7 +90,7 @@ noted on the event itself.
 
 <iframe src="https://calendar.google.com/calendar/embed?src=c_8gke2uhalrfpkc9kc5akec2c80%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
-### <a id="b:materials" href="#b:materials">Materials</a>
+## <a id="b:materials" href="#b:materials">Materials</a>
 
 There is no required textbook for the course. There is a stepik online textbook available and it is free and interactive! It serves as a useful reference and there will be links to relevant stepik sections in with the course schedule.
 
@@ -100,6 +100,7 @@ There is no required textbook for the course. There is a stepik online textbook 
 We may use other on-line resources during the quarter that may be required
 reading or activities. These will all be free and linked from the schedule.
 
+### Online Discussion and Q&A
 Online discussion and Q&A for the class will be available on Piazza: sign up to
 <a href="https://piazza.com/class/l3oedrn1kia73m" target="_blank">join the class here</a>
 and <a href="https://piazza.com/class/l3oedrn1kia73m" target="_blank">view the discussion forum here</a>.
@@ -107,12 +108,15 @@ Important announcements from the course team will be pinned at the top of your f
 When you set up your account, you can select the frequency for email notifications of messages and discussions
 on Piazza.  Piazza is one way you can <a href="#pa:piazzahelp">ask for and get help</a> in this course.
 
+
+### Java Documentation
 <a href="https://docs.oracle.com/javase/11/" target="_blank">The
 documentation for the Java language</a>, while not required reading, will be
 linked to from some assignments and is always a useful reference while
 programming. We will be using Java version **11** for the programming
 assignments in this course, which is available at <a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html">Oracle's web site</a>.
 
+### Working on and Submitting Assignments
 You'll be submitting your classwork and seeing grading feedback through a
 tool called <a href="http://gradescope.com/" target="_blank">Gradescope</a>.
 
@@ -121,7 +125,7 @@ href="https://github.com" target="_blank">Github</a>. You aren't required to
 have an account to complete coursework, but it can be useful for you to make
 one.
 
-### <a id="b:engage" href="#b:engage">Engagement</a>
+## <a id="b:engage" href="#b:engage">Engagement</a>
 
 We highly recommend actively participating in class, attending discussion,
 and completing the weekly review quizzes. Regularly engaging with the class
@@ -368,10 +372,8 @@ Programming work that is late follows the resubmission policy in <a href="#p:gra
 
 <b>Regrades</b> Mistakes sometimes occur in grading. Once grades are posted, we will allow a short period for you to request a fix to your grade (announced along with the release of grades), with a clear argument for why a mistake was made. If you don't make a request in the given period, the grade you were initially given is final. All regrades should be made through Gradescope's interface.
 
-## <a id="policies" href="#policies">Other Policies</a>
-
 <a id="p:community"></a>
-<h3>The CSE 12 Community</h3>
+## The CSE 12 Community
 CSE 12 is a large course: there are 10 people on the instructional team and over 100 students.  We are all here because we are excited about Computer Science and want to ensure a productive, interesting, and useful quarter.
 
 At UC San Diego, we agree to hold ourselves to the <a href="https://ucsd.edu/about/principles.html" target="_blank">Principles of Community</a> of respect, inclusion, and integrity.  This translates to all our interactions in this course, and beyond.
@@ -443,7 +445,7 @@ and to the OSD Liaison in the CSE department in advance so that accommodations m
 If you are experiencing any basic needs insecurities (food, housing, financial resources), there are resources available on campus to help, including The Hub and the Triton Food Pantry.  Please visit http://thehub.ucsd.edu/. for more information.
 
 
-## <a id="faqs" href="#faqs">Frequently Asked Questions</a>
+## Frequently Asked Questions
 
 __Do I have to participate if I’m on the waitlist?__
 
