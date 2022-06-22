@@ -1,10 +1,8 @@
 ---
 layout: pa
-title: "PA3: Worklists are A MAZE ING (Open)"
+title: "PA3: Worklists are A MAZE ING"
 doodle: "../doodle.png"
 ---
-
-**This assignment is <a href="../#programming">open to collaboration</a>.**
 
 This assignment will teach you how to use stacks and queues as worklists, how
 to implement an important search algorithm, and how the worklist choice affects
@@ -13,11 +11,11 @@ the algorithm.
 _This assignment draws ideas from an assignment by Prof Langlois and Alvarado,
 which in turn drew from a CSCI 151 lab assignment from Oberlin college._
 
-The assignment is due Wednesday, January 30 at 11pm.
+The assignment is due Thursday, July 14th at 11pm.
 
 You can get the starter code here:
 
-https://github.com/ucsd-cse12-w19/pa3-starter/
+https://github.com/ucsd-cse12-w19/pa3-starter/ TODO
 
 ## The Structure of a Maze Solver
 
@@ -287,7 +285,7 @@ them:
 
 ## Grading
 
-A grader will be made available by Monday, Jan 28. The rough grade breakdown
+A grader will be made available by Tuesday, July 12th. The rough grade breakdown
 is:
 
 - 6 points README

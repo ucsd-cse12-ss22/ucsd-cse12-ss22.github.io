@@ -1,21 +1,19 @@
 ---
 layout: pa
-title: "PA2 (Closed): Manipulating Lists"
+title: "PA2: Manipulating Lists"
 doodle: "../doodle.png"
 ---
 
-**This assignment is <a href="../#programming">closed to collaboration</a>.**
-
 This assignment will exercise your understanding of array and linked lists.
 
-It is due on Wednesday, January 23 at 11pm. A submission link will be provided
-on Gradescope by Monday, January 19.
+It is due on Thursday, July 7th at 11pm. A submission link will be provided
+on Gradescope by Tuesday, July 5th.
 
 ## Setup and Goal
 
 You can get the starter code at
 [https://github.com/ucsd-cse12-w19/pa2-starter](https://github.com/ucsd-cse12-w19/pa2-starter),
-which contains the following files:
+which contains the following files: TODO
 
 - `StringList.java` – you *cannot* edit this file
 - `StringTransformer.java` – you *cannot* edit this file
@@ -216,25 +214,13 @@ from the schedule on the course web page.
 
 ## Asking for Help
 
-This is a *closed* PA, so you cannot get any help from other students or ask
-implementation questions of the staff. If you have any questions about the PA,
-you must ask them as _private_ questions on Piazza. Do not post publicly about
-this PA, even for clarification questions. Doing so is a violation of academic
-integrity. The full rules for closed PAs are <a href="../#programming">on the
-course web site</a>.
-
-You can always ask the staff about anything from lecture. For this PA, you may
-find it especially helpful to go over the worksheets and code from January 14
-(Monday) and January 16 (Wednesday). The staff will politely decline requests
-to help with the PA, however.
+You can always ask the staff about anything from lecture. For this PA, you may find it especially helpful to go over the worksheets and code from lecture.
 
 If you have any policy questions, please ask!
 
 ## Style
 
-There are no graded style requirements for this PA, which has the same
-suggestions as PA1. We may give you feedback on style, which you should pay
-attention to, because future assignments will assign points to style.
+There are no graded style requirements for this PA, which has the same suggestions as PA1. We may give you feedback on style, which you should pay attention to, because future assignments will assign points to style.
 
 ## README
 
@@ -273,7 +259,7 @@ Rubric:
 
 (50 total points)
 
-The submission link will be available on Gradescope as `pa2`.
+The submission link will be available on Gradescope as `PA2`.
 
 ## Modern Java: Lambda Expressions
 
