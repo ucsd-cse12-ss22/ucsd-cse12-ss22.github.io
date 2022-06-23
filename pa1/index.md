@@ -5,9 +5,7 @@ doodle: "../doodle.png"
 ---
 
 
-# CSE 12 Programming Assignment 1
-
-### Testing Shopping Baskets
+## Testing Shopping Baskets
 
 This assignment will teach you to use JUnit to test implementations of an
 interface, and review a number of Java concepts.
@@ -256,9 +254,9 @@ On this assignment, we will give you feedback on style but not deduct points
 for problems with style.
 
 ## Submitting
-#### Part 1
+### Part 1
 On the Gradescope assignment **pa1-code** please submit only your `BasketTest.java` file. You may encounter errors if you submit extra files or directories. You may submit as many times as you like till the deadline. 
-#### Part 2
+### Part 2
 Please submit your answers to the questions from part 2 on the Gradescope assignment **pa1-written**. You may submit as many times as you like till the deadline.
 
 
