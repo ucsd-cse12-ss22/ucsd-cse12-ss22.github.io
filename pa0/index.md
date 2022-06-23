@@ -1,12 +1,10 @@
 ---
 layout: pa
-title: "PA0: Getting Started"
+title: "PA0: Getting Started (Optional)"
 doodle: "../doodle.png"
 ---
 
-# CSE 12 Programming Assignment 0 (Optional)
-
-### Computer Setup
+## Computer Setup
 
 This optional assignment will teach you how to setup Java and Eclipse, get the starter code from GitHub, and how to run Eclipse projects. If you already have the JDK installed from a previous quarter and a way to edit, compile and run Java programs, then you can skip this assignment. Any IDE can be used, however, the course staff is most familiar with Eclipse and may not be able to help you with IDE issue if you choose to use a different IDE such as IntelliJ. Note: you can also use a text editor and commandline if you wish, an IDE is not required.
 

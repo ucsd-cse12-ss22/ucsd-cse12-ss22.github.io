@@ -222,12 +222,12 @@ or = in `Choosers.java `
 
 
 
-### Part 3: Gradescope Assignment (4 points)
+### Part 3: Written Assignment (4 points)
 
 You will also answer question on Gradescope regarding the assignment. Answer 
 the two questions written below. 
 **Make sure to submit
-directly to the Gradescope assignment: "Programming Assignment 2 - questions"** 
+directly to the Gradescope assignment: "PA2-written"** 
 
 1. Describe a mistake you made in your implementation, and how you fixed it.
 (Don't worry even if you think you implementation is incomplete when answering 
@@ -428,7 +428,7 @@ times as you like till the deadline.
     * Does your code compile? If not, you will get 0 points.
     * Does it pass all of the provided unit tests?
 * **Implementations of MyChooser/MyTransformer** (4 points)
-* **Gradescope Assignment** (4 points)
+* **Written Assignment** (4 points)
   
 
 

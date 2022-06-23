@@ -4,8 +4,6 @@ title: CSE 12 Summer Session 1 2022
 doodle: "/logo.jpg"
 ---
 
-### __This website is under development. If you happen to see this website before the quarter starts do NOT assume what you see is accurate.__
-
 # Basic Data Structures and Object-Oriented Design
 
 <a href="https://www.linkedin.com/in/skrauselevy/">Sophia Krause-Levy</a> (Instructor)
