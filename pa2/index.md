@@ -3,144 +3,252 @@ layout: pa
 title: "PA2: Manipulating Lists"
 doodle: "../doodle.png"
 ---
+---
+tags: CSE12WI21
+---
+---
+
+# PA2: Lists
+---
+
+You should finish reading the whole writeup before you start to code. 
 
 This assignment will exercise your understanding of array and linked lists.
 
-It is due on Thursday, July 7th at 11pm. A submission link will be provided
-on Gradescope by Tuesday, July 5th.
+This PA is due on ** **Thursday, Julty 7th at 11:00pm** **.
 
-## Setup and Goal
+## CSE Mantra: *Start early, start often!*
+*You will notice throughout the quarter that the PAs get harder and harder. 
+By starting the quarter off with good habits, you can prepare yourself for 
+future PAs that might take more time than the earlier ones.*
 
-You can get the starter code at
-[https://github.com/ucsd-cse12-w19/pa2-starter](https://github.com/ucsd-cse12-w19/pa2-starter),
-which contains the following files: TODO
+## Getting the Code
 
-- `StringList.java` – you *cannot* edit this file
-- `StringTransformer.java` – you *cannot* edit this file
-- `StringChooser.java` – you *cannot* edit this file
-- `ArraySL.java` – you will edit this file
-- `LinkedSL.java` – you will edit this file
+The starter code available on Github at [https://github.com/ucsd-cse12-ss22/PA2_starter_code](https://github.com/ucsd-cse12-ss22/PA2_starter_code). If you are not familiar with Github, here are two easy ways to get your code.
+
+1. Download as a ZIP folder 
+
+    If you scroll to the top of Github repository, you should see a green button that says *Code*. Click on that button. Then click on *Download ZIP*. This should download all the files as a ZIP folder. You can then unzip/extract the zip bundle and move it to wherever you would like to work. The code that you will be changing is in the folder called *pa1-starter*.
+    
+![](https://i.imgur.com/ujaxqBP.png)
+
+
+2. Using git clone (requires terminal/command line)
+
+    If you scroll to the top of the Github repository, you should see a green button that says *Code*. Click on that button. You should see something that says *Clone with HTTPS*. Copy the link that is in that section. In terminal/command line, navigate to whatever folder/directory you would like to work. Type the command `git clone _` where the `_` is replaced with the link you copied. This should clone the repository on your computer and you can then edit the files on whatever IDE you see fit.
+    
+If you are unsure or have questions about how to get the starter code, feel free to make a Piazza post or ask a tutor for help.
+
+## Code Layout
+
+- `MyList.java` – you *cannot* edit this file
+- `MyTransformer.java` – you *cannot* edit this file
+- `MyChooser.java` – you *cannot* edit this file
+- `ArrayGL.java` – you will edit this file
+- `LinkedGL.java` – you will edit this file
 - `TestLists.java` – you will edit this file
 - `Choosers.java` – you will edit this file
 - `Transformers.java` – you will edit this file
 
 
-You are going to implement the `StringList` interface below twice, once for
-array lists and once for linked lists:
+## Assignment Overview
+
+### Part 1: Implementation of MyList (42 points)
+
+The `MyList` interface is implemented in `ArrayGL.java` and in `LinkedGL.java`: 
 
 ```
-public interface StringList {
-  String[] toArray();
-  void transformAll(StringTransformer st);
-  void chooseAll(StringChooser sc);
-  boolean isEmpty();
+public interface MyList<E>{
+    E[] toArray();
+    void transformAll(MyTransformer mt);
+    void chooseAll(MyChooser mc);
+    boolean isEmpty();
 }
 ```
 
-You will also implement a constructor for linked lists that takes a string
-array (`String[]`) as a parameter; we've provided the constructor of this form
-for array lists.
+The constructor for the lists will take a generic array (`E[]`) as a parameter. 
+We provide you with the constructor for `ArrayGL.java`. It is your task to complete 
+the constructor for `LinkedGL.java`. 
 
-In total, you will implement and thoroughly test:
+In part 1 and part 2, you will implement and thoroughly test the following methods:
 
-- `LinkedSL(String[] initialElements)`
+- `LinkedGL(E[] contents)`
 - `isEmpty` for both types of list
 - `toArray` for both types of list
 - `transformAll` for both types of list
 - `chooseAll` for both types of list
-- several implementations of the `StringTransformer` and `StringChooser`
+- Implementations of the `MyTransformer` and `MyChooser`
   interfaces
 
-The related interfaces `StringTransformer` and `StringChooser` are defined as:
+The related interfaces `MyTransformer` and `MyChooser` are defined as:
 
 ```
-public interface StringTransformer {
-  String transformElement(String s);
+public interface MyTransformer<E>{
+    E transformElement(E e);
 }
 
-public interface StringChooser {
-  boolean chooseElement(String s);
+public interface MyChooser<E>{
+    boolean chooseElement(E e);
 }
 ```
 
-## Method and Class Descriptions
+#### `public LinkedGL(E[] contents)`
 
-### `LinkedSL(String[] initialElements)`
-
-*Constructor* that creates a new `LinkedSL` with its elements from
-`initialElements` in the same order. For example, the following constructor call:
+*Constructor* that creates a new `LinkedGL` with its elements from
+`contents` in the same order. For example, the following constructor call:
 
 ```
-String[] input = {"a", "b", "c"};
-LinkedSL = new LinkedSL(input);
+Integer[] input = {1, 2, 3};
+LinkedGL<Integer> list = new LinkedGL<Integer>(input);
 ```
 
-should create a new Linked string list with contents `"a", "b", "c"`.
+should create a new Linked Integer list with contents `{1, 2, 3}`.
 
-### `toArray`
+#### `public E[] toArray()`
 
-Returns the contents of the list as a new array, with elements in the same
-order they appear in the list. The length of the array produced must be the
-same as the size of the list.
+Returns the contents of the list as a new array, with *shallow copy* of the 
+elements in the same order they appear in the list. The length of the array 
+produced must be the same as the size of the list. To notice, you cannot 
+initialize a generic array, like `E[] array = new E[];`. **Hint**: consider 
+typecaste or check out lecture materials. 
 
-### `isEmpty`
+#### `public boolean isEmpty()`
 
-Returns `true` if the list has no elements, `false` otherwise
+Returns `true` if the list has no elements, `false` otherwise.
 
-### `transformAll`
+#### `public void transformAll(MyTransformer mt)`
 
-Changes the contents of the list according to the provided `StringTransformer`.
-Each element in the list should be given as an argument to the
-`transformElement` method of the given transformer, with the result of the call
-to `transformElement` stored in the list at the same index. For example,
-consider the provided `UpperCaseTransformer` that implements
-`StringTransformer`. If we construct a list like:
+Changes the contents of the list according to the provided `MyTransformer`.
+`mt` is a concrete class that implements `MyTransformer`. (We will illustrate 
+how to implement `MyTransformer` in part 2.) It has a method called 
+`transformElement(E e)`, which takes an element as an argument and returns the 
+transformed element. Therefore, you should apply 
+`transformElement` method of `mt` class to each element in the list, getting
+the transformed element and replacing the orginal one.
+For example, consider the provided `UpperCaseTransformer` that 
+implements `MyChooser`, which transforms a string into uppercase. If we 
+construct a list like:
 
 ```
 String[] contents = {"a", "b", "c"};
-ArraySL asl = new ArraySL(contents);
-asl.transformAll(new UpperCaseTransformer());
+ArrayGL<String> agl = new ArrayGL<String>(contents);
+agl.transformAll(new UpperCaseTransformer());
 ```
 
-then we should expect the contents of the list after to be `"A", "B", "C"`.
+then we should expect the contents of the list after to be `{"A", "B", "C"}`.
 
-### `chooseAll`
+When the element is `null`, it should not be transformed. For example,
 
-Changes the list to contain only elements selected by the `StringChooser`.
-After calling `chooseAll`, the list should contain only the elements for which
-calling `chooseElement` on the element returns `true`. The elements should remain in
-the same order after `chooseAll` is called. For example, consider the provided
-`LongWordChooser` that implements `StringChooser`. If we construct a list like:
+```
+String[] contents = {"a", "b", null};
+ArrayGL<String> agl = new ArrayGL<String>(contents);
+agl.transformAll(new UpperCaseTransformer());
+```
+
+then we should expect the contents of the list after to be `{"A", "B", null}`.
+
+
+
+#### `public void chooseAll(MyChooser mc)`
+
+Changes the list to contain only elements selected by the `MyChooser`.
+`mc` is a concrete class that implements `MyChooser`. (We will illustrate how
+to implement `MyChooser` in part 2.) It has a method called 
+`chooseElement(E e)`, which takes an element as an argument and check if this
+element should be put into the new list. It return `true`, if we should choose 
+this element. Otherwise, it returns `false`. Therefore, you should apply 
+`chooseElement` method of `mc` class to each element in the list, verifying if 
+the element should be chosen and keeping the element if true. 
+The elements should remain in the same order after `chooseAll` is called. 
+For example, consider the provided `LongWordChooser` that implements `MyChooser`,
+which chooses a string whose length is more than 5. If we construct a list like:
 
 ```
 String[] contents = {"longword", "longerword", "short"};
-ArraySL asl = new ArraySL(contents);
-asl.chooseAll(new LongWordChooser());
+ArrayGL<String> agl = new ArrayGL(contents);
+agl.chooseAll(new LongWordChooser());
 ```
 
-then we should expect the contents of the list after to be `"longword",
-"longerword"`.
+then we should expect the contents of the list after to be `{"longword",
+"longerword"}`.
 
-### Implementations of `StringChooser` and `StringTransformer`
+When element is `null`, it should not be chosen. For example, 
 
-You must add (at least) 2 implementations of **each** of these interfaces. Your
-implementations of `StringChooser` should go into the file `Choosers.java`, and
-your implementations of `StringTransformer` should go into the file
-`Transformers.java`. You have free choice in what you implement for these, and
-they will be graded manually.
+```
+String[] contents = {"longword", null, "short"};
+ArrayGL<String> agl = new ArrayGL(contents);
+agl.chooseAll(new LongWordChooser());
+```
+then we should expect the contents of the list after to be `{"longword"}`.
+
+
+
+
+### Part 2: Implementations of `MyChooser` and `MyTransformer` (4 points)
+
+You must add (at least) 2 implementations of **each** of these interfaces. 
+In other words, you should create at least 2 classes which implement 
+`MyChooser` in `Choosers.java` and implement `MyTransformer` in 
+`Transformers.java`. You have free choice in what you implement for these,
+and they will be graded manually. We have provided examples below:
+
+```
+// inside Choosers.java
+class LongWordChooser implements MyChooser<String> {
+    @Override
+    public boolean chooseElement(String s) {
+        return s.length() > 5;
+    }
+} 
+
+// inside Transformers.java
+class UpperCaseTransformer implements MyTransformer<String> {
+    @Override
+    public String transformElement(String s) {
+        return s.toUpperCase();
+    }
+}
+```
+
+"Choosers" should overwrite `public boolean chooseElement(E e)` of `MyChooser`.
+When you put a "chooser" into `chooseAll(MyChooser mc)`'s paramter, like 
+`agl.chooseAll(new LongWordChooser())`, you can access`chooseElement` method by
+`mc.chooseElement(element)`. Similarly, "transformers" should overwrite 
+`E transformElement(E e)`and you can access `transformElement` by 
+`mt.transformElement(element)`.
+
+**Note**: you should not use `toLowerCase()` in `Transformers.java` and >, <, 
+or = in `Choosers.java `
+
+
+
+### Part 3: Gradescope Assignment (4 points)
+
+You will also answer question on Gradescope regarding the assignment. Answer 
+the two questions written below. 
+**Make sure to submit
+directly to the Gradescope assignment: "Programming Assignment 2 - questions"** 
+
+1. Describe a mistake you made in your implementation, and how you fixed it.
+(Don't worry even if you think you implementation is incomplete when answering 
+the question. Mention about  mistakes you made to get to your current point).
+
+2. Was it easier to implement `toArray`, `transformAll`, and `chooseAll` on one 
+of `ArrayGL` or `LinkedGL`? Why? (150 words or less)
 
 ## Getting Started
 
 After you get the code, you will notice that the class bodies for both
-`ArraySL` and `LinkedSL` are quite empty. Indeed, trying to compile the program
+`ArrayGL` and `LinkedGL` are quite empty. Indeed, trying to compile the program
+by `javac -cp ../lib/junit-4.12.jar:../lib/hamcrest-core-1.3.jar:. *.java `
 will result in errors like:
 
 ```
-src/cse12pa2student/ArraySL.java:3: error: ArraySL is not abstract and does not override abstract method isEmpty() in StringList
-public class ArraySL implements StringList {
+ArrayGL.java:1: error: ArrayGL is not abstract and does not override abstract method isEmpty() in MyList
+public class ArrayGL<E> implements MyList<E> {
        ^
-src/cse12pa2student/LinkedSL.java:13: error: LinkedSL is not abstract and does not override abstract method isEmpty() in StringList
-public class LinkedSL implements StringList {
+LinkedGL.java:1: error: LinkedGL is not abstract and does not override abstract method isEmpty() in MyList
+public class LinkedGL<E> implements MyList<E> {
        ^
 2 errors
 ```
@@ -151,46 +259,76 @@ always returns `false`:
 
 ```
 public boolean isEmpty() {
-  return false;
+    return false;
 }
 ```
 
-This clearly returns the wrong value, but by adding methods with the right
-types, you can make the two implementations compile and start running the
-tester. Do this first!
+This clearly returns the wrong value, but it will allow you to compile the files and start running the tester. Make sure the method returns the correct type. Do this first!
 
-After doing this, you can start testing out the individual methods. You may
-want to start with `ArraySL`, since the constructor is already provided,
-implementing those methods first. You can run the tests and see the results for
-both implementations, even if one is incorrect, as long as both compile.
+After doing this, you can start working on the individual methods. You may
+want to start with implementing the methods for `ArrayGL`, since the constructor is already provided. 
 
-Test as you go, and as you get more comfortable with the code move back and
+Run the tests as you go. Even if you hanve't finished implementing other methods, as long as the files compiles, you can test for the method you're currently working on. 
+
+As you get more comfortable with the PA, move back and
 forth between the implementations as you see fit to make progress.
+
 
 ## Testing
 
-The thoroughness and correctness of your tests will be graded automatically. To
-test correctness, we will run your tests against our reference implementation,
-and they should all succeed. The thoroughness will be assessed by running your
+The thoroughness and correctness of your tests will be graded automatically. 
+Correctnes will be assessed by running your tests against our reference 
+implementation and checking if the results are as expected.
+Thoroughness will be assessed by running your
 tests against each buggy implementation and checking if the results are
 different than on the reference implementation.
 
-You will be able to see the correctness information in Gradescope to confirm
-that your tests match our expected behavior. The thoroughness information will
-be available only after you submit, so make sure to test a number of
-interesting cases.
+You will be able to see the correctness assessment in Gradescope to confirm
+that your tests match our expected behavior. 
+
+### What is wheat and chaff? 
+* Wheat and chaff are terms to describe good and bad code. **Be sure to 
+understand these two terms as you will find that they will be used in later 
+programming assignments as well!** Wheat refers to  functional code while chaff 
+refers to buggy code. Throughout this course we will do the following in order 
+to score your written tests:
+    * running your written tests against a wheat implementation to see if your 
+      tests are correct. 
+    * running your tests against a series of chaff implementations to make sure 
+      your tests are thorough and able to catch potential bugs.
+
+The following table shows the test case breakdown along with some descriptions 
+to help you write your own tests. Note, **this is not a comprehensive list of 
+tests** and
+you will have to think of some of your own test cases. This list is simply a 
+guide to help you implement your own. 
+
+
+| Test Cases   | Description | Points |
+|--------------|-------------|--------|
+| chaff implementations |The following are examples of bad implementations where your tests will be expected to catch the bugs, look at the names to help get an idea of what the bug could be. For tricker bugs, further explanations are given. <ul><li>chaffAlwaysChoosesFirstArrayGL<ul><li>in ArrayGL, chooseAll() always chooses the first element</li></ul></li><li>chaffIsEmptyReturnsTrueIfSizeGreaterThan0ArrayGL</li><li>chaffReturnNewArrayArrayGL<ul><li>in ArrayGL, toArray() does not create a new array</li></ul></li><li>chaffIsEmptyReturnsFalseSizeGreaterThan3</li><li>chaffChooseAllFailsIfLastNotChosenLinkedGL<ul><li>in LinkedGL, chooseAll() will cause an exception if the last node is not chosen</li></ul></li><li>chaffDoWhileToArrayLinkedGL<ul><li>in LinkedGL, a do-while loop is used in toArray()</li></ul></li><li>chaffDoWhileTransformArrayGL</li><li>chaffFixedSizeConstructorLinkedGL</li><li>chaffIncorrectTransformBoundsLinkedGL<ul><li> in LinkedGL, transformAll() does not loop through the entire list</li></ul></li><li>chaffIncludeNullToArrayArrayGL<ul><li>in ArrayGL, extra nulls are being copied to the end of the new array</li></ul></li></ul> | 10 |
+| wheat implementation | `TestLists.java` will be used against a correct implementation. This will check if the tests written are correct and do not flag any errors for the wheat implementation. | 5 |
+| Constructor | Correctly populates the instance variables for the object. <ul><li>pass an empty array</li><li>pass an array with multiple values</li> </ul>| 3 |
+| isEmpty |  Correctly checks to see if the ArrayGL/LinkedGL is empty. <ul><li>the list is empty, returns True</li><li>the list is not empty with multiple values, returns False</li><li>the list is not empty with only one value, returns False</li> </ul>| 6 (3 for ArrayGL, 3 for LinkedGL)|
+| toArray |  Correctly returns an array of the values that were in the ArrayGL/LinkedGL. <ul><li>the list is empty</li><li>the list has a large size</li><li>creates a new array to return</li> </ul> | 6 (3 for ArrayGL, 3 for LinkedGL)|
+| choose | Correctly chooses the desired elements. <ul><li>the list is empty</li><li>choose all of the elements in the list</li><li>list with only two elements, choose second element</li> <li>choose first and last in list</li></ul> | 6 (3 for ArrayGL, 3 for LinkedGL)|
+| transform | Correctly transforms the elements in the list. <ul><li>the list is empty</li><li>the list has two items</li><li>the list has a large size</li> </ul>| 6 (3 for ArrayGL, 3 for LinkedGL)|
+
+### Sanity Check
+When you submit, you will see a `Sanity Check`. This is a subset of the tests we will be running on your code to help you see if you are on the right track. **Passing all of these does not necessarily mean you will get full credit!!!** You need to write your own tests to make sure you have the correct functionality for all of the required methods.
+
 
 ## Constraints
 
 Your implementation is subject to the following constraints; violating them
 will result in substantial deductions or a 0:
 
-- You cannot use `ArraySL` to implement `LinkedSL` or vice versa
-- You cannot add, remove, or change fields in `ArraySL` or `LinkedSL`
-- Your implementations of `ArraySL` and `LinkedSL` cannot use the built-in Java
+- You cannot use `ArrayGL` to implement `LinkedGL` or vice versa
+- You cannot add, remove, or change fields in `ArrayGL` or `LinkedGL`
+- Your implementations of `ArrayGL` and `LinkedGL` cannot use the built-in Java
   collections classes (including `ArrayList` and `LinkedList`)
 - In your tests in `TestLists.java`, you can only use the `makeList` method to
-  construct lists, and you can only call methods declared on the `StringList`
+  construct lists, and you can only call methods declared on the `MyList`
   interface to manipulate the lists you create. This makes sure we can
   automatically grade your submission.
 
@@ -212,54 +350,88 @@ You are free to use all of the following resources:
 We encourage you to make heavy use of these resources! Much of these are linked
 from the schedule on the course web page.
 
-## Asking for Help
+## Answers for FAQ
 
-You can always ask the staff about anything from lecture. For this PA, you may find it especially helpful to go over the worksheets and code from lecture.
+1. Even though we only offer Choosers/Transformers examples of String, your implementation of transformerAll/chooseAll can transform/choose any object types, including String, Integer, or your own object class. Therefore, you should consider write your own Choosers and Transformers of multiple object types and test them. For example, consider such a transformer: class IntegerTransformer implements MyTransformer<Integer>.
+2. When you apply Choosers of String to an Integer list, there will be a java.lang.ClassCastException (you should try it). However, you do not need to worry about how to handle the error. When we are testing, we will apply the correct type. 
+3. We don't test null input in LinkedGL's or ArrayGL's constructors. 
+4. It's ok to have warnings. 
+5. In the writeup, it says "you should not use <, ==, or > in Choosers.java" and toLowerCase in Transformers.java because if those are allowed, students can just copy the code from LongWordChooser and UpperCaseTransformer and change < into == or > and toUpperCase into toLowerCase, which does not count as "create your own choosers and transformers." Therefore, if you want to use <, ==, > or toLowerCase, make sure you are not just taking a shortcut. 
+6. Magic numbers are allowed in your Choosers.java and Transformers.java source files since the sample ones contain them.
+7. We don't test null inputs to chooseAll/transformAll.
+8. You may write JUnit tests that test your own choosers and transformers.
+9. About toArray, return a "new" array which contains the shallow copy(reference) of each element. 
+10. Null element does not count as empty. For example, if I create a list with {null, null, "A"}, its size should be 3 instead of 1. 
+11. You are not allowed to use system calls to copy array. You should copy an array though a loop. 
+12. chaffFixedSizeConstructorLinkedGL() is an implementation whose constructor has a fixed maximum size. Meaning if the content's length is larger than this fixed size, it won't populate the list with all of the contents.
+13. You can use Arrays class in your tests
+
+## Asking for Help
+Feel free to ask the staff about anything from lecture. For this PA, you may
+find it especially helpful to go over the worksheets and code from the lecture
+on Array Lists and Linked Lists.
 
 If you have any policy questions, please ask!
 
 ## Style
 
-There are no graded style requirements for this PA, which has the same suggestions as PA1. We may give you feedback on style, which you should pay attention to, because future assignments will assign points to style.
+On this assignment, we will give you feedback on style but not deduct points
+for problems with style. In future assignments, we will deduct style points if 
+you have:
 
-## README
+- Lines in code files that are longer than 100 characters
+- Inconsistent indentations
+- Unit tests with generic names like "test1"
+- Helper methods with generic names like "method1"
 
-You will answer the following question in your README:
-
-1. Describe a mistake you made in your implementation, and how you fixed it.
-(Don't worry if you don't think your implementation is fully complete when
-answering this, just talk about some mistake you made to get to the point
-you're at).
-
-2. Was it easier to implement `toArray`, `transformAll`, and `chooseAll` on one of
-`ArraySL` or `LinkedSL`? Why? (150 words or less)
-
-## Rubric and Checklist
+## Submission Checklist
 
 Checklist:
 
-- `chooseAll` for `ArraySL` and for `LinkedSL`
-- `transformAll` for `ArraySL` and for `LinkedSL`
-- `isEmpty` for `ArraySL` and for `LinkedSL`
-- `toArray` for `ArraySL` and for `LinkedSL`
-- `LinkedSL` constructor with `String[]` parameter
+- `LinkedGL` constructor with `E[]` parameter
+- `isEmpty` for `ArrayGL` and for `LinkedGL`
+- `toArray` for `ArrayGL` and for `LinkedGL`
+- `transformAll` for `ArrayGL` and for `LinkedGL`
+- `chooseAll` for `ArrayGL` and for `LinkedGL`
 - A correct and thorough set of tests
-- 2 implementations of `StringChooser` (in addition to `LongWordChooser`)
-- 2 implementations of `StringTransformer` (in addition to `UpperCaseTransformer`)
-- 2 README questions
+- 2 implementations of `MyChooser` (in addition to `LongWordChooser`)
+- 2 implementations of `MyTransformer` (in addition to `UpperCaseTransformer`)
+- 2 assignment questions
 
-Rubric:
 
-- 31 points – implementation correctness
-  - 3 points for each of 9 methods [autograded]
-  - 4 points for implementations of `StringChooser` and `StringTransformer` [manually graded]
-- 5 points – test correctness [autograded]
-- 10 points – test thoroughness [autograded]
-- 4 points – written questions [manually graded]
+## Submitting
 
-(50 total points)
+### Part 1 & 2
+On the Gradescope assignment **PA2-code** please submit 
+the following files:
 
-The submission link will be available on Gradescope as `PA2`.
+    * ArrayGL.java
+    * Choosers.java
+    * LinkedGL.java
+    * MyChooser.java
+    * MyList.java
+    * MyTransformer.java
+    * TestLists.java
+    * Transformers.java
+
+
+
+### Part 3
+Please submit your answers to the questions from part 3 on the Gradescope 
+assignment **PA2-written**. You may submit as many 
+times as you like till the deadline.
+
+## Scoring (50 points total)
+
+* **Coding Style** (0 points)
+* **Correctness** (42 points)
+    * Does your code compile? If not, you will get 0 points.
+    * Does it pass all of the provided unit tests?
+* **Implementations of MyChooser/MyTransformer** (4 points)
+* **Gradescope Assignment** (4 points)
+  
+
+
 
 ## Modern Java: Lambda Expressions
 
@@ -270,21 +442,21 @@ Read this blog post, up to the part about Block Lambda Expressions:
 
 [https://medium.freecodecamp.org/learn-these-4-things-and-working-with-lambda-expressions-b0ab36e0fffc](https://medium.freecodecamp.org/learn-these-4-things-and-working-with-lambda-expressions-b0ab36e0fffc)
 
-Note that `StringChooser` and `StringTransformer` are _functional interfaces_.
+Note that `MyChooser` and `MyTransformer` are _functional interfaces_.
 This means that another way to write this example:
 
 ```
 String[] contents = {"a", "b", "c"};
-ArraySL asl = new ArraySL(contents);
-asl.transformAll(new UpperCaseTransformer());
+ArrayGL<String> agl = new ArrayGL<String>(contents);
+agl.transformAll(new UpperCaseTransformer());
 ```
 
 is to instead write:
 
 ```
 String[] contents = {"a", "b", "c"};
-ArraySL asl = new ArraySL(contents);
-asl.transformAll(s -> s.toUpperCase());
+ArrayGL<String> agl = new ArrayGL<String>(contents);
+agl.transformAll(s -> s.toUpperCase());
 ```
 
 This doesn't require writing the `UpperCaseTransformer` class at all!
@@ -292,4 +464,3 @@ This doesn't require writing the `UpperCaseTransformer` class at all!
 Lambda expressions were added in Java version 8, and allow for us to write
 methods and classes in the concise style shown above if we design with
 functional interfaces in mind.
-
