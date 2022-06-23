@@ -79,7 +79,7 @@ will focus more on introducing programming assignments, and the Wednesday sectio
 There are many instructional staff to help with your learning. You can find
 their names and pictures on <a
 href="https://piazza.com/ucsd/summer2022/cse12/staff" target="_blank">Piazza
-Staff page</a>. Our “home base” is in B260 in the CSE building (basement), but
+Staff page</a>. Our “home base” is in B240 in the CSE building (basement), but
 you can work in any lab. You should use <a href="https://autograder.ucsd.edu"
 target="_blank">Autograder</a> to ask for help in open lab hours. In addition,
 Professor Sophia and the two TAs each hold individual weekly office hours that
@@ -110,11 +110,11 @@ on Piazza.  Piazza is one way you can <a href="#pa:piazzahelp">ask for and get h
 
 
 ### Java Documentation
+
 <a href="https://docs.oracle.com/javase/11/" target="_blank">The
 documentation for the Java language</a>, while not required reading, will be
 linked to from some assignments and is always a useful reference while
-programming. We will be using Java version **11** for the programming
-assignments in this course, which is available at <a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html">Oracle's web site</a>.
+programming. You can install any version higher than 8. The latest version available is 18. If you would like to set everything up on your own computer and do not already have Java and eclipse installed please complete <a href="https://ucsd-cse12-ss22.github.io/pa0" target="_blank">PA0: Computer Set up</a>.
 
 ### Working on and Submitting Assignments
 You'll be submitting your classwork and seeing grading feedback through a
@@ -147,7 +147,7 @@ _The review quiz must be completed independently and individually. You may refer
 else's name, or ask anyone for prior knowledge about the review quiz._
 
 
-We encourage you to find your preferred method for staying engaged with the course.  There are lots of ways to earn full credit for a week's engagement.  For example: (1) attending all lectures (for the section in which you're enrolled); or (2) attending two lectures and two discussion sections; or (3) answering all questions on the review quiz correctly; or (4)
+We encourage you to find your preferred method for staying engaged with the course.  There are lots of ways to earn full credit for a week's engagement.  For example: (1) attending all lectures (for the section in which you're enrolled); or (2) attending three lectures and two discussion sections; or (3) answering all questions on the review quiz correctly; or (4)
 attending two lectures and getting two answers correct on the review  quiz; etc.
 
 ## <a id="b:exams" href="#b:exams">Exams</a>
@@ -252,9 +252,7 @@ would be
 for the automated part, and the manually-graded part would remain 10, for
 total of 65 (rather than the original 50) points on the assignment.
 
-In addition, closed-collaboration assignments are treated as **open** once
-their deadline passes. You can talk to other students about them, get coding
-help from staff on them, and so on. Please make use of these resources to
+In addition, once a programming assignmen deadline passes you can talk to other students about them, get coding help from staff on them, and so on. Please make use of these resources to
 understand where your solution was incorrect or incomplete, and resubmit!
 
 ## <a id="help" href="#help">Getting Help</a>
@@ -371,6 +369,7 @@ __In addition, you must pass the final exam in order to pass the course and scor
 Programming work that is late follows the resubmission policy in <a href="#p:grading">the programming grades section</a>.
 
 <b>Regrades</b> Mistakes sometimes occur in grading. Once grades are posted, we will allow a short period for you to request a fix to your grade (announced along with the release of grades), with a clear argument for why a mistake was made. If you don't make a request in the given period, the grade you were initially given is final. All regrades should be made through Gradescope's interface.
+### <a id="policies" href="#b:policies"></a>
 
 <a id="p:community"></a>
 ## The CSE 12 Community
