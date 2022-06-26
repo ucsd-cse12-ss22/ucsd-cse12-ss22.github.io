@@ -339,7 +339,7 @@ understand where your solution was incorrect or incomplete, and resubmit!
 We expect that ALL STUDENTS WILL NEED HELP at some point in this course.  If you find yourself needing help, this is not a cause for embarrassment.  It is completely expected. Please seek help early and often through any (or all) of the following resources.
 
 You have <a href="https://sdacs.ucsd.edu/~icc/index.php" target="_blank">computer accounts</a> for the labs in the CSE building.  Even if you choose to work on your programming assignments on
-your own computer, you can work in these labs. The type of programming assignment you are working on will determine whether you can <a href="#pa:pa-collab">collaborate with other students</a> in the lab.
+your own computer, you can work in these labs.
 
 During <a href="#staff">open lab hours</a>, tutors, TAs, and the
 instructors will be available to help. We will work with you to get you un-stuck when you're not sure what to do next on an
