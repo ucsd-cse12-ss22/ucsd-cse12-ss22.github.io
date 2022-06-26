@@ -123,171 +123,6 @@ href="https://github.com" target="_blank">Github</a>. You aren't required to
 have an account to complete coursework, but it can be useful for you to make
 one.
 
-## <a id="b:engage" href="#b:engage">Engagement</a>
-
-We highly recommend actively participating in class, attending discussion,
-and completing the weekly review quizzes. Regularly engaging with the class
-in these ways counts towards the Engagement component of your overall score.
-
-This score is calculated on a weekly basis (starting in Week 1). The maximum
-number of points you can earn in one week is 8.
-
-Earn engagement points by:
-* __In class participation via iClickers__  In Weeks 1 through 5 (starting with the second lecture of the quarter), you will earn credit for attending and participating in lecture (2 points each) and discussion section (1 point each, up to a maximum
-of 8 points per week). Clicker questions will be graded for participation only and not for correctness of the response. Full credit for clicker points for a given day will be
-awarded for clicking in at least 80% of the time that day. Forgetting your clicker counts as missing a class, so please remember to bring it! We have you respond to problems in lecture because there’s quite a bit of evidence that sitting and listening passively [probably isn’t the best way to teach or learn science](https://www.nature.com/news/why-we-are-teaching-science-wrong-and-how-to-make-it-right-1.17963). <a id="p:clicker-ai"></a>
- _Do not attempt to falsify iClicker or discussion participation or review quiz submissions; this would be considered a violation of academic integrity._
-
-* __Weekly (P)review quiz__ Online quizzes review the week's material and preview some upcoming examples each week. You can submit your answers to each quiz as many times as you like. The latest submission before 11pm on Tuesday will count towards your engagement score. Each weekly review quiz will be worth 8 points.  Review quizzes will stay available even after the
-deadline; in the past, students have found working through them to be helpful when studying for exams.
-<a id="p:quiz-ai"></a>
-_The review quiz must be completed independently and individually. You may refer to your class notes and resources linked from this website, but not to other references. You may not share information about the review quiz with others, take the review quiz in someone
-else's name, or ask anyone for prior knowledge about the review quiz._
-
-
-We encourage you to find your preferred method for staying engaged with the course.  There are lots of ways to earn full credit for a week's engagement.  For example: (1) attending all lectures (for the section in which you're enrolled); or (2) attending three lectures and two discussion sections; or (3) answering all questions on the review quiz correctly; or (4)
-attending two lectures and getting two answers correct on the review  quiz; etc.
-
-## <a id="b:exams" href="#b:exams">Exams</a>
-
-
-There will be four tests during the quarter and a final exam. The tests will be held during lecture on Wednesdays weeks 2, 3, 4, and 5. The final exam will be held on Friday July 29th @11:30am.
-
-Seats will be assigned for all exam sessions and announced beforehand, and you must bring your school ID to the exam. All work on exams is to be done on your own, and you are not allowed to use any electronics or study aids during the exam (aside from those needed for University-approved academic accommodations). You may not speak to any other student in the exam room while the exam is in progress (including after you hand in your own exam).  You may not share any information about the exam with any student who has not yet taken it (including students in future quarters of CSE12). When the time is called, you must stop writing. You may not discuss the contents of any quiz or exam with ANYONE ELSE until the instructors explicitly state that it is OK to do so.
-
-* All 50% of your exam points come from your final exam score.
-
-* The final exam will be split into four sections, roughly corresponding to the material covered by each test, and each worth 25% of your exam score
-
-* The score you get on each test contributes to your final exam score in the relevant category, up to a maximum of 10% of the 25% for that section. You can’t score more than 25% on each section of the final exam with this additional contribution. 
-
-* If you get a lower score on the final exam than the average of your test scores minus 20%, you instead earn that score on the final.
-
-This means that each test contributes to your final exam score, but if you miss or do poorly on a test you can always make up the credit by doing well on the corresponding section of the final exam.
-
-
-**Example:** A student scores 50%, 60%, 0%, and 80% on the four tests. On the final exam, they score 10/25, 20/25, 20/25, 15/25 on each of the four sections. Their final exam score would be (10 + 5) + (20 + 6) + (20 + 0) + (15 + 8) for a total of 83/100 on the exam.
-
-**Example:** A student scores 60%, 70%, 80%, and 90% on the tests, and then skips the final. Their final exam grade will be 55%.
-
-**Example:** A student scores 100%, 100%, 100%, and 100% on the tests, and then gets only 5/25 of the credit in each portion of the final exam. Their final exam grade will be 80%.
-
-**Make-up Exams:** There are no make-up exams given. If you miss one of the tests, your score for that test is a 0 and you don’t earn credit towards that part of the final exam ahead of time. Note that this doesn’t necessarily impact your final grade, since you can still earn all of the credit on the final exam itself. Similarly, if you miss or skip the final, the average-replacement policy applies.
-
-## <a id="programming" href="#programming">Programming</a>
-
-Most weeks, you will be working on a programming assignment for this class.
-There are several specific policies in place regarding programming
-assignments, and you should pay careful attention to them.
-
-__Academic Integrity__
-The goal of CSE 12 will be a turning point for most of you on understanding how different strategies to solve a problem may result in vastly different efficiency. Future instructors, employers, and colleagues will expect that you will attain a certain proficiency in data structures. Using unauthorized aids in doing your work will prevent you from attaining the proficiencies that others will expect. Meeting or not meeting these expectations relate directly to getting internships, retaining employment, and success in your future studies.
-
-
-The basic rule for CSE 12 is: Work hard. Start early. Make use of the expertise of the CSE 12 staff to learn what you need to know to really do well in the course. Don't cheat.
-If you do cheat, we will enforce the UCSD Policy on Integrity of Scholarship (see the General Catalog or the corresponding web page, scroll 2/3 of the way down). This means: You will get a reduced grade in this course (in many cases an F), and the Dean of your college could put you on probation or suspend you or dismiss you from UCSD.
-
-
-__What counts as cheating?__
-In CSE 12, you can read books, surf the web, talk to your friends and the CSE 12 staff to get help understanding the concepts you need to know to solve your PA problems. However, you must write your program alone for all PAs except where otherwise indicated. Specifically:
-On PAs you MAY:
-* Consult any resources provided in class or in the textbook.
-* Ask tutors, TAs, and instructors for help.  
-* Help your peers debug, or provide debugging assistance to your peers.  Note that this can involve looking at code, but you should not directly copy any code.  Keep your own code closed when helping your peers.  __You must explicitly acknowledge anyone you received help from (outside of course staff) in your header comment at the top of your file.__
-* Search/consult the web for general documentation, for example, how to use Java APIs.
-
-
-On PAs you may __NOT__:
-* Search/consult the web for solutions to the PAs, including algorithms or code.
-* Copy code from anywhere (except the textbook and class materials like slides--with attribution).  
-* Have anyone else completed your assignment (or any part of it). 
-
-We do electronically check every program that is turned in. In recent quarters, we also found out that people unintentionally post their codes on public GitHub repos and it is a violation of the AI policy! We report all these cases to the academic integrity office. If you want to share your work with future employers or simply want to save a copy of your work, you can post them privately on your GitHub account!
-
-
-Receiving a grade on a PA doesn't mean that you have passed the plagiarism checking. We can report cheating cases any time during the quarter, even after we submit your final letter grade. So the safest bet is don't cheat!
-
-
-To reinforce these points, every student in CSE 12 must read, understand, and sign the Integrity of Scholarship Agreement. You must sign an integrity statement before completing any of the assignments or labs. 
-
-### <a id="p:open-closed" href="#p:open-closed">Collaboration</a>
-
- The main goal of the programming assignments is for you to become a better programmer.  You must experience writing your own code for this to really happen.
-Pair programming on PAs is strongly encouraged when it is permitted.
-You may discuss your assignment with other students, and you may help them debug, but all code that you submit must be written by you alone.  
- 
-You should be familiar with [the UCSD
-guidelines](http://senate.ucsd.edu/Operating-Procedures/Senate-Manual/Appendices/2)
-on academic integrity as well.
-
-### <a id="p:grading" href="#p:grading">Grading Programming Work</a>
-
-Each programming assignment will have a portion that is automatically graded,
-and a portion that is manually graded by the course staff.
-
-After each assignment's deadline, we will open a resubmission for that
-assignment for two weeks (this time period may be shorter for assignments
-near the end of the quarter). You can resubmit to improve the automated part
-of your grade. You can gain up to _half_ the points you lost in the initial
-submission through resubmission; we'll divide the difference of the initial
-and resubmission by 2 and add it to the original. There's no penalty for
-(accidentally or intentionally) resubmitting work that is marked lower. There
-is no way to resubmit and recover points for the manually graded part of
-assignments, which must be submitted before the deadline.
-
-This policy also serves as the late policy for programming assignments; if
-you don't submit an assignment, the initial grade is 0, and you can get half
-of the automated points by submitting after the deadline. There is no other
-late policy for programming work.
-
-_Example_: On a PA, you submit and get 40/80 for the automated score, and
-10/20 for the manual score. After the deadline, you find many of your
-mistakes and resubmit, and get a new automated grade of 70/80. Your new score
-would be
-
-(70 - 40) / 2 + 40 = 55
-
-for the automated part, and the manually-graded part would remain 10, for
-total of 65 (rather than the original 50) points on the assignment.
-
-In addition, once a programming assignmen deadline passes you can talk to other students about them, get coding help from staff on them, and so on. Please make use of these resources to
-understand where your solution was incorrect or incomplete, and resubmit!
-
-## <a id="help" href="#help">Getting Help</a>
-
-<h3>Working and getting help in the lab</h3>
-
-We expect that ALL STUDENTS WILL NEED HELP at some point in this course.  If you find yourself needing help, this is not a cause for embarrassment.  It is completely expected. Please seek help early and often through any (or all) of the following resources.
-
-You have <a href="https://sdacs.ucsd.edu/~icc/index.php" target="_blank">computer accounts</a> for the labs in the CSE building.  Even if you choose to work on your programming assignments on
-your own computer, you can work in these labs. The type of programming assignment you are working on will determine whether you can <a href="#pa:pa-collab">collaborate with other students</a> in the lab.
-
-During <a href="#staff">open lab hours</a>, tutors, TAs, and the
-instructors will be available to help. We will work with you to get you un-stuck when you're not sure what to do next on an
-assignment. We will be using the <a href="https://autograder.ucsd.edu" target="_blank">Autograder</a> system to manage to queue of
-requests for help in lab.  To get in the queue, log into Autograder with your @ucsd.edu email and submit your question as a ticket:
-
-- Give a meaningful question or problem statement in your ticket.
-- Be prepared! When the tutor shows up, you should be ready to reproduce the issue you're having, have a test case that doesn't produce the right output, show them a drawing of the situation you're confused about, etc.
-
-Expect to have about 5 minutes with a tutor (or TA or instructor): you probably won't have the solution at the end of the conversation, but you should feel un-stuck and ready to try new approaches.
-
-<a id="pa:piazzahelp"></a>
-<h4>Asking & Answering questions on Piazza</h4>
-
-Piazza is an online discussion board where we can make announcements and students can ask questions. Both we (the course staff) and your classmates can answer your questions. There are a few kinds of questions you should ask on Piazza:
-
-- Private questions about portions of your programming assignment solution.  Please see a tutor during our tutoring session or post these questions privately.
-- Private questions about your grade / account
-- Public questions about programming assignments
-- Public questions about the content of lecture, discussion, and any readings
-
-For each assignment, you will find a Frequently Asked Questions post, where we will answer all common questions we receive in office hours and via (private) Piazza posts. If you ask a question that's already answered in that post, we'll likely just send you a link to that post. That post will be updated as new important questions and answers come in.
-
-When answering questions, be polite, be clear, and assume the best intentions of the person asking. If it turns out you make a mistake or were wrong, admit it with a smile (emoji are great for this 😊), and make sure the correct information is clear. Above all, keep in mind that the course is a community whose goal is to foster a positive learning environment for everyone. For public discussion, note that answers from your classmates are not official! They could be downright wrong or misleading, completely by accident. “My classmate said so on Piazza” is not a legitimate justification in most arguments, though they may
-indeed lead you in helpful directions.
-
-
 
 ## <a id="grading" href="#grading">Grading</a>
 
@@ -295,7 +130,7 @@ Your grade will be computed from:
 
 <ul>
   <li>50% exams</li>
-    <li>40% programming assignments</li>
+  <li>40% programming assignments</li>
   <li>10% engagement</li>
 </ul>
 
@@ -360,13 +195,180 @@ based on the following grading scale:
 
 We may adjust the above scale to be more lenient (depending on the overall class performance), but we guarantee that we will
 not adjust the scale to make it harder to get a better grade.
-__In addition, you must pass the final exam in order to pass the course and score at least 55% on the overall PA portion of this course, you will receive an F for the course, regardless of your overall average.__
+__In addition, you must score at least 55% on the overall PA portion of this course. You must also score at least 55% on the overall exam portion of this course.  If you score lower than the 55% cutoff on the aforementioned categories, you will receive an F for the course, regardless of your overall average.__
 
 <b>Late and Makeup Work</b> In general, work cannot be handed in late for credit. 
 
 Programming work that is late follows the resubmission policy in <a href="#p:grading">the programming grades section</a>.
 
 <b>Regrades</b> Mistakes sometimes occur in grading. Once grades are posted, we will allow a short period for you to request a fix to your grade (announced along with the release of grades), with a clear argument for why a mistake was made. If you don't make a request in the given period, the grade you were initially given is final. All regrades should be made through Gradescope's interface.
+
+## <a id="b:engage" href="#b:engage">Engagement</a>
+
+We highly recommend actively participating in class, attending discussion,
+and completing the weekly review quizzes. Regularly engaging with the class
+in these ways counts towards the Engagement component of your overall score.
+
+This score is calculated on a weekly basis (starting in Week 1). The maximum
+number of points you can earn in one week is 8.
+
+Earn engagement points by:
+* __In class participation via iClickers__  In Weeks 1 through 5 (starting with the second lecture of the quarter), you will earn credit for attending and participating in lecture (2 points each) and discussion section (1 point each, up to a maximum
+of 8 points per week). Clicker questions will be graded for participation only and not for correctness of the response. Full credit for clicker points for a given day will be
+awarded for clicking in at least 80% of the time that day. Forgetting your clicker counts as missing a class, so please remember to bring it! We have you respond to problems in lecture because there’s quite a bit of evidence that sitting and listening passively [probably isn’t the best way to teach or learn science](https://www.nature.com/news/why-we-are-teaching-science-wrong-and-how-to-make-it-right-1.17963). <a id="p:clicker-ai"></a>
+ _Do not attempt to falsify iClicker or discussion participation or review quiz submissions; this would be considered a violation of academic integrity._
+
+* __Weekly (P)review quiz__ Online quizzes review the week's material and preview some upcoming examples each week. You can submit your answers to each quiz as many times as you like. The latest submission before 11pm on Tuesday will count towards your engagement score. Each weekly review quiz will be worth 8 points.  Review quizzes will stay available even after the
+deadline; in the past, students have found working through them to be helpful when studying for exams.
+<a id="p:quiz-ai"></a>
+_The review quiz must be completed independently and individually. You may refer to your class notes and resources linked from this website, but not to other references. You may not share information about the review quiz with others, take the review quiz in someone
+else's name, or ask anyone for prior knowledge about the review quiz._
+
+
+We encourage you to find your preferred method for staying engaged with the course.  There are lots of ways to earn full credit for a week's engagement.  For example: (1) attending all lectures (for the section in which you're enrolled); or (2) attending three lectures and two discussion sections; or (3) answering all questions on the review quiz correctly; or (4)
+attending two lectures and getting two answers correct on the review  quiz; etc.
+
+## <a id="b:exams" href="#b:exams">Exams</a>
+
+
+There will be four tests during the quarter and a final exam. The tests will be held during lecture on Wednesdays weeks 2, 3, 4, and 5. The final exam will be held on Friday July 29th @11:30am.
+
+Seats will be assigned for all exam sessions and announced beforehand, and you must bring your school ID to the exam. All work on exams is to be done on your own, and you are not allowed to use any electronics or study aids during the exam (aside from those needed for University-approved academic accommodations). You may not speak to any other student in the exam room while the exam is in progress (including after you hand in your own exam).  You may not share any information about the exam with any student who has not yet taken it (including students in future quarters of CSE12). When the time is called, you must stop writing. You may not discuss the contents of any quiz or exam with ANYONE ELSE until the instructors explicitly state that it is OK to do so.
+
+* All 50% of your exam points come from your final exam score.
+
+* The final exam will be split into four sections, roughly corresponding to the material covered by each test, and each worth 25% of your exam score
+
+* The score you get on each test contributes to your final exam score in the relevant category, up to a maximum of 10% of the 25% for that section. You can’t score more than 25% on each section of the final exam with this additional contribution. 
+
+* If you get a lower score on the final exam than the average of your test scores minus 20%, you instead earn that score on the final.
+
+This means that each test contributes to your final exam score, but if you miss or do poorly on a test you can always make up the credit by doing well on the corresponding section of the final exam. 
+
+**Example:** A student scores 50%, 60%, 0%, and 80% on the four tests. On the final exam, they score 10/25, 20/25, 20/25, 15/25 on each of the four sections. Their final exam score would be (10 + 5) + (20 + 6) + (20 + 0) + (15 + 8) for a total of 83/100 on the exam.
+
+**Example:** A student scores 60%, 70%, 80%, and 90% on the tests, and then skips the final. Their final exam grade will be 55%.
+
+**Example:** A student scores 100%, 100%, 100%, and 100% on the tests, and then gets only 5/25 of the credit in each portion of the final exam. Their final exam grade will be 80%.
+
+**Make-up Exams:** There are no make-up exams given. If you miss one of the tests, your score for that test is a 0 and you don’t earn credit towards that part of the final exam ahead of time. Note that this doesn’t necessarily impact your final grade, since you can still earn all of the credit on the final exam itself. Similarly, if you miss or skip the final, the average-replacement policy applies.
+
+## <a id="programming" href="#programming">Programming</a>
+
+Most weeks, you will be working on a programming assignment for this class.
+There are several specific policies in place regarding programming
+assignments, and you should pay careful attention to them.
+
+__Academic Integrity__
+The goal of CSE 12 will be a turning point for most of you on understanding how different strategies to solve a problem may result in vastly different efficiency. Future instructors, employers, and colleagues will expect that you will attain a certain proficiency in data structures. Using unauthorized aids in doing your work will prevent you from attaining the proficiencies that others will expect. Meeting or not meeting these expectations relate directly to getting internships, retaining employment, and success in your future studies.
+
+
+The basic rule for CSE 12 is: Work hard. Start early. Make use of the expertise of the CSE 12 staff to learn what you need to know to really do well in the course. Don't cheat.
+If you do cheat, we will enforce the UCSD Policy on Integrity of Scholarship (see the General Catalog or the corresponding web page, scroll 2/3 of the way down). This means: You will get a reduced grade in this course (in many cases an F), and the Dean of your college could put you on probation or suspend you or dismiss you from UCSD.
+
+
+__What counts as cheating?__
+In CSE 12, you can read books, surf the web, talk to your friends and the CSE 12 staff to get help understanding the concepts you need to know to solve your PA problems. However, you must write your program alone for all PAs except where otherwise indicated. Specifically:
+On PAs you MAY:
+* Consult any resources provided in class or in the textbook.
+* Ask tutors, TAs, and instructors for help.  
+* Help your peers debug, or provide debugging assistance to your peers.  Note that this can involve looking at code, but you should not directly copy any code.  Keep your own code closed when helping your peers.  __You must explicitly acknowledge anyone you received help from (outside of course staff) in your header comment at the top of your file.__
+* Search/consult the web for general documentation, for example, how to use Java APIs.
+
+
+On PAs you may __NOT__:
+* Search/consult the web for solutions to the PAs, including algorithms or code.
+* Copy code from anywhere (except the textbook and class materials like slides--with attribution).  
+* Have anyone else completed your assignment (or any part of it). 
+
+We do electronically check every program that is turned in. In recent quarters, we also found out that people unintentionally post their codes on public GitHub repos and it is a violation of the AI policy! We report all these cases to the academic integrity office. If you want to share your work with future employers or simply want to save a copy of your work, you can post them privately on your GitHub account!
+
+
+Receiving a grade on a PA doesn't mean that you have passed the plagiarism checking. We can report cheating cases any time during the quarter, even after we submit your final letter grade. So the safest bet is don't cheat!
+
+
+To reinforce these points, every student in CSE 12 must read, understand, and sign the Integrity of Scholarship Agreement. You must sign an integrity statement before completing any of the assignments or labs. 
+
+### <a id="p:open-closed" href="#p:open-closed">Collaboration</a>
+
+ The main goal of the programming assignments is for you to become a better programmer.  You must experience writing your own code for this to really happen.
+You may discuss your assignment with other students, and you may help them debug, but all code that you submit must be written by you alone.  
+ 
+You should be familiar with [the UCSD
+guidelines](http://senate.ucsd.edu/Operating-Procedures/Senate-Manual/Appendices/2)
+on academic integrity as well.
+
+### <a id="p:grading" href="#p:grading">Grading Programming Work</a>
+
+Each programming assignment will have a portion that is automatically graded,
+and a portion that is manually graded by the course staff. You may submit both portions as many times as you like until the deadline. For both portions we will assume your latest submission is the one that you would like to be graded.
+
+After each assignment's deadline, we will open a resubmission for that
+assignment for one week (this time period may be shorter for assignments
+near the end of the quarter). You can resubmit to improve the automated part
+of your grade. You can gain up to _half_ the points you lost in the initial
+submission through resubmission; we'll divide the difference of the initial
+and resubmission by 2 and add it to the original. There's no penalty for
+(accidentally or intentionally) resubmitting work that is marked lower. There
+is no way to resubmit and recover points for the manually graded part of
+assignments, which must be submitted before the deadline.
+
+This policy also serves as the late policy for programming assignments; if
+you don't submit an assignment, the initial grade is 0, and you can get half
+of the automated points by submitting after the deadline. There is no other
+late policy for programming work.
+
+_Example_: On a PA, you submit and get 40/80 for the automated score, and
+10/20 for the manual score. After the deadline, you find many of your
+mistakes and resubmit, and get a new automated grade of 70/80. Your new score
+would be
+
+(70 - 40) / 2 + 40 = 55
+
+for the automated part, and the manually-graded part would remain 10, for
+total of 65 (rather than the original 50) points on the assignment.
+
+In addition, once a programming assignmen deadline passes you can talk to other students about them, get coding help from staff on them, and so on. Please make use of these resources to
+understand where your solution was incorrect or incomplete, and resubmit!
+
+
+## <a id="help" href="#help">Getting Help</a>
+
+<h3>Working and getting help in the lab</h3>
+
+We expect that ALL STUDENTS WILL NEED HELP at some point in this course.  If you find yourself needing help, this is not a cause for embarrassment.  It is completely expected. Please seek help early and often through any (or all) of the following resources.
+
+You have <a href="https://sdacs.ucsd.edu/~icc/index.php" target="_blank">computer accounts</a> for the labs in the CSE building.  Even if you choose to work on your programming assignments on
+your own computer, you can work in these labs. The type of programming assignment you are working on will determine whether you can <a href="#pa:pa-collab">collaborate with other students</a> in the lab.
+
+During <a href="#staff">open lab hours</a>, tutors, TAs, and the
+instructors will be available to help. We will work with you to get you un-stuck when you're not sure what to do next on an
+assignment. We will be using the <a href="https://autograder.ucsd.edu" target="_blank">Autograder</a> system to manage to queue of
+requests for help in lab.  To get in the queue, log into Autograder with your @ucsd.edu email and submit your question as a ticket:
+
+- Give a meaningful question or problem statement in your ticket.
+- Be prepared! When the tutor shows up, you should be ready to reproduce the issue you're having, have a test case that doesn't produce the right output, show them a drawing of the situation you're confused about, etc.
+- If you are attending virtual open lab hours please make sure to provide a zoom link when you submit your ticket
+
+Expect to have about 5 minutes with a tutor (or TA or instructor): you probably won't have the solution at the end of the conversation, but you should feel un-stuck and ready to try new approaches. 
+
+<a id="pa:piazzahelp"></a>
+<h4>Asking & Answering questions on Piazza</h4>
+
+Piazza is an online discussion board where we can make announcements and students can ask questions. Both we (the course staff) and your classmates can answer your questions. There are a few kinds of questions you should ask on Piazza:
+
+- Private questions about portions of your programming assignment solution.  Please see a tutor during our tutoring session or post these questions privately.
+- Private questions about your grade / account
+- Public questions about programming assignments
+- Public questions about the content of lecture, discussion, and any readings
+
+For each assignment, you will find a Frequently Asked Questions post, where we will answer all common questions we receive in office hours and via (private) Piazza posts. If you ask a question that's already answered in that post, we'll likely just send you a link to that post. That post will be updated as new important questions and answers come in.
+
+When answering questions, be polite, be clear, and assume the best intentions of the person asking. If it turns out you make a mistake or were wrong, admit it with a smile (emoji are great for this 😊), and make sure the correct information is clear. Above all, keep in mind that the course is a community whose goal is to foster a positive learning environment for everyone. For public discussion, note that answers from your classmates are not official! They could be downright wrong or misleading, completely by accident. “My classmate said so on Piazza” is not a legitimate justification in most arguments, though they may
+indeed lead you in helpful directions.
+
+
+
 ### <a id="policies" href="#b:policies"></a>
 
 <a id="p:community"></a>
@@ -380,7 +382,7 @@ These practices go beyond the university setting. A huge amount of modern comput
 Before you post a question or answer, consider:
 
 - Does it contribute to a positive, constructive, and respectful forum for discussion and learning?
-- <a id="p:piazza-ai"></a>Does it contain contain source code from your solution or other information that shouldn't be shared class-wide? Consider if the assignment is open or closed.
+- <a id="p:piazza-ai"></a>Does it contain contain source code from your solution or other information that shouldn't be shared class-wide?
 - Is it a question that's been asked before, that you could find via searching?
 
 If you make a post that violates these guidelines, we may make it private and remind you of these guidelines. Overall, our goal is to make the public content on Piazza constructive and relevant for everyone.
