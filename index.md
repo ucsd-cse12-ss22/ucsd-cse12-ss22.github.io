@@ -31,7 +31,7 @@ complete for the course. You are responsible for checking this schedule and
 completing work by the deadlines given, which are always at 11pm local San
 Diego time on the listed date.
 
-<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&title=CSE12SS22%20Open%20Lab%20Hours%20and%20Office%20Hours&mode=WEEK&src=Y19zbXEzNXBjZWQyZ2s1YnRsZ3Y1bTU5amRka0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y184Z2tlMnVoYWxyZnBrYzlrYzVha2VjMmM4MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23E4C441&color=%23B39DDB" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe width="100%" height="800px" style="border: none; border-top: 1px solid grey; border-spacing: 2px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTux7TSQqT3UwSqhxtazdFTAB2-IjkoxMwSQ_iU0tisnuBv63bezJN66l4drybUPxfWpdRmmUBV-Cg7/pubhtml?gid=1638030103&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 
 ## Basic Course Components
 <a id="basics"></a>
@@ -86,7 +86,7 @@ for help on an assignment or material covered in class. The schedule for both
 office hours and lab hours are below. For office hours, the room number is
 noted on the event itself.
 
-<iframe src="https://calendar.google.com/calendar/embed?src=c_8gke2uhalrfpkc9kc5akec2c80%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&title=CSE12SS22%20Open%20Lab%20Hours%20and%20Office%20Hours&mode=WEEK&src=Y19zbXEzNXBjZWQyZ2s1YnRsZ3Y1bTU5amRka0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y184Z2tlMnVoYWxyZnBrYzlrYzVha2VjMmM4MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23E4C441&color=%23B39DDB" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
 ## <a id="b:materials" href="#b:materials">Materials</a>
 
