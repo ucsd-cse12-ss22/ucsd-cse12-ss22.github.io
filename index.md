@@ -85,21 +85,21 @@ you can attend. You can use either of these resources whether you're looking
 for help on an assignment or material covered in class. The schedule for both
 office hours and lab hours are below. For office hours, the room number is
 noted on the event itself.
-<!-- 
+
 <div class="grid-container" style = "display:inline-grid;grid-gap:8px 20px;grid-template-columns: repeat(5, 1fr);grid-template-rows: repeat(5, auto); justify-items:center;">
-    <img src="staff-images\sophia.jpg"/>
-    <img src="staff-images\rachel.png"/>
-    <img src="staff-images\ripunjay.jpg"/>
-    <img src="staff-images\carol.jpg"/>
-    <img src="staff-images\daniel.jpg"/>
+    <img src="staff-images\sophia.png" height="150px"/>
+    <img src="staff-images\rachel.png" height="150px"/>
+    <img src="staff-images\ripunjay.png" height="150px"/>
+    <img src="staff-images\carol.png" height="150px"/>
+    <img src="staff-images\daniel.png" height="150px"/>
     <p>Sophia Krause-Levy</p> <p>Rachel Lim</p> <p>Ripunjay Sharma</p> <p>Carol Bao</p> <p>Daniel Lee</p>
-    <img src="staff-images\galen.jpg"/>
-    <img src="staff-images\john.jpg"/>
-    <img src="staff-images\josh.jpg"/>
-    <img src="staff-images\rainee.jpeg"/>
-    <img src="staff-images\richard.jpg"/>
+    <img src="staff-images\galen.png" height="150px"/>
+    <img src="staff-images\john.png" height="150px"/>
+    <img src="staff-images\josh.png" height="150px"/>
+    <img src="staff-images\rainee.png" height="150px"/>
+    <img src="staff-images\richard.png" height="150px"/>
     <p>Galen Han</p> <p>John Driscoll</p> <p>Josh Cross</p> <p>Rainee Pei</p> <p>Richard Chen</p>
-</div> -->
+</div>
 
 <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&title=CSE12SS22%20Open%20Lab%20Hours%20and%20Office%20Hours&mode=WEEK&src=Y19zbXEzNXBjZWQyZ2s1YnRsZ3Y1bTU5amRka0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y184Z2tlMnVoYWxyZnBrYzlrYzVha2VjMmM4MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23E4C441&color=%23B39DDB" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
