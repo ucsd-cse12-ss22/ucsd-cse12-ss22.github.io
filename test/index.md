@@ -87,17 +87,17 @@ office hours and lab hours are below. For office hours, the room number is
 noted on the event itself.
 
 <div class="grid-container" style = "display:inline-grid;grid-gap:8px 20px;grid-template-columns: repeat(5, 1fr);grid-template-rows: repeat(5, auto); justify-items:center;">
-    <img src="../staff-images\sophia.png"/>
-    <img src="../staff-images\rachel.png"/>
-    <img src="../staff-images\ripunjay.png"/>
-    <img src="../staff-images\carol.png"/>
-    <img src="../staff-images\daniel.png"/>
+    <img src="../staff-images\sophia.png" height="150px"/>
+    <img src="../staff-images\rachel.png" height="150px"/>
+    <img src="../staff-images\ripunjay.png" height="150px"/>
+    <img src="../staff-images\carol.png" height="150px"/>
+    <img src="../staff-images\daniel.png" height="150px"/>
     <p>Sophia Krause-Levy</p> <p>Rachel Lim</p> <p>Ripunjay Sharma</p> <p>Carol Bao</p> <p>Daniel Lee</p>
-    <img src="../staff-images\galen.png"/>
-    <img src="../staff-images\john.png"/>
-    <img src="../staff-images\josh.png"/>
-    <img src="../staff-images\rainee.png"/>
-    <img src="../staff-images\richard.png"/>
+    <img src="../staff-images\galen.png" height="150px"/>
+    <img src="../staff-images\john.png" height="150px"/>
+    <img src="../staff-images\josh.png" height="150px"/>
+    <img src="../staff-images\rainee.png" height="150px"/>
+    <img src="../staff-images\richard.png" height="150px"/>
     <p>Galen Han</p> <p>John Driscoll</p> <p>Josh Cross</p> <p>Rainee Pei</p> <p>Richard Chen</p>
 </div>
 
