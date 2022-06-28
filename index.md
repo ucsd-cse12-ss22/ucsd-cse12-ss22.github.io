@@ -86,6 +86,23 @@ for help on an assignment or material covered in class. The schedule for both
 office hours and lab hours are below. For office hours, the room number is
 noted on the event itself.
 
+## Staff
+<div class="grid-container" style = "display:inline-grid;grid-gap:8px 20px;grid-template-columns: repeat(5, 1fr);grid-template-rows: repeat(5, auto); justify-items:center;">
+    <img src="staff-images\sophia.png"/>
+    <img src="staff-images\rachel.png"/>
+    <img src="staff-images\ripunjay.png"/>
+    <img src="staff-images\carol.png"/>
+    <img src="staff-images\daniel.png"/>
+    <p>Sophia Krause-Levy</p> <p>Rachel Lim</p> <p>Ripunjay Sharma</p> <p>Carol Bao</p> <p>Daniel Lee</p>
+    <img src="staff-images\galen.png"/>
+    <img src="staff-images\john.png"/>
+    <img src="staff-images\josh.png"/>
+    <img src="staff-images\rainee.png"/>
+    <img src="staff-images\richard.png"/>
+    <p>Galen Han</p> <p>John Driscoll</p> <p>Josh Cross</p> <p>Rainee Pei</p> <p>Richard Chen</p>
+</div>
+
+
 <iframe src="https://calendar.google.com/calendar/embed?src=c_8gke2uhalrfpkc9kc5akec2c80%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
 ## <a id="b:materials" href="#b:materials">Materials</a>
