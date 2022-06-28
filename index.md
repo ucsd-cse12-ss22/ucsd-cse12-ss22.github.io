@@ -88,17 +88,17 @@ noted on the event itself.
 
 ## Staff
 <div class="grid-container" style = "display:inline-grid;grid-gap:8px 20px;grid-template-columns: repeat(5, 1fr);grid-template-rows: repeat(5, auto); justify-items:center;">
-    <img src="staff-images\sophia.png"/>
+    <img src="staff-images\sophia.jpg"/>
     <img src="staff-images\rachel.png"/>
-    <img src="staff-images\ripunjay.png"/>
-    <img src="staff-images\carol.png"/>
-    <img src="staff-images\daniel.png"/>
+    <img src="staff-images\ripunjay.jpg"/>
+    <img src="staff-images\carol.jpg"/>
+    <img src="staff-images\daniel.jpg"/>
     <p>Sophia Krause-Levy</p> <p>Rachel Lim</p> <p>Ripunjay Sharma</p> <p>Carol Bao</p> <p>Daniel Lee</p>
-    <img src="staff-images\galen.png"/>
-    <img src="staff-images\john.png"/>
-    <img src="staff-images\josh.png"/>
-    <img src="staff-images\rainee.png"/>
-    <img src="staff-images\richard.png"/>
+    <img src="staff-images\galen.jpg"/>
+    <img src="staff-images\john.jpg"/>
+    <img src="staff-images\josh.jpg"/>
+    <img src="staff-images\rainee.jpeg"/>
+    <img src="staff-images\richard.jpg"/>
     <p>Galen Han</p> <p>John Driscoll</p> <p>Josh Cross</p> <p>Rainee Pei</p> <p>Richard Chen</p>
 </div>
 
