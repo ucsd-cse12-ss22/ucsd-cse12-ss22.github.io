@@ -80,14 +80,13 @@ href="https://piazza.com/ucsd/summer2022/cse12/staff" target="_blank">Piazza
 Staff page</a>. Our “home base” is in B240 in the CSE building (basement), but
 you can work in any lab. You should use <a href="https://autograder.ucsd.edu"
 target="_blank">Autograder</a> to ask for help in open lab hours. In addition,
-Professor Sophia and the two TAs each hold individual weekly office hours that
+Instructor Sophia and the two TAs each hold individual weekly office hours that
 you can attend. You can use either of these resources whether you're looking
 for help on an assignment or material covered in class. The schedule for both
 office hours and lab hours are below. For office hours, the room number is
 noted on the event itself.
-
-## Staff
-<!-- <div class="grid-container" style = "display:inline-grid;grid-gap:8px 20px;grid-template-columns: repeat(5, 1fr);grid-template-rows: repeat(5, auto); justify-items:center;">
+<!-- 
+<div class="grid-container" style = "display:inline-grid;grid-gap:8px 20px;grid-template-columns: repeat(5, 1fr);grid-template-rows: repeat(5, auto); justify-items:center;">
     <img src="staff-images\sophia.jpg"/>
     <img src="staff-images\rachel.png"/>
     <img src="staff-images\ripunjay.jpg"/>
