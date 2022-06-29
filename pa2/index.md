@@ -307,12 +307,19 @@ guide to help you implement your own.
 | Test Cases   | Description | Points |
 |--------------|-------------|--------|
 | chaff implementations |The following are examples of bad implementations where your tests will be expected to catch the bugs, look at the names to help get an idea of what the bug could be. For tricker bugs, further explanations are given. <br /> chaffAlwaysChoosesFirstArrayGL: in ArrayGL, chooseAll() always chooses the first element<br /> chaffIsEmptyReturnsTrueIfSizeGreaterThan0ArrayGL<br />chaffReturnNewArrayArrayGL: in ArrayGL, toArray() does not create a new array<br />chaffIsEmptyReturnsFalseSizeGreaterThan3<br />chaffChooseAllFailsIfLastNotChosenLinkedGL: in LinkedGL, chooseAll() will cause an exception if the last node is not chosen<br />chaffDoWhileToArrayLinkedGL: in LinkedGL, a do-while loop is used in toArray()<br />chaffDoWhileTransformArrayGL<br />chaffFixedSizeConstructorLinkedGL<br />chaffIncorrectTransformBoundsLinkedGL: in LinkedGL, transformAll() does not loop through the entire list<br />chaffIncludeNullToArrayArrayGL: in ArrayGL, extra nulls are being copied to the end of the new array | 10 |
+|--------------|-------------|--------|
 | wheat implementation | `TestLists.java` will be used against a correct implementation. This will check if the tests written are correct and do not flag any errors for the wheat implementation. | 5 |
-| Constructor | Correctly populates the instance variables for the object. <ul><li>pass an empty array</li><li>pass an array with multiple values</li> </ul>| 3 |
-| isEmpty |  Correctly checks to see if the ArrayGL/LinkedGL is empty. <ul><li>the list is empty, returns True</li><li>the list is not empty with multiple values, returns False</li><li>the list is not empty with only one value, returns False</li> </ul>| 6 (3 for ArrayGL, 3 for LinkedGL)|
-| toArray |  Correctly returns an array of the values that were in the ArrayGL/LinkedGL. <ul><li>the list is empty</li><li>the list has a large size</li><li>creates a new array to return</li> </ul> | 6 (3 for ArrayGL, 3 for LinkedGL)|
-| choose | Correctly chooses the desired elements. <ul><li>the list is empty</li><li>choose all of the elements in the list</li><li>list with only two elements, choose second element</li> <li>choose first and last in list</li></ul> | 6 (3 for ArrayGL, 3 for LinkedGL)|
-| transform | Correctly transforms the elements in the list. <ul><li>the list is empty</li><li>the list has two items</li><li>the list has a large size</li> </ul>| 6 (3 for ArrayGL, 3 for LinkedGL)|
+|--------------|-------------|--------|
+| Constructor | Correctly populates the instance variables for the object. <br /> - pass an empty array<br />- pass an array with multiple values| 3 |
+|--------------|-------------|--------|
+| isEmpty |  Correctly checks to see if the ArrayGL/LinkedGL is empty. <br />- the list is empty, returns True<br />- the list is not empty with multiple values, returns False<br />- the list is not empty with only one value, returns False| 6 (3 for ArrayGL, 3 for LinkedGL)|
+|--------------|-------------|--------|
+| toArray |  Correctly returns an array of the values that were in the ArrayGL/LinkedGL. <br /> - the list is empty<br />- the list has a large size<br />- creates a new array to return | 6 (3 for ArrayGL, 3 for LinkedGL)|
+|--------------|-------------|--------|
+| choose | Correctly chooses the desired elements.<br />- the list is empty<br />- choose all of the elements in the list<br />- list with only two elements, choose second element<br />- choose first and last in list | 6 (3 for ArrayGL, 3 for LinkedGL)|
+|--------------|-------------|--------|
+| transform | Correctly transforms the elements in the list. <br />- the list is empty<br />- the list has two items<br />- the list has a large size| 6 (3 for ArrayGL, 3 for LinkedGL)|
+|--------------|-------------|--------|
 
 ### Sanity Check
 When you submit, you will see a `Sanity Check`. This is a subset of the tests we will be running on your code to help you see if you are on the right track. **Passing all of these does not necessarily mean you will get full credit!!!** You need to write your own tests to make sure you have the correct functionality for all of the required methods.
