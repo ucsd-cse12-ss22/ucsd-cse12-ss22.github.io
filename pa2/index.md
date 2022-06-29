@@ -15,7 +15,7 @@ You should finish reading the whole writeup before you start to code.
 
 This assignment will exercise your understanding of array and linked lists.
 
-This PA is due on ** **Thursday, Julty 7th at 11:00pm** **.
+This PA is due on ** **Thursday, July 7th at 11:00pm** **.
 
 ## CSE Mantra: *Start early, start often!*
 *You will notice throughout the quarter that the PAs get harder and harder. 
@@ -110,7 +110,7 @@ Returns the contents of the list as a new array, with *shallow copy* of the
 elements in the same order they appear in the list. The length of the array 
 produced must be the same as the size of the list. To notice, you cannot 
 initialize a generic array, like `E[] array = new E[];`. **Hint**: consider 
-typecaste or check out lecture materials. 
+type casting or check out lecture materials. 
 
 #### `public boolean isEmpty()`
 
@@ -155,7 +155,7 @@ Changes the list to contain only elements selected by the `MyChooser`.
 `mc` is a concrete class that implements `MyChooser`. (We will illustrate how
 to implement `MyChooser` in part 2.) It has a method called 
 `chooseElement(E e)`, which takes an element as an argument and check if this
-element should be put into the new list. It return `true`, if we should choose 
+element should be put into the new list. It returns `true`, if we should choose 
 this element. Otherwise, it returns `false`. Therefore, you should apply 
 `chooseElement` method of `mc` class to each element in the list, verifying if 
 the element should be chosen and keeping the element if true. 
@@ -306,7 +306,7 @@ guide to help you implement your own.
 
 | Test Cases   | Description | Points |
 |--------------|-------------|--------|
-| chaff implementations |The following are examples of bad implementations where your tests will be expected to catch the bugs, look at the names to help get an idea of what the bug could be. For tricker bugs, further explanations are given. <ul><li>chaffAlwaysChoosesFirstArrayGL<ul><li>in ArrayGL, chooseAll() always chooses the first element</li></ul></li><li>chaffIsEmptyReturnsTrueIfSizeGreaterThan0ArrayGL</li><li>chaffReturnNewArrayArrayGL<ul><li>in ArrayGL, toArray() does not create a new array</li></ul></li><li>chaffIsEmptyReturnsFalseSizeGreaterThan3</li><li>chaffChooseAllFailsIfLastNotChosenLinkedGL<ul><li>in LinkedGL, chooseAll() will cause an exception if the last node is not chosen</li></ul></li><li>chaffDoWhileToArrayLinkedGL<ul><li>in LinkedGL, a do-while loop is used in toArray()</li></ul></li><li>chaffDoWhileTransformArrayGL</li><li>chaffFixedSizeConstructorLinkedGL</li><li>chaffIncorrectTransformBoundsLinkedGL<ul><li> in LinkedGL, transformAll() does not loop through the entire list</li></ul></li><li>chaffIncludeNullToArrayArrayGL<ul><li>in ArrayGL, extra nulls are being copied to the end of the new array</li></ul></li></ul> | 10 |
+| chaff implementations |The following are examples of bad implementations where your tests will be expected to catch the bugs, look at the names to help get an idea of what the bug could be. For tricker bugs, further explanations are given. <br /> chaffAlwaysChoosesFirstArrayGL: in ArrayGL, chooseAll() always chooses the first element<br /> chaffIsEmptyReturnsTrueIfSizeGreaterThan0ArrayGL<br />chaffReturnNewArrayArrayGL: in ArrayGL, toArray() does not create a new array<br />chaffIsEmptyReturnsFalseSizeGreaterThan3<br />chaffChooseAllFailsIfLastNotChosenLinkedGL: in LinkedGL, chooseAll() will cause an exception if the last node is not chosen<br />chaffDoWhileToArrayLinkedGL: in LinkedGL, a do-while loop is used in toArray()<br />chaffDoWhileTransformArrayGL<br />chaffFixedSizeConstructorLinkedGL<br />chaffIncorrectTransformBoundsLinkedGL: in LinkedGL, transformAll() does not loop through the entire list<br />chaffIncludeNullToArrayArrayGL: in ArrayGL, extra nulls are being copied to the end of the new array | 10 |
 | wheat implementation | `TestLists.java` will be used against a correct implementation. This will check if the tests written are correct and do not flag any errors for the wheat implementation. | 5 |
 | Constructor | Correctly populates the instance variables for the object. <ul><li>pass an empty array</li><li>pass an array with multiple values</li> </ul>| 3 |
 | isEmpty |  Correctly checks to see if the ArrayGL/LinkedGL is empty. <ul><li>the list is empty, returns True</li><li>the list is not empty with multiple values, returns False</li><li>the list is not empty with only one value, returns False</li> </ul>| 6 (3 for ArrayGL, 3 for LinkedGL)|
