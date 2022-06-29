@@ -305,14 +305,18 @@ guide to help you implement your own.
 
 
 | Test Cases   | Description | Points |
+|--------------|-------------|--------|
+|________________________________________________________|||
+---
+
+| chaff implementations |The following are examples of bad implementations where your tests will be expected to catch the bugs, look at the names to help get an idea of what the bug could be. For tricker bugs, further explanations are given. <br /> <br />- chaffAlwaysChoosesFirstArrayGL: in ArrayGL, chooseAll() always chooses the first element<br /> - chaffIsEmptyReturnsTrueIfSizeGreaterThan0ArrayGL<br />- chaffReturnNewArrayArrayGL: in ArrayGL, toArray() does not create a new array<br />- chaffIsEmptyReturnsFalseSizeGreaterThan3<br />- chaffChooseAllFailsIfLastNotChosenLinkedGL: in LinkedGL, chooseAll() will cause an exception if the last node is not chosen<br />- chaffDoWhileToArrayLinkedGL: in LinkedGL, a do-while loop is used in toArray()<br />- chaffDoWhileTransformArrayGL<br />- chaffFixedSizeConstructorLinkedGL<br />- chaffIncorrectTransformBoundsLinkedGL: in LinkedGL, transformAll() does not loop through the entire list<br />- chaffIncludeNullToArrayArrayGL: in ArrayGL, extra nulls are being copied to the end of the new array | 10 |
 |____________________________|||
 |--------------|-------------|--------|
-| chaff implementations |The following are examples of bad implementations where your tests will be expected to catch the bugs, look at the names to help get an idea of what the bug could be. For tricker bugs, further explanations are given. <br /> <br />chaffAlwaysChoosesFirstArrayGL: in ArrayGL, chooseAll() always chooses the first element<br /> chaffIsEmptyReturnsTrueIfSizeGreaterThan0ArrayGL<br />chaffReturnNewArrayArrayGL: in ArrayGL, toArray() does not create a new array<br />chaffIsEmptyReturnsFalseSizeGreaterThan3<br />chaffChooseAllFailsIfLastNotChosenLinkedGL: in LinkedGL, chooseAll() will cause an exception if the last node is not chosen<br />chaffDoWhileToArrayLinkedGL: in LinkedGL, a do-while loop is used in toArray()<br />chaffDoWhileTransformArrayGL<br />chaffFixedSizeConstructorLinkedGL<br />chaffIncorrectTransformBoundsLinkedGL: in LinkedGL, transformAll() does not loop through the entire list<br />chaffIncludeNullToArrayArrayGL: in ArrayGL, extra nulls are being copied to the end of the new array | 10 |
-|____________________________|||
-|--------------|-------------|--------|
+---
 | wheat implementation | `TestLists.java` will be used against a correct implementation. This will check if the tests written are correct and do not flag any errors for the wheat implementation. | 5 |
 |____________________________|||
 |--------------|-------------|--------|
+---
 | Constructor | Correctly populates the instance variables for the object. <br /> - pass an empty array<br />- pass an array with multiple values| 3 |
 |--------------|-------------|--------|
 |____________________________|||
