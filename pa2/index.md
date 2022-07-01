@@ -3,10 +3,6 @@ layout: pa
 title: "PA2: Manipulating Lists"
 doodle: "../doodle.png"
 ---
----
-tags: CSE12WI21
----
----
 
 # PA2: Lists
 ---
@@ -15,7 +11,7 @@ You should finish reading the whole writeup before you start to code.
 
 This assignment will exercise your understanding of array and linked lists.
 
-This PA is due on ** **Thursday, July 7th at 11:00pm** **.
+This PA is due on ** **Thursday, July 7th at 11:00pm** **. This assignment is not open to collaboration. __You should be completing it on your own__. Please review the academic integrity guidelines.
 
 ## CSE Mantra: *Start early, start often!*
 *You will notice throughout the quarter that the PAs get harder and harder. 
@@ -218,7 +214,7 @@ When you put a "chooser" into `chooseAll(MyChooser mc)`'s paramter, like
 `mt.transformElement(element)`.
 
 **Note**: you should not use `toLowerCase()` in `Transformers.java` and >, <, 
-or = in `Choosers.java `
+or = in `Choosers.java `.  This is because if those are allowed, students can just copy the code from LongWordChooser and UpperCaseTransformer and change < into == or > and toUpperCase into toLowerCase, which does not count as "create your own choosers and transformers." Therefore, if you want to use <, ==, > or toLowerCase, make sure you are not just taking a shortcut. 
 
 
 
