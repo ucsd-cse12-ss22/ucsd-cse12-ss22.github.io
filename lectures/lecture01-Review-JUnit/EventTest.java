@@ -3,13 +3,13 @@ import org.junit.Test;
 import java.time.LocalDateTime;
 
 public class EventTest {
-  LocalDateTime nine45 = LocalDateTime.of(2022, 1, 10, 9, 45);
-  LocalDateTime ten30 = LocalDateTime.of(2022, 1, 10, 10, 30);
-  LocalDateTime ten45 = LocalDateTime.of(2022, 1, 10, 10, 45);
-  LocalDateTime eleven45 = LocalDateTime.of(2022, 1, 10, 11, 45);
+  LocalDateTime nine45 = LocalDateTime.of(2018, 1, 10, 9, 45);
+  LocalDateTime ten30 = LocalDateTime.of(2018, 1, 10, 10, 30);
+  LocalDateTime ten45 = LocalDateTime.of(2018, 1, 10, 10, 45);
+  LocalDateTime eleven45 = LocalDateTime.of(2018, 1, 10, 11, 45);
 
-  LocalDateTime farPast = LocalDateTime.of(2021, 1, 10, 9, 45);
-  LocalDateTime farFuture = LocalDateTime.of(2024, 1, 10, 10, 45);
+  LocalDateTime farPast = LocalDateTime.of(2017, 1, 10, 9, 45);
+  LocalDateTime farFuture = LocalDateTime.of(2020, 1, 10, 10, 45);
 
   @Test
   public void testBetween() {
@@ -22,17 +22,12 @@ public class EventTest {
   }
 
   public void testBetweenInclusiveStartExclusiveEnd() {
-    // These three tests help give you confidence that you have implemented a between
+    // These three tests help give me confidence that we implemented a between
     // that is *exclusive* on end times but *inclusive* on start times.
     assertEquals(false, Event.between(this.nine45, this.nine45, this.nine45));
     assertEquals(true, Event.between(this.nine45, this.nine45, this.ten30));
     assertEquals(false, Event.between(this.ten30, this.nine45, this.ten30));
   }
-
-  // In each of the following tests, I tried to make the name of the method
-  // explain the purpose of the test. In each, I tried both orderings
-  // (e1.conflict(e2) and e2.conflict(e1)) because conflicts should be
-  // symmetric -- if e1 conflicts with e2 then e2 must conflict with e1.
 
   @Test
   public void testEventConstructor() {
