@@ -3,17 +3,11 @@ layout: pa
 title: "PA3: Worklists are A MAZE ING"
 doodle: "../doodle.png"
 ---
----
-tags: CSE12WI21
----
 
----
 
 # PA3: Worklists are A MAZE ING
 
 ---
-
-**This assignment is open to collaboration.**
 
 This assignment will teach you how to use stacks and queues as worklists, how to implement an important search algorithm, and how the worklist choice affects the algorithm.
 
@@ -256,12 +250,16 @@ The following table shows the test case breakdown along with some descriptions t
 
 | Test Cases   | Description | Points |
 |--------------|-------------|--------|
-| chaff implementations |The following are examples of bad implementations where your tests will be expected to catch the bugs. Look at the names to help get an idea of what the bug could be. For example, `chaffsolve_stopearly` could indicate that the maze solver stops too early (this could mean that the maze solver stopped before it checked all the squares needed for the correct solution).<ul><li>chaffsolve_diagonalmoves</li><li>chaffsolve_stopearly</li><li>chaffsolve_difforder</li><li>chaffwalls_ignore</li> </ul>| 8 |
+|________________________________________________________|||
+| chaff implementations |The following are examples of bad implementations where your tests will be expected to catch the bugs. Look at the names to help get an idea of what the bug could be. For example, `chaffsolve_stopearly` could indicate that the maze solver stops too early (this could mean that the maze solver stopped before it checked all the squares needed for the correct solution).<br /><br />-  chaffsolve_diagonalmoves<br />- chaffsolve_stopearly<br />- chaffsolve_difforder<br />- chaffwalls_ignore| 8 |
+|________________________________________________________|||
 | wheat implementations | TestSolvers.java will be used against a correct implementation. This will check if the tests written are correct and do not flag any errors for the wheat implementation. | 2 |
+|________________________________________________________|||
 | method tests | Each method (`add`, `remove`, `isEmpty`) of the Stack and Queue will be tested. Make sure that you have the correct behavior for both data structures. | 6 |
-| implementation tests | There are also tests that your implementation needs to pass. This is not a comprehensive list but here are some of the cases you might want to write tests for. Keep in mind there may be other tests on Gradescope that are currently hidden.<ul><li>the maze has no walls</li><li>the maze has a lot of walls</li><li>finish and start are right next to each other</li><li>finish and start are in two different corners</li> </ul>| 16 |
+|________________________________________________________|||
+| implementation tests | There are also tests that your implementation needs to pass. This is not a comprehensive list but here are some of the cases you might want to write tests for. Keep in mind there may be other tests on Gradescope that are currently hidden.<br /><br />- the maze has no walls<br />- the maze has a lot of walls<br />- finish and start are right next to each other</li><li>finish and start are in two different corners| 16 |
 
-## Part 2: Gradescope Assignment (6 points)
+## Part 2: Written Assignment (6 points)
 
 **Make sure to submit directly to the Gradescope assignment:  "PA3-written".** You will also answer the following questions on Gradescope regarding the assignment:
 
@@ -271,8 +269,6 @@ The following table shows the test case breakdown along with some descriptions t
 
 - Argue for or against this statement: “Solving a solvable maze with a queue worklist will always visit equal or fewer squares than solving the maze with a stack worklist.” Either provide a counterexample, or write a sentence or two about why this must be true.
   
-In addition, put any collaborators you worked with in the Collaborator section of the gradescope assignment as described in the collaboration policy for open assignments.
-
 ## Style (4 points)
 
 On this PA, we will give deductions for violating the following style guidelines:
