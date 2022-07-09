@@ -44,6 +44,13 @@ If you are unsure or have questions about how to get the starter code, feel free
 - `Square.java` – you *cannot* edit this file
 - `TestSolvers.java` – you will edit this file
 
+## Suggested Workflow
+1) SearchWorklist.java
+2) MazeSolver.java
+3) Maze.java
+
+**Note:** You are free to use any built-in Java collections to implement these using the adapter pattern (`LinkedList`, `Stack`, etc), as long as they have the appropriate behavior. This may mean that your implementation is no more than a dozen lines of code! There is one constraint we'd like you to respect – make sure the constructors take no arguments, and initialize the worklist to be empty.
+
 
 ## Part 1: The Structure of a Maze Solver (30 points)
 
@@ -273,14 +280,11 @@ The following table shows the test case breakdown along with some descriptions t
 
 On this PA, we will give deductions for violating the following style guidelines:
 
-- Lines longer than 100 characters
 - Inconsistent indentation
 - Test method names that don't have meaning related to the test
 - Helper method names that aren't meaningful
 
 We are also introducing some new guidelines. These new guidelines won't be graded for credit on PA3, but may be on future PAs, and you may get feedback on them:
-- File headers
-- If you write a helper method with a body longer than 2 statements, we recommend adding a header comment (a comment above the method) that summarizes what it does in English.
 - Avoid redundant in-line commenting; 
   Some examples of redundant comments are:
 
@@ -323,9 +327,10 @@ Please submit your answers to the questions from part 2 on the Gradescope assign
 ## Scoring (42 points total)
 
 * **Coding Style** (4 points)
-* **Correctness** (32 points)
+* **Correctness + Testing** (32 points)
     * Does your code compile? If not, you will get 0 points.
     * Does it pass all of the provided unit tests?
+    * Did you write your tests?
 * **Gradescope Assignment** (6 points)
 
 ## Extension
