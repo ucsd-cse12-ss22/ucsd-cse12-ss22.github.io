@@ -76,7 +76,7 @@ Removes square from the worklist and returns the square that was removed.
 #### `boolean isEmpty()`
 Returns true if worklist is empty, false otherwise.
 
-**Note:** You are free to use any built-in Java collections to implement these using the adapter pattern (`LinkedList`, `Stack`, etc), as long as they have the appropriate behavior. This may mean that your implementation is no more than a dozen lines of code! There is one constraint we'd like you to respect – make sure the constructors take no arguments, and initialize the worklist to be empty.
+**Note:** You are free to use any built-in Java collections to implement these (or other **TODO** methods) using the adapter pattern (`LinkedList`, `Stack`, etc), as long as they have the appropriate behavior. This may mean that your implementation is no more than a dozen lines of code! There is one constraint we'd like you to respect – make sure the constructors take no arguments, and initialize the worklist to be empty.
 
 
 ## The `Maze` and `Square` Classes
@@ -127,7 +127,7 @@ Produce a string array like the arguments to the String[] constructor, but with 
 
 ### TODO: Methods to Implement for Maze 
 #### `public ArrayList<Square> storePath()` 
-Return the solution path as an ArrayList of square that contains all square from start to finish. If there does not exists a solution path from start to finish, return an empty ArrayList instead.
+Return the solution path (of the already solved maze) as an ArrayList of square that contains all square from start to finish. If there does not exists a solution path from start to finish, return an empty ArrayList instead.
 
 
 ## The Search Algorithm
@@ -169,7 +169,7 @@ One place where the implementation can become complicated is when checking for a
 ```
 // Return true if the location of s, offset by rowOffset and colOffset, is in
 // bounds and not a wall, false otherwise
-boolean availableNeighbor(Square[][] contents, Square s, int rowOffset, int colOffset)
+static boolean availableNeighbor(Square[][] contents, Square s, int rowOffset, int colOffset)
 ```
 
 You are not required to write this method, but doing doing so will provide useful practice for future reference in other assignments. You also might find variations of the method to be useful (i.e. return a `Square` if it is available, that take a `SearchWorklist` and add the element if it's available, etc.) when implementing certain cases of the algorithm.
@@ -190,7 +190,7 @@ For example, see the following maze:
 
 ![](https://i.imgur.com/JkgaxNt.png)
 
-If the S quare is the starting point, the F square is the finishing point, and the black squares are walls, we can represent the maze with the following 
+If the S square is the starting point, the F square is the finishing point, and the black squares are walls, we can represent the maze with the following 
 lines of strings:
 
 ```
