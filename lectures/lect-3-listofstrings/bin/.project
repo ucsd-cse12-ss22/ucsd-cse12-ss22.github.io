@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>lecture08-Sorting-Runtime</name>
+	<name>lect-3-listofstrings</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -16,7 +16,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1656954385623</id>
+			<id>1656625280297</id>
 			<name></name>
 			<type>30</type>
 			<matcher>
