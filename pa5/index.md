@@ -162,7 +162,7 @@ In our file system, FileSystem class is used to represent the entire structure o
 ##### `nameMap`
 
 A MyHashMap that uses file's name as the key and a list of FileData as the value.
-<img src="[abc.jpg](https://i.imgur.com/S2bucAA.png)" width="200">
+<img src=[abc.jpg](https://i.imgur.com/S2bucAA.png) width="200">
 <!-- ![](https://i.imgur.com/S2bucAA.png) -->
 **Illustration to show that "test.txt" is an entry within nameMap that uses filename (String) as a key that maps to an arraylist of all fileData with the same filename but in a different directory.*
 
