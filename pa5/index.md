@@ -4,13 +4,13 @@ title: "PA5: Hash Map and BST"
 doodle: "../doodle.png"
 ---
 
-**This assignment is **closed** to collaboration.**
+**This assignment is closed to collaboration.**
 
 This assignment will teach you how to implement a Hash Map and a Binary Search Tree and use them to implement a basic file searching system that can order and filter data from a text file. 
 
 ## Deadlines
 
-This PA is due on ** **Thursday, July 28, at 11:00pm PDT** **  
+This PA is due on **Thursday, July 28, at 11:00pm PDT** 
 
 ## Resources
 
@@ -162,7 +162,8 @@ In our file system, FileSystem class is used to represent the entire structure o
 ##### `nameMap`
 
 A MyHashMap that uses file's name as the key and a list of FileData as the value.
-![](https://i.imgur.com/S2bucAA.png)
+<img src="[abc.jpg](https://i.imgur.com/S2bucAA.png)" width="200">
+<!-- ![](https://i.imgur.com/S2bucAA.png) -->
 **Illustration to show that "test.txt" is an entry within nameMap that uses filename (String) as a key that maps to an arraylist of all fileData with the same filename but in a different directory.*
 
 ##### `dateMap`
