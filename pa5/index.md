@@ -163,7 +163,7 @@ In our file system, `FileSystem` class is used to represent the entire structure
 
 A MyHashMap that uses file's name as the key and a list of FileData as the value.
 
-<img src="https://i.imgur.com/S2bucAA.png" width="500">
+<img src="https://i.imgur.com/S2bucAA.png" width="450">
 
 <!-- ![](https://i.imgur.com/S2bucAA.png) -->
 **Illustration to show that "test.txt" is an entry within nameMap that uses filename (String) as a key that maps to an arraylist of all fileData with the same filename but in a different directory.*
@@ -172,7 +172,7 @@ A MyHashMap that uses file's name as the key and a list of FileData as the value
 
 A MyHashMap that uses file's date as the key and a list of FileData as the value.
 
-<img src="https://i.imgur.com/DSqDRBz.png" width="500">
+<img src="https://i.imgur.com/DSqDRBz.png" width="450">
 
 <!-- ![](https://i.imgur.com/DSqDRBz.png) -->
 **Illustration to show that "02/01/2021" is an entry within nameMap that uses file's lastModifiedDate (String) as a key that maps to an arraylist of all fileData with the same lastModifiedDate.*
@@ -184,7 +184,7 @@ A MyHashMap that uses file's date as the key and a list of FileData as the value
 
 A BST that uses the file name as the key and the `FileData` as the value.  
 
-<img src="https://i.imgur.com/io0Fayy.png" width="500">
+<img src="https://i.imgur.com/io0Fayy.png" width="450">
 
 <!-- ![](https://i.imgur.com/io0Fayy.png) -->
 
@@ -192,7 +192,7 @@ A BST that uses the file name as the key and the `FileData` as the value.
 
 A BST that uses the file date in a different format (format: yyyy/mm/dd) as the key and a list of FileData as the value. This list should keep track of the files in the order that they arrive in.   
 
-<img src="https://i.imgur.com/hlOvqBl.png" width="500">
+<img src="https://i.imgur.com/hlOvqBl.png" width="450">
 
 <!-- ![](https://i.imgur.com/hlOvqBl.png) -->
 
@@ -309,7 +309,7 @@ Default constructor that creates a new `FileSystem` object and initializes its i
 
 #### `public FileSystem(String inputFile)`
 
-*Constructor* that creates a new `FileSystem` object with the given `inputFile` that contains the file system information. The method initailizes FileSystem's instance variables and populates FileSystem with each file's information. Each file information is represented by a line formatted as `filename, directory, date` within the content of `inputFile`. For example, it could be `mySample.txt, /home, 02/01/2021`. (Note that since it is a unix type file system, forward slashes are used to represent directory hierarchy). We have provided a sample file, `input.txt`, to show how each file information is represented within the inputFile. 
+*Constructor* that creates a new `FileSystem` object with the given `inputFile` that contains the file system information. The method initializes FileSystem's instance variables and populates FileSystem with each file's information. Each file information is represented by a line formatted as `filename, directory, date` within the content of `inputFile`. For example, it could be `mySample.txt, /home, 02/01/2021`. (Note that since it is a unix type file system, forward slashes are used to represent directory hierarchy). We have provided a sample file, `input.txt`, to show how each file information is represented within the inputFile. 
 
 #### `public boolean add(String fileName, String directory, String modifiedDate)`
 
@@ -351,7 +351,7 @@ Default constructor that creates a new `FileSystem` object and initializes its i
 
 #### `public FileSystem(String inputFile)`
 
-*Constructor* that creates a new `FileSystem` object with the given `inputFile` that contains the file system information. It initailizes FileSystem's instance variables and populates FileSystem with each file's information. Each file information is represented by a line formatted as `filename, directory, date` within the content of `inputFile`. For example, it could be `mySample.txt, /home, 02/01/2021`. (Note that since it is a unix type file system, forward slashes are used to represent directory hierarchy). We have provided a sample file, `input.txt`, to show how each file information is represented within the inputFile.
+*Constructor* that creates a new `FileSystem` object with the given `inputFile` that contains the file system information. It initializes FileSystem's instance variables and populates FileSystem with each file's information. Each file information is represented by a line formatted as `filename, directory, date` within the content of `inputFile`. For example, it could be `mySample.txt, /home, 02/01/2021`. (Note that since it is a unix type file system, forward slashes are used to represent directory hierarchy). We have provided a sample file, `input.txt`, to show how each file information is represented within the inputFile.
 
 #### `public void add(String name, String dir, String date)`
 
