@@ -143,11 +143,11 @@ In FileData.java, you will implement and thoroughly test the following methods:
 - `public FileData(String name, String directory, String modifiedDate)`
 - `public String toString()`
 
-#### `public FileData(String name, String directory, String modifiedDate)`
+##### `public FileData(String name, String directory, String modifiedDate)`
 
 A *Constructor* that creates an instance of `FileData` object by intializing its instance variables with the given parameters. You may assume that the parameters passed in to the constructor will be non-null.
 
-#### `public String toString()`
+##### `public String toString()`
 
 A method that returns the string representation of FileData by displaying the file information. It should strictly follow the format of `{Name: file_name, Directory: dir_name,  Modified Date: date}`.
 
@@ -249,7 +249,7 @@ Respond to the following prompts in the Gradescope assignment: **PA5-written**:
 3. Describe what the best case would be for a non-empty BST, specifically, what does the tree look like? How is this the best case? What methods benefit from the best case scenario? 
 
 
-### Style (4 points)
+## Style (4 points)
 The following files will be graded on style:
 * MyHashMap.java
 * BST.java
@@ -287,7 +287,7 @@ The easiest way to submit your files is to drag them individually into the submi
 Please submit your answers to the questions from part 3 on the Gradescope assignment: **PA5-written**. You may submit as many times as you like till the deadline.
 
 
-## Scoring (50 points total)
+## Scoring (60 points total)
 
 - 18 points: HashMap implementation of `DefaultMap` [automatically graded]
 - 18 points: BST implementation of `DefaultMap` [automatically graded]
