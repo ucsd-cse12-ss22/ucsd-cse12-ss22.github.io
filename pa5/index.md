@@ -4,6 +4,7 @@ title: "PA5: Hash Map and BST"
 doodle: "../doodle.png"
 ---
 
+---
 **This assignment is closed to collaboration.**
 
 This assignment will teach you how to implement a Hash Map and a Binary Search Tree and use them to implement a basic file searching system that can order and filter data from a text file. 
