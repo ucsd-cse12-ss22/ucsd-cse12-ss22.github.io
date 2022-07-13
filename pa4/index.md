@@ -24,7 +24,7 @@ CS019](https://cs.brown.edu/courses/cs019/2016/sortaclesortacle.html)._
 Read the whole writeup before starting – there are several different pieces of
 the assignment you will need to hand in. In particular, you will submit:
 
-- Code to `pa4-code` assignment (starter code: TODO update [https://github.com/ucsd-cse12-w19/pa4-starter](https://github.com/ucsd-cse12-w19/pa4-starter))
+- Code to `pa4-code` assignment (starter code: [https://github.com/ucsd-cse12-ss22/PA4_starter_code](https://github.com/ucsd-cse12-ss22/PA4_starter_code))
 
 - A PDF to the `pa4-written` assignment
 
@@ -48,7 +48,7 @@ justification:
 If you are justifying the positive direction, give choices of `n0` and `C`. For
 big-Θ, make sure to justify both big-O and big-Ω, or big-O in both directions.
 
-[These slides TODO update](https://github.com/ucsd-cse12-w19/ucsd-cse12-w19.github.io/tree/master/lectures/lecture10-O-Theta-Omega) give a definition of big-Θ and big-Ω, which were not
+[These slides](https://drive.google.com/file/d/1TTuUKoJ2I9m6aZztt7ThUgDPKJdH9IqH/view?usp=sharing) give a definition of big-Θ and big-Ω, which were not
 covered in detail in class. The strategies we showed in class for big-O can
 also be used for big-Ω, and big-Θ simply combines the two.
 
@@ -421,7 +421,7 @@ property attorneys, to extend the analogy to the professional context.**
 
 ## File Summary
 
-Starter code is here: TODO [https://github.com/ucsd-cse12-w19/pa5-starter](https://github.com/ucsd-cse12-w19/pa5-starter)
+Starter code is here:  [https://github.com/ucsd-cse12-ss22/PA4_starter_code](https://github.com/ucsd-cse12-ss22/PA4_starter_code)
 
 - `PartitionOracle.java`:
   - `findCounterExample` (you implement this)
