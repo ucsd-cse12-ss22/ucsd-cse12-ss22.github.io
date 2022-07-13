@@ -298,3 +298,133 @@ Please submit your answers to the questions from part 3 on the Gradescope assign
 
 There is no bad implementation testing on this PA. However, we highly recommend you use the practices you know from testing to thoroughly check that `MyHashMap` and the `BST` you wrote work as expected.
 
+
+## Appendix
+
+### Methods implemented for Hash Map implementation
+
+#### `public FileSystem()`
+
+Default constructor that creates a new `FileSystem` object and initializes its instance variable.
+
+#### `public FileSystem(String inputFile)`
+
+*Constructor* that creates a new `FileSystem` object with the given `inputFile` that contains the file system information. The method initailizes FileSystem's instance variables and populates FileSystem with each file's information. Each file information is represented by a line formatted as `filename, directory, date` within the content of `inputFile`. For example, it could be `mySample.txt, /home, 02/01/2021`. (Note that since it is a unix type file system, forward slashes are used to represent directory hierarchy). We have provided a sample file, `input.txt`, to show how each file information is represented within the inputFile. 
+
+#### `public boolean add(String fileName, String directory, String modifiedDate)`
+
+This method creates a FileData object with the given file information and adds it to the instance variables of FileSystem. This method returns true if the file is successfully added to the FileSystem, and false if a file with the same name already exists in that directory. The default values for `filenName`, `dir`, and `modifiedDate` are `""`, `"/"`, `"01/01/2021"` in case any of these variables is null.
+
+#### `public FileData findFile(String name, String directory)`
+This method returns a single FileData object with the given name and directory. It returns null if such a file does not exist. 
+
+#### `public ArrayList<String> findAllFilesName()`
+
+This method returns an array list of string that represents all unique file names across all directories within the fileSystem. It returns an empty array list if there is no file in the file system yet.
+
+#### `public ArrayList<FileData> findFilesByName(String name)`
+
+The find method returns a list of FileData with the given name. It returns an empty list if such a file does not exist. 
+
+#### `public ArrayList<FileData> findFilesByDate(String modifiedDate)`
+
+This find method returns a list of FileData with the given modifiedDate. It returns an empty list if such a file does not exist. 
+
+#### `public ArrayList<FileData> findFilesInMultDir(String modifiedDate)`
+
+This find method returns a list of FileData with the given modifiedDate that has at least another file with the same file name in a different directory. It returns an empty list if such a file does not exist. 
+
+#### `public boolean removeByName(String name)`
+
+This method removes all the files with the given name in the FileSystem. It returns true if success, false otherwise. It removes the entry in the hashmap if necessary.
+
+#### `public boolean removeFile(String name, String directory)`
+
+This method removes a certain file with the given name and directory. It returns true if success, false otherwise. It removes the entry in the hashmap if necessary.
+
+
+### Methods implemented for BST implementation
+
+#### `public FileSystem()`
+
+Default constructor that creates a new `FileSystem` object and initializes its instance variable.
+
+#### `public FileSystem(String inputFile)`
+
+*Constructor* that creates a new `FileSystem` object with the given `inputFile` that contains the file system information. It initailizes FileSystem's instance variables and populates FileSystem with each file's information. Each file information is represented by a line formatted as `filename, directory, date` within the content of `inputFile`. For example, it could be `mySample.txt, /home, 02/01/2021`. (Note that since it is a unix type file system, forward slashes are used to represent directory hierarchy). We have provided a sample file, `input.txt`, to show how each file information is represented within the inputFile.
+
+#### `public void add(String name, String dir, String date)`
+
+This method creates a FileData object with the given file information and adds it to the instance variables of FileSystem. If there is a duplicate file name, then the FileData with the most recent date is used. For example, if the first FileData stored in the trees is `test.txt, /home, 01/01/2021` and the next FileData is `test.txt, /home, 01/02/2021`, the second FileData *replaces* the first FileData stored in the trees. If the `name`, `dir`, or `date` is `null`, then nothing is added to the FileSystem.
+
+#### `public ArrayList<String> findFileNamesByDate(String date)`
+
+Given a `date` (format: mm/dd/yyyy), returns an ArrayList of file names that correspond to this date. This list has the file names in the order that they were added. If the `date` given is `null`, returns `null`.
+
+#### `public FileSystem filter(String startDate, String endDate)`
+
+Given a `startDate` and an `endDate` (format: mm/dd/yyyy), returns a new FileSystem that contains only the files that are within the range (`startDate` is inclusive, `endDate` is exclusive). Assumes the given parameters are valid and non-null.  
+
+Example: Let's call `filter("01/20/2021", "02/02/2021")` on a `FileSystem` with the following `dateTree`:   
+
+<img src="https://i.imgur.com/dlQBJfT.png" width="450">
+
+<!-- ![](https://i.imgur.com/dlQBJfT.png) -->
+
+It returns a **FileSystem** with a `dateTree` that looks like the following (note: there should be a populated `nameTree` with the same entries):   
+
+<img src="https://i.imgur.com/jDzGOt0.png" width="450">
+
+<!-- ![](https://i.imgur.com/jDzGOt0.png) -->
+
+#### `public FileSystem filter(String wildCard)`
+
+Given a string `wildCard`, returns a new FileSystem that contains only the files with names that contain the `wildCard` string. Note that this wildcard can be found anywhere in the file name (if the wild card is `test`, then `test.txt`, `thistest.txt` and `thistest` would all be files that are selected in the filter). Assumes the given parameter is valid and non-null. 
+
+Example: Let's call `filter("mySam")` on a `FileSystem` with the following `nameTree`:  
+
+<img src="https://i.imgur.com/YBsdlMK.png" width="450">
+
+<!-- ![](https://i.imgur.com/YBsdlMK.png)   -->
+Returns a **FileSystem** with a `nameTree` that looks like the following (note: there should be a populated `dateTree` as well - it is not shown here):   
+
+<img src="https://i.imgur.com/MuJ6PM0.png" width="450">
+
+<!-- ![](https://i.imgur.com/MuJ6PM0.png) -->
+
+#### `public List<String> outputNameTree()`
+
+Returns a List<String> that contains the `nameTree` where each entry is formatted as: "<file name>: <FileData toString()>". This list is in alphabetical order.   
+
+Input file: 
+```
+mySample.txt, /home, 02/01/2021
+mySample1.txt, /root, 02/01/2021
+mySample2.txt, /user, 02/06/2021
+```
+
+Example Output: 
+```
+["mySample.txt: {Name: mySample.txt, Directory: /home, Modified Date: 02/01/2021}", 
+"mySample1.txt: {Name: mySample1.txt, Directory: /root, Modified Date: 02/01/2021}", 
+"mySample2.txt: {Name: mySample2.txt, Directory: /user, Modified Date: 02/06/2021}"]
+
+```
+
+#### `public List<String> outputDateTree()`
+
+Returns a List<String> that contains the `dateTree` where each entry is formatted as: "<date>: <FileData toString()>". The List is in order from most recent to oldest. If there are multiple files associated with the same date, they are added to the List in reverse order in comparison to how they were added into the ArrayList (see example below).
+
+Input file: 
+```
+mySample.txt, /home, 02/01/2021
+mySample1.txt, /root, 02/01/2021
+mySample2.txt, /user, 02/06/2021
+```
+
+Example Output:
+```
+["02/06/2021: {Name: mySample2.txt, Directory: /user, Modified Date: 02/06/2021}", 
+"02/01/2021: {Name: mySample1.txt, Directory: /root, Modified Date: 02/01/2021}", 
+"02/01/2021: {Name: mySample.txt, Directory: /home, Modified Date: 02/01/2021}"]
+```
