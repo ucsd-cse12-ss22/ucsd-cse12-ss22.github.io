@@ -40,15 +40,15 @@ This assignment is open, for which you can talk to anyone else in the course, po
 
 There are a few restrictions:
 
-- Any code that you didn’t write must be cited in the README file that goes along with your submission
+- Any code that you didn’t write must be cited on the last page of your `pa4-written` pdf that goes along with your submission to `pa4-written`
 
-  - __Example:__ You and another student chat online about the solution, you figure out a particular helper method together. Your README should say “The FOO function was developed in collaboration with Firstname Lastname”
+  - __Example:__ You and another student chat online about the solution, you figure out a particular helper method together. The last page of your `pa4-written` pdf should say “The FOO function was developed in collaboration with Firstname Lastname”
 
-  - __Example:__ On an open assignment, a student posts the recursive method calls they used to solve a problem you were struggling with. Your README should say “I used the code from https://piazza.com/class/id-of-post”.
+  - __Example:__ On an open assignment, a student posts the recursive method calls they used to solve a problem you were struggling with. The last page of your `pa4-written` pdf should say “I used the code from https://piazza.com/class/id-of-post”.
 
-- Anyone you work with in-person must be noted in your README
+- Anyone you work with in-person must be noted on the last page of your `pa4-written` pdf
 
-  - __Example:__ You and another student sit next to each other in the lab, and point out mistakes and errors to one another as you work through the assignment. As a result, your solutions are substantially similar. Your README should say “I collaborated with Firstname Lastname to develop my solution.”
+  - __Example:__ You and another student sit next to each other in the lab, and point out mistakes and errors to one another as you work through the assignment. As a result, your solutions are substantially similar. The last page of your `pa4-written` pdf should say “I collaborated with Firstname Lastname to develop my solution.”
 
 - You cannot share an entire repository of code or paste an entire solution into Piazza. Keep snippets to reasonable, descriptive chunks of code; think a dozen lines or so to get the point across.
 - You still cannot use code that you find online (no copying code from StackOverflow or blogs online), or get assistance or code from students outside of this offering of the class. All the code that is handed in should be developed by you or someone in the class.
@@ -57,7 +57,7 @@ This doesn’t mean the staff will be handing out answers. We’ll mostly respon
 
 There is no guarantee the assistance you get from your classmates is correct. It is your responsibility to use your judgment to avoid using an idea on Piazza that is wrong, or doesn’t work with your solution; we won’t necessarily tell you one way or another while the assignment is out.
 
-If we see that you used code from other students and didn’t cite it in the README, the penalty will range from a point deduction to an academic integrity violation, depending on the severity. Always cite your work!
+If we see that you used code from other students and didn’t cite it on the last page of your `pa4-written` pdf, the penalty will range from a point deduction to an academic integrity violation, depending on the severity. Always cite your work!
 
 # Part 1: Runtime
 
@@ -283,7 +283,7 @@ String isValidPartitionResult(String[] before, int low, int high, int pivot, Str
 
 ```
 /*
- * Generate a list of items of size n
+ * Generate a list that contains n items (size = n)
  */
 String[] generateInput(int n);
 ```
@@ -500,6 +500,7 @@ value in submitting after the deadline.
 Part 1 (28 points)
 - 12 points: initial big-O justifications [manually graded]
 - 16 points: list method analysis [manually graded]
+- 0 points: Who you collaborated with for both Part 1 and Part 2. Provide this written up on the _fourth_ page of `pa4.pdf`.
 
 Part 2 (40 points)
 - 10 points: `isValidPartitionResult`, graded automatically
