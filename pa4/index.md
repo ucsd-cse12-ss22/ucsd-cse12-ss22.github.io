@@ -104,31 +104,31 @@ Provide this written up on the _first_ page of `pa4.pdf`.
 
 ## Stack and Queue Analysis
 
-Consider the four files [Queue.java](./Queue.java),
-[Stack.java](./Stack.java), [ArrayStringList.java](./ArrayStringList.java) and [LinkedStringList.java](./LinkedStringList.java)
+Consider the four files [Queue.java](./pa4-written/Queue.java),
+[Stack.java](./pa4-written/Stack.java), [ArrayStringList.java](./pa4-written/ArrayStringList.java) and [LinkedStringList.java](./pa4-written/LinkedStringList.java). You can veiw all of the files here: [pa4-written](https://github.com/ucsd-cse12-ss22/ucsd-cse12-ss22.github.io/tree/main/pa4/pa4-written)
 
 Answer the following questions, and justify them with one or two sentences
 each:
 
 __QueueStringAL__
-- Give a tight big-O bound for the _best case_ running time of `enqueue` in Queue.java for QueueStringAL
-- Give a tight big-O bound for the _best case_ running time of `dequeue` in Queue.java for QueueStringAL
-- Give a tight big-O bound for the _worst case_ running time of `equeue` in Queue.java for QueueStringAL
-- Give a tight big-O bound for the _worst case_ running time of `dequeue` in Queue.java for QueueStringAL
+1. Give a tight big-O bound for the _best case_ running time of `enqueue` for QueueStringAL
+2. Give a tight big-O bound for the _best case_ running time of `dequeue` for QueueStringAL
+3. Give a tight big-O bound for the _worst case_ running time of `enqueue` for QueueStringAL
+4. Give a tight big-O bound for the _worst case_ running time of `dequeue` for QueueStringAL
 
-- Could we improve the running time of `enqueue` and `dequeue` if we change which side of our ArrayStringList represents the front and back of our queue? In your explanation be clear on why or why not and if there is a difference, answer questions 1-4 again but for our new implementation.
+5. Could we improve the running time of `enqueue` and `dequeue` if we change which side of our ArrayStringList represents the front and back of our queue? In your explanation be clear on why or why not and if there is a difference, answer questions 1-4 again but for our new implementation.
 
-- Imagine we decide to create a QueueStringLL where we implement our QueueStringLL using our LinkedStringList class instead of our ArrayStringList class. In this case assume we  are considering the front of the LinkedStringList our top. Answer questions 1-4 again but for our QueueStringLL.
+6. Imagine we decide to create a QueueStringLL where we implement our QueueStringLL using our LinkedStringList class instead of our ArrayStringList class. In this case assume we  are considering the front of the LinkedStringList the front of our queueue and the back of the LinkedStringList as the back of our queue. Answer questions 1-4 again but for our QueueStringLL.
 
 __StackStringAL__
-- Give a tight big-O bound for the _best case_ running time of `pop` in Stack.java for StackStringAL
-- Give a tight big-O bound for the _best case_ running time of `push` in Stack.java for StackStringAL
-- Give a tight big-O bound for the _worst case_ running time of `pop` in Stack.java for StackStringAL
-- Give a tight big-O bound for the _worst case_ running time of `push` in Stack.java for StackStringAL
+1. Give a tight big-O bound for the _best case_ running time of `pop` for StackStringAL
+2. Give a tight big-O bound for the _best case_ running time of `push` for StackStringAL
+3. Give a tight big-O bound for the _worst case_ running time of `pop` for StackStringAL
+4. Give a tight big-O bound for the _worst case_ running time of `push` for StackStringAL
 
-- Could we improve the running time of `push` and `pop` if we change which side of our ArrayStringList represents the top of our stack? In your explanation be clear on why or why not and if there is a difference, answer questions 1-4 again but for our new implementation.
+5. Could we improve the running time of `push` and `pop` if we change which side of our ArrayStringList represents the top of our stack? In your explanation be clear on why or why not and if there is a difference, answer questions 1-4 again but for our new implementation.
 
-- Imagine we decide to create a StackStringLL where we implement our StackStringLL using our LinkedStringList class instead of our ArrayStringList class. In this case assume we  are considering the front of the LinkedStringList our top. Answer questions 1-4 again but for our StackStringLL.
+6. Imagine we decide to create a StackStringLL where we implement our StackStringLL using our LinkedStringList class instead of our ArrayStringList class. In this case assume we  are considering the front of the LinkedStringList our top. Answer questions 1-4 again but for our StackStringLL.
 
 In all cases, give answers in terms of the _current size of the stack or queue_, and
 assume that the stack/queue has some non-empty size _n_. That is, you shouldn't
@@ -137,7 +137,7 @@ on other factors like size, capacity, and nodes.
 
 Notable points to consider:
 
-- Creating an array takes time proportional to the length of the array
+- Copying elements into an array takes time proportional to the length of the array
 - When considering the running time of a method, make sure to take into
   account any helpers methods it uses!
 
@@ -421,9 +421,11 @@ Part 1: Runtime
 - You will submit a pdf to `pa4-written`
 
 Part 2: Sorting
-- You will submit the following files to `pa4-code`
+- You will submit the following files to `pa4-code`:
   - `PartitionOracle.java`
   - `CounterExample.java`
+
+Remember: More tests will be run AFTER the deadline!
 
 
 
