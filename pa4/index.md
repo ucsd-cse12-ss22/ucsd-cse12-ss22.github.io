@@ -24,12 +24,40 @@ CS019](https://cs.brown.edu/courses/cs019/2016/sortaclesortacle.html)._
 Read the whole writeup before starting – there are several different pieces of
 the assignment you will need to hand in. In particular, you will submit:
 
-- Code to `pa4-code` assignment (starter code: [https://github.com/ucsd-cse12-ss22/PA4_starter_code](https://github.com/ucsd-cse12-ss22/PA4_starter_code))
-
-- A PDF to the `pa4-written` assignment
+- Part 1: A PDF to the `pa4-written` assignment
+- Part 2: Code to `pa4-code` assignment (starter code: [https://github.com/ucsd-cse12-ss22/PA4_starter_code](https://github.com/ucsd-cse12-ss22/PA4_starter_code))
 
 Make sure you know how to generate a PDF (Google Docs is a good option) and ask
 for help if you don't, well in advance of the deadline!
+
+# PA4 (and ONLY PA4) is Open to collaboration
+
+What does this mean? In your professional programming life, some of your work will be highly collaborative with lots of expert advice available from senior developers and from sites like StackOverflow. This is a common case in companies, in academia, and on open-source projects. It’s a great way to get exposed to new techniques, share knowledge, and generally enjoy teamwork. In contrast, some of your work will involve figuring out programming problems on your own, where you are the first person to encounter an issue, or the first person to try using a new library in the context of your application. You should get experience in both types of situations; we might call the former kind of problem open to collaboration and the latter closed to collaboration.
+
+In terms of courses, this split also makes sense. Programming assignments serve (at least) two roles. First and foremost, they are a mechanism for you to learn! By directly applying the techniques and skills we discuss in class, you get practice and become a better programmer. Second, they are an assessment mechanism – as instructional staff we use them to evaluate your understanding of concepts as demonstrated by your programs. Open collaboration can reduce frustration while learning and give you chances to enjoy collaboration and lots of help, but may not let us accurately evaluate your understanding. Closed assignments are an opportunity for you to demonstrate what you know by way of programming.
+
+This assignment is open, for which you can talk to anyone else in the course, post snippets of code on Piazza, get lots of help from TAs, and generally come up with solutions collaboratively. TAs will be happy to look at your code and suggest approaches and fixes.
+
+There are a few restrictions:
+
+- Any code that you didn’t write must be cited in the README file that goes along with your submission
+
+  - __Example:__ You and another student chat online about the solution, you figure out a particular helper method together. Your README should say “The FOO function was developed in collaboration with Firstname Lastname”
+
+  - __Example:__ On an open assignment, a student posts the recursive method calls they used to solve a problem you were struggling with. Your README should say “I used the code from https://piazza.com/class/id-of-post”.
+
+- Anyone you work with in-person must be noted in your README
+
+  - __Example:__ You and another student sit next to each other in the lab, and point out mistakes and errors to one another as you work through the assignment. As a result, your solutions are substantially similar. Your README should say “I collaborated with Firstname Lastname to develop my solution.”
+
+- You cannot share an entire repository of code or paste an entire solution into Piazza. Keep snippets to reasonable, descriptive chunks of code; think a dozen lines or so to get the point across.
+- You still cannot use code that you find online (no copying code from StackOverflow or blogs online), or get assistance or code from students outside of this offering of the class. All the code that is handed in should be developed by you or someone in the class.
+- You are responsible for understanding all the code you have written. All of the programming problems on the PAs may show up on exams, where you will need to have a thorough understanding of the PA to answer the questions.
+This doesn’t mean the staff will be handing out answers. We’ll mostly respond with leading questions and advice, and you shouldn’t expect a direct answer to questions like “am I done?” or “is my code right?”
+
+There is no guarantee the assistance you get from your classmates is correct. It is your responsibility to use your judgment to avoid using an idea on Piazza that is wrong, or doesn’t work with your solution; we won’t necessarily tell you one way or another while the assignment is out.
+
+If we see that you used code from other students and didn’t cite it in the README, the penalty will range from a point deduction to an academic integrity violation, depending on the severity. Always cite your work!
 
 # Part 1: Runtime
 
