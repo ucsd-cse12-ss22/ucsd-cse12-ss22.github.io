@@ -111,24 +111,25 @@ Consider the four files [Queue.java](./Queue.java),
 Answer the following questions, and justify them with one or two sentences
 each:
 
-__QueueStringAL (24 points)__
-- Give a tight big-O bound for the _best case_ running time of `enqueue` in Queue for QueueStringAL
-- Give a tight big-O bound for the _best case_ running time of `dequeue` in Queue for QueueStringAL
-- Give a tight big-O bound for the _worst case_ running time of `equeue` in Queue for QueueStringAL
-- Give a tight big-O bound for the _worst case_ running time of `dequeue` in Queue for QueueStringAL
+__QueueStringAL__
+- Give a tight big-O bound for the _best case_ running time of `enqueue` in Queue.java for QueueStringAL
+- Give a tight big-O bound for the _best case_ running time of `dequeue` in Queue.java for QueueStringAL
+- Give a tight big-O bound for the _worst case_ running time of `equeue` in Queue.java for QueueStringAL
+- Give a tight big-O bound for the _worst case_ running time of `dequeue` in Queue.java for QueueStringAL
 
-- Is our current version of QueueStringAL the best implementations using our ArrayStringList (using the __adapter pattern__)? Is there a way we could change how we use an ArrayStringList to implement our QueueStringAL to improve the running time of our QueueStringAL? In your explanation be clear on why and what the new tight big-O bound for the _best case_ and tight big-O bound for the worst case_ would be for `enqueue` and `dequeue`.
-- Imagine we decide to create a StackStringLL where we implement our StackString using our LinkedStringList class instead of our ArrayStringList class, where we consider the front of the LinkedStringList our top. Answer questions 1-4 again but for our StackStringLL
+- Could we improve the running time of `enqueue` and `dequeue` if we change which side of our ArrayStringList represents the front and back of our queue? In your explanation be clear on why or why not and if there is a difference, answer questions 1-4 again but for our new implementation.
 
-__StackStringAL (24 points)__
-- Give a tight big-O bound for the _best case_ running time of `pop` in Stack for StackStringAL
-- Give a tight big-O bound for the _worst case_ running time of `push` in Stack for StackStringAL
-- Give a tight big-O bound for the _worst case_ running time of `pop` in Stack for StackStringAL
-- Give a tight big-O bound for the _worst case_ running time of `push` in Queue for StackStringAL
+- Imagine we decide to create a QueueStringLL where we implement our QueueStringLL using our LinkedStringList class instead of our ArrayStringList class. In this case assume we  are considering the front of the LinkedStringList our top. Answer questions 1-4 again but for our QueueStringLL.
 
-- Is our current version of StackStringAL the best implementations using our ArrayStringList (using the __adapter pattern__)? Is there a way we could change how we use an ArrayStringList to implement our StackStringAL to improve the running time of our StackStringAL? In your explanation be clear on why and what the new tight big-O bound for the _best case_ and tight big-O bound for the worst case_ would be for `push` and `pop`.
+__StackStringAL__
+- Give a tight big-O bound for the _best case_ running time of `pop` in Stack.java for StackStringAL
+- Give a tight big-O bound for the _best case_ running time of `push` in Stack.java for StackStringAL
+- Give a tight big-O bound for the _worst case_ running time of `pop` in Stack.java for StackStringAL
+- Give a tight big-O bound for the _worst case_ running time of `push` in Stack.java for StackStringAL
 
-- Imagine we decide to create a StackStringLL where we implement our StackString using our LinkedStringList class instead of our ArrayStringList class, where we consider the front of the LinkedStringList our top. Answer questions 1-4 again but for our StackStringLL
+- Could we improve the running time of `push` and `pop` if we change which side of our ArrayStringList represents the top of our stack? In your explanation be clear on why or why not and if there is a difference, answer questions 1-4 again but for our new implementation.
+
+- Imagine we decide to create a StackStringLL where we implement our StackStringLL using our LinkedStringList class instead of our ArrayStringList class. In this case assume we  are considering the front of the LinkedStringList our top. Answer questions 1-4 again but for our StackStringLL.
 
 In all cases, give answers in terms of the _current size of the stack or queue_, and
 assume that the stack/queue has some non-empty size _n_. That is, you shouldn't
@@ -493,14 +494,14 @@ the files above to `pa4-code`. You can use the provided `prepare-submission.sh` 
 
 
 
-## Grade Breakdown (100 total points)
+## Grade Breakdown (92 total points)
 
 Note that this assignment has **a lot of manually grading**, so there's less
 value in submitting after the deadline.
 
-Part 1 (60 points)
+Part 1 (52 points)
 - 12 points: initial big-O justifications [manually graded]
-- 48 points: stack and queue method analysis [manually graded]
+- 40 points: stack and queue method analysis [manually graded]
 - 0 points: Who you collaborated with for both Part 1 and Part 2. Provide this written up on the _fourth_ page of `pa4.pdf`.
 
 Part 2 (40 points)
