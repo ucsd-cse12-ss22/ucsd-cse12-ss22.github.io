@@ -103,34 +103,36 @@ might find helpful:
 
 Provide this written up on the _first_ page of `pa4.pdf`.
 
-## List Analysis
+## Stack and Queue Analysis
 
-Consider the two files [ArrayStringList.java](./ArrayStringList.java) and
-[LinkedStringList.java](./LinkedStringList.java), which are the starter files
-from PA2.
+Consider the four files [Queue.java](./Queue.java),
+[Stack.java](./Stack.java), [ArrayStringList.java](./ArrayStringList.java) and [LinkedStringList.java](./LinkedStringList.java)
+
 Answer the following questions, and justify them with one or two sentences
 each:
 
-- Give a tight big-O bound for the _best case_ running time of `prepend` in
-  ArrayStringList
-- Give a tight big-O bound for the _best case_ running time of `prepend` in
-  LinkedStringList
-- Give a tight big-O bound for the _worst case_ running time of `prepend` in
-  ArrayStringList
-- Give a tight big-O bound for the _worst case_ running time of `prepend` in
-  LinkedStringList
-- Give a tight big-O bound for the _best case_ running time of `add` in
-  ArrayStringList
-- Give a tight big-O bound for the _best case_ running time of `add` in
-  LinkedStringList
-- Give a tight big-O bound for the _worst case_ running time of `add` in
-  ArrayStringList
-- Give a tight big-O bound for the _worst case_ running time of `add` in
-  LinkedStringList
+__QueueStringAL (24 points)__
+- Give a tight big-O bound for the _best case_ running time of `enqueue` in Queue for QueueStringAL
+- Give a tight big-O bound for the _best case_ running time of `dequeue` in Queue for QueueStringAL
+- Give a tight big-O bound for the _worst case_ running time of `equeue` in Queue for QueueStringAL
+- Give a tight big-O bound for the _worst case_ running time of `dequeue` in Queue for QueueStringAL
 
-In all cases, give answers in terms of the _current size of the list_, and
-assume that the list has some non-empty size _n_. That is, you shouldn't
-consider the empty list as a best case; instead think about the best case based
+- Is our current version of QueueStringAL the best implementations using our ArrayStringList (using the __adapter pattern__)? Is there a way we could change how we use an ArrayStringList to implement our QueueStringAL to improve the running time of our QueueStringAL? In your explanation be clear on why and what the new tight big-O bound for the _best case_ and tight big-O bound for the worst case_ would be for `enqueue` and `dequeue`.
+- Imagine we decide to create a StackStringLL where we implement our StackString using our LinkedStringList class instead of our ArrayStringList class, where we consider the front of the LinkedStringList our top. Answer questions 1-4 again but for our StackStringLL
+
+__StackStringAL (24 points)__
+- Give a tight big-O bound for the _best case_ running time of `pop` in Stack for StackStringAL
+- Give a tight big-O bound for the _worst case_ running time of `push` in Stack for StackStringAL
+- Give a tight big-O bound for the _worst case_ running time of `pop` in Stack for StackStringAL
+- Give a tight big-O bound for the _worst case_ running time of `push` in Queue for StackStringAL
+
+- Is our current version of StackStringAL the best implementations using our ArrayStringList (using the __adapter pattern__)? Is there a way we could change how we use an ArrayStringList to implement our StackStringAL to improve the running time of our StackStringAL? In your explanation be clear on why and what the new tight big-O bound for the _best case_ and tight big-O bound for the worst case_ would be for `push` and `pop`.
+
+- Imagine we decide to create a StackStringLL where we implement our StackString using our LinkedStringList class instead of our ArrayStringList class, where we consider the front of the LinkedStringList our top. Answer questions 1-4 again but for our StackStringLL
+
+In all cases, give answers in terms of the _current size of the stack or queue_, and
+assume that the stack/queue has some non-empty size _n_. That is, you shouldn't
+consider the empty stack/queue as a best case; instead think about the best case based
 on other factors like size, capacity, and nodes.
 
 Notable points to consider:
@@ -139,7 +141,7 @@ Notable points to consider:
 - When considering the running time of a method, make sure to take into
   account any helpers methods it uses!
 
-Example for `get` in the `LinkedStringList` class:
+Example for `get` in the `LinkedStringList` class (your analysis will be on Stacks and Queues):
 
     The get method is O(1) in the best case, when the index is 0. In this case
     it will do constant work checking the index and immediately return the
@@ -151,7 +153,6 @@ Example for `get` in the `LinkedStringList` class:
     in overall O(n) number of steps taken.
 
 Provide this written up on the _second and third_ pages of `pa4.pdf`.
-
 
 # Part 2: Sorting - Testing Partition
 
@@ -492,14 +493,14 @@ the files above to `pa4-code`. You can use the provided `prepare-submission.sh` 
 
 
 
-## Grade Breakdown (68 total points)
+## Grade Breakdown (100 total points)
 
 Note that this assignment has **a lot of manually grading**, so there's less
 value in submitting after the deadline.
 
-Part 1 (28 points)
+Part 1 (60 points)
 - 12 points: initial big-O justifications [manually graded]
-- 16 points: list method analysis [manually graded]
+- 48 points: stack and queue method analysis [manually graded]
 - 0 points: Who you collaborated with for both Part 1 and Part 2. Provide this written up on the _fourth_ page of `pa4.pdf`.
 
 Part 2 (40 points)
