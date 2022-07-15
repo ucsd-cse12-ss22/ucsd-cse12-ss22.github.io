@@ -421,8 +421,9 @@ Part 1: Runtime
 - You will submit a pdf to `pa4-written`
 
 Part 2: Sorting
-- You will hand in a zip archive of the pa4-starter directory containing all
-the files above to `pa4-code`. You can use the provided `prepare-submission.sh` script for this.
+- You will submit the following files to `pa4-code`
+  - `PartitionOracle.java`
+  - `CounterExample.java`
 
 
 
