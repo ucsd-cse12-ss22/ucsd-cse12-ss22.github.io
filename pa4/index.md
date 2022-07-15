@@ -11,8 +11,7 @@ representations, practice matching them to implementations, and perform
 measurements of the runtime of different methods.
 
 2) Teach you how to write tests in a thorough, automated way,
-will explore some properties of quicksort, and will give you structured
-practice in re-using code you find on the Web.
+will explore some properties of quicksort.
 
 
 _This assignment is inspired by a combination of a lab in Swarthmore College's
@@ -155,9 +154,7 @@ Example for `get` in the `LinkedStringList` class (your analysis will be on Stac
 
 Provide this written up on the _second and third_ pages of `pa4.pdf`.
 
-# Part 2: Sorting - Testing Partition
-
-## Part 2.1: A Bad (and Good) Implementation Detector
+# Part 2: Sorting - Testing Partition: A Bad (and Good) Implementation Detector
 
 ### Testing with Properties
 
@@ -348,8 +345,6 @@ more refined tests. Here are some ideas:
   where you use interesting input lists that you construct by hand. You can
   combine whether they sort correctly or not (e.g. partition them and then check
   `isValidPartitionResult`).
-- Use the partition implementations that you find on the Web (below) and check
-  if they are good or bad.
 - The `java.util.Random` class has useful tools for generating random numbers
   and strings.  You can create a random number generator and use it to get
   random integers from 0 to a bound, which you can combine with ASCII codes to
@@ -391,64 +386,6 @@ lists to find the issues, and it will just slow down grading. You should focus
 on generating (many, maybe hundreds or thousands of) small interesting lists
 rather than a few big ones, which should process very quickly.
 
-## Part 2.2: Copying Code from the Internet
-
-There's a lot of code out there in the world. Much of it is available, with
-permissive licensing, for free on the Web. When you're learning, it's often
-useful to write implementations yourself to gain experience. However, there are
-also skills related to finding and re-using code, rather than writing your own
-from scratch. These skills are useful to develop, and come with their own set
-of best practices.
-
-When you re-use or repurpose code, there are two main concerns:
-
-- Are you allowed, legally and ethically? Your course, company, or institution
-  may have its own rules, and there are laws about how you can re-use or modify
-  code depending on its software license. There are also simple intellectual
-  honesty issues around giving credit to the right sources. It may be the case
-  that you shouldn't even be _looking_ at other code that solves your problem.
-  This is usually the case in programming courses, for example.
-- More practically, does the code actually do what you want? If it's a method,
-  are the inputs and outputs the types your program will expect? Does it match
-  your performance expectations in terms of its runtime? If you need to change
-  it to adapt to your application, will that invalidate any assumptions of the
-  original version?
-
-For this assignment, you must go _find three `partition` implementations in
-Java on the Web_. You should document the source you got it from clearly, and
-adapt it to fit the `Partitioner` interface that partitions `String`s For each
-implementation you find, you write in a header comment with the method:
-
-- Where it came from as a URL, and list the author (usernames or emails count!)
-  if you can identify the author
-- A URL for the _license_ or other rules posted for the re-use of the code. In
-  code repositories like those on Github, this will usually be in a file called
-  `LICENSE` or `LICENSE.txt` in the root of the repository. Here's one for
-  [openjdk](https://github.com/dmlloyd/openjdk/blob/jdk/jdk/LICENSE), a free
-  and open source Java implementation, for example. Don't use code for which
-  you can't find the rules of re-use!
-- Describe what changes you made to adapt it to this problem
-- Indicate if it was buggy or not (by using handwritten tests, or potentially
-  by using your tester, if you have it ready) and why
-- Describe the worst case of its runtime behavior using a tight big-O bound
-
-Put these implementations in the provided files `WebPartitioner1-3.java`.
-
-A search engine is your friend here. Searching “Java partition implementation”
-or “Java quicksort implementation” is a fine way to start. Searching “java
-partition implementation site:github.com” gives a bunch of promising options,
-as well.  Have fun searching, there's lots of cool stuff out there!
-
-**NOTE: This part of the assignment comes with a deliberate, narrow exception
-to the Academic Integrity policy for the course. You shouldn't, in any other
-assignment (or other parts of this assignment) go hunting for code on the Web
-that solves the assignment for you.  You certainly shouldn't do it in other
-classes or at your job unless you know it's acceptable to do so – you should
-always know and consult the policies relevant to your current context. We (the
-instructors) know how to search for code on the Web. So do intellectual
-property attorneys, to extend the analogy to the professional context.**
-
-
 ## File Summary
 
 Starter code is here:  [https://github.com/ucsd-cse12-ss22/PA4_starter_code](https://github.com/ucsd-cse12-ss22/PA4_starter_code)
@@ -462,11 +399,6 @@ Starter code is here:  [https://github.com/ucsd-cse12-ss22/PA4_starter_code](htt
 - `Partitioner.java` (do not edit this): Defines the signature of the
   `partition` method implemented by all sorters. You will implement this
   interface several times to test `findCounterExample`.
-- `WebPartitioner1-3.java`: For your implementations found on the Web that you
-  will adapt to implement `Partitioner`.
-
-There is no dedicated written part for this part of the PA– the header comments in the
-WebPartitioners serve as the written part of your grade for this PA.
 
 ## Style
 
@@ -494,7 +426,7 @@ the files above to `pa4-code`. You can use the provided `prepare-submission.sh` 
 
 
 
-## Grade Breakdown (92 total points)
+## Grade Breakdown (83 total points)
 
 Note that this assignment has **a lot of manually grading**, so there's less
 value in submitting after the deadline.
@@ -504,10 +436,9 @@ Part 1 (52 points)
 - 40 points: stack and queue method analysis [manually graded]
 - 0 points: Who you collaborated with for both Part 1 and Part 2. Provide this written up on the _fourth_ page of `pa4.pdf`.
 
-Part 2 (40 points)
+Part 2 (31 points)
 - 10 points: `isValidPartitionResult`, graded automatically
 - 5 points: `generateInput`, graded automatically
 - 11 points: `findCounterExample`, graded by how it performs on good and bad
   partitions that we provide, graded automatically
 - 5 points: Test and code readability and style [manually graded]
-- 9 points: (3 points each) for the sort implementations you find online and describe in your header comments [manually graded]
