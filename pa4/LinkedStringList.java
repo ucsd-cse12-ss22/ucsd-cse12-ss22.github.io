@@ -12,12 +12,10 @@ public class LinkedStringList implements StringList {
   Node front;
   int size;
 
-  // How will we construct it?
   public LinkedStringList() {
     this.front = new Node(null, null);
   }
 
-  // How will we implement the methods?
   public void prepend(String s) {
     Node newFront = new Node(s, this.front.next);
     this.front.next = newFront;
@@ -33,7 +31,7 @@ public class LinkedStringList implements StringList {
   }
 
   public void add(String s) {
-    // We start at this.front, because what we need
+    // NOTE: we start at this.front, because what we need
     // for add() is a reference to a node to add to, which may
     // be front itself if the list is empty.
 
@@ -49,25 +47,36 @@ public class LinkedStringList implements StringList {
     this.size += 1;
   }
 
-  public void remove(int index) {
-    Node current = this.front;
-    for(int i = 0; i < index; i += 1) {
-      current = current.next;
-    }
-    current.next = current.next.next;
-  }
-
-  public void insert(int index, String s) {
-    Node current = this.front;
-    for(int i = 0; i < index; i += 1) {
-      current = current.next;
-    }
-    current.next = new Node(s, current.next);
-  }
-
   public int size() {
     return this.size;
   }
+  
+  //Assumes a valid index is given
+  public void remove(int index){  
+    Node current = this.front;
+
+    for(int i = 0; i < index; i += 1) {
+      current = current.next;
+    }
+
+    current.next = current.next.next;  
+    this.size -= 1;
+  
+    return;
+  }
+  
+  //Assumes a valid index is given
+  public void insert(int index, String s){
+    Node current = this.front;
+
+    for(int i = 0; i < index; i += 1) {
+      current = current.next;
+    }
+
+    current.next = new Node(s, current.next);
+    this.size += 1;
+	  
+    return;
+  }
 
 }
-

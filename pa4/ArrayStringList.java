@@ -8,15 +8,6 @@ public class ArrayStringList implements StringList {
     this.size = 0;
   }
 
-  public void prepend(String s) {
-    expandCapacity();
-    for(int i = this.size; i > 0; i -= 1) {
-      this.elements[i] = this.elements[i - 1];
-    }
-    this.elements[0] = s;
-    this.size += 1;
-  }
-
   public void add(String s) {
     expandCapacity();
     this.elements[this.size] = s;
@@ -43,5 +34,37 @@ public class ArrayStringList implements StringList {
       expanded[i] = this.elements[i];
     }
     this.elements = expanded;
+  }
+
+  // Assumes a valid index is given
+  public void remove(int index){
+    for(int i = index; i < this.size - 1; i++){
+      this.elements[i] = this.elements[i + 1];
+    }
+	  
+    this.elements[size] = null;
+    this.size -= 1;
+	  
+    return;
+  }
+  
+  // Assumes a valid index is given
+  public void insert(int index, String s){
+    expandCapacity();
+	  
+    for(int i = this.size; i > index; i--){
+      this.elements[i] = this.elements[i - 1];
+    }
+    
+    this.elements[index] = s;
+    this.size += 1;
+	  
+    return;
+  }
+  
+  // Just call insert at index 0!
+  public void prepend(String s){
+	  this.insert(0, s);
+	  return;
   }
 }
