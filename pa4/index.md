@@ -427,7 +427,7 @@ Part 2: Sorting
 
 
 
-## Grade Breakdown (83 total points)
+## Grade Breakdown (80 total points)
 
 Note that this assignment has **a lot of manually grading**, so there's less
 value in submitting after the deadline.
@@ -437,9 +437,9 @@ Part 1 (52 points)
 - 40 points: stack and queue method analysis [manually graded]
 - 0 points: Who you collaborated with for both Part 1 and Part 2. Provide this written up on the _fourth_ page of `pa4.pdf`.
 
-Part 2 (31 points)
+Part 2 (28 points)
 - 10 points: `isValidPartitionResult`, graded automatically
 - 5 points: `generateInput`, graded automatically
 - 11 points: `findCounterExample`, graded by how it performs on good and bad
   partitions that we provide, graded automatically
-- 5 points: Test and code readability and style [manually graded]
+- 2 points: Test and code readability and style [manually graded]
