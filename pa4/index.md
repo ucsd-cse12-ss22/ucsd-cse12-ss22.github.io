@@ -23,11 +23,8 @@ CS019](https://cs.brown.edu/courses/cs019/2016/sortaclesortacle.html)._
 Read the whole writeup before starting – there are several different pieces of
 the assignment you will need to hand in. In particular, you will submit:
 
-- Part 1: A PDF to the `pa4-written` assignment
+- Part 1: `pa4-written` assignment - rather than submitting a pdf, you will fill out your anwers. Your answers will save if you click save, even if you close the window. It will say submitted if you reopen it but you can resubmit as you add in more answers.
 - Part 2: Code to `pa4-code` assignment (starter code: [https://github.com/ucsd-cse12-ss22/PA4_starter_code](https://github.com/ucsd-cse12-ss22/PA4_starter_code))
-
-Make sure you know how to generate a PDF (Google Docs is a good option) and ask
-for help if you don't, well in advance of the deadline!
 
 # PA4 (and ONLY PA4) is Open to collaboration
 
@@ -39,15 +36,15 @@ This assignment is open, for which you can talk to anyone else in the course, po
 
 There are a few restrictions:
 
-- Any code that you didn’t write must be cited on the last page of your `pa4-written` pdf that goes along with your submission to `pa4-written`
+- Any code that you didn’t write must be cited in your `pa4-written` submission
 
-  - __Example:__ You and another student chat online about the solution, you figure out a particular helper method together. The last page of your `pa4-written` pdf should say “The FOO function was developed in collaboration with Firstname Lastname”
+  - __Example:__ You and another student chat online about the solution, you figure out a particular helper method together. You should say “The FOO function was developed in collaboration with Firstname Lastname”
 
-  - __Example:__ On an open assignment, a student posts the recursive method calls they used to solve a problem you were struggling with. The last page of your `pa4-written` pdf should say “I used the code from https://piazza.com/class/id-of-post”.
+  - __Example:__ On an open assignment, a student posts the recursive method calls they used to solve a problem you were struggling with. You should say “I used the code from https://piazza.com/class/id-of-post”.
 
-- Anyone you work with in-person must be noted on the last page of your `pa4-written` pdf
+- Anyone you work with in-person must be noted in your `pa4-written` submission
 
-  - __Example:__ You and another student sit next to each other in the lab, and point out mistakes and errors to one another as you work through the assignment. As a result, your solutions are substantially similar. The last page of your `pa4-written` pdf should say “I collaborated with Firstname Lastname to develop my solution.”
+  - __Example:__ You and another student sit next to each other in the lab, and point out mistakes and errors to one another as you work through the assignment. As a result, your solutions are substantially similar. You should say “I collaborated with Firstname Lastname to develop my solution.”
 
 - You cannot share an entire repository of code or paste an entire solution into Piazza. Keep snippets to reasonable, descriptive chunks of code; think a dozen lines or so to get the point across.
 - You still cannot use code that you find online (no copying code from StackOverflow or blogs online), or get assistance or code from students outside of this offering of the class. All the code that is handed in should be developed by you or someone in the class.
@@ -56,7 +53,7 @@ This doesn’t mean the staff will be handing out answers. We’ll mostly respon
 
 There is no guarantee the assistance you get from your classmates is correct. It is your responsibility to use your judgment to avoid using an idea on Piazza that is wrong, or doesn’t work with your solution; we won’t necessarily tell you one way or another while the assignment is out.
 
-If we see that you used code from other students and didn’t cite it on the last page of your `pa4-written` pdf, the penalty will range from a point deduction to an academic integrity violation, depending on the severity. Always cite your work!
+If we see that you used code from other students and didn’t cite it in your `pa4-written` submission, the penalty will range from a point deduction to an academic integrity violation, depending on the severity. Always cite your work!
 
 # Part 1: Runtime
 
@@ -100,7 +97,7 @@ might find helpful:
 - f(n) = n!
 - f(n) = n<sup>n</sup>
 
-Provide this written up on the _first_ page of `pa4.pdf`.
+Provide this in your `pa4-written` submission.
 
 ## Stack and Queue Analysis
 
@@ -152,7 +149,7 @@ Example for `get` in the `LinkedStringList` class (your analysis will be on Stac
     loop will run n times, spending constant time on each iteration, resulting
     in overall O(n) number of steps taken.
 
-Provide this written up on the _second and third_ pages of `pa4.pdf`.
+Provide this written up in your `pa4-written` submission.
 
 # Part 2: Sorting - Testing Partition: A Bad (and Good) Implementation Detector
 
@@ -418,7 +415,7 @@ recommendation, not something we will enforce.
 ## Submission
 
 Part 1: Runtime
-- You will submit a pdf to `pa4-written`
+- You will submit your answers to Part 1 in `pa4-written` and list anyone you collaborated with
 
 Part 2: Sorting
 - You will submit the following files to `pa4-code`:
@@ -437,7 +434,7 @@ value in submitting after the deadline.
 Part 1 (52 points)
 - 12 points: initial big-O justifications [manually graded]
 - 40 points: stack and queue method analysis [manually graded]
-- 0 points: Who you collaborated with for both Part 1 and Part 2. Provide this written up on the _fourth_ page of `pa4.pdf`.
+- 0 points: Who you collaborated with for both Part 1 and Part 2. Provide this in your `pa4-written` submission
 
 Part 2 (28 points)
 - 10 points: `isValidPartitionResult`, graded automatically
