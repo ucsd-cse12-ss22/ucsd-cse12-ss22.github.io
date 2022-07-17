@@ -101,8 +101,8 @@ Provide this in your `pa4-written` submission.
 
 ## Stack and Queue Analysis
 
-Consider the four files [Queue.java](./pa4-written/Queue.java),
-[Stack.java](./pa4-written/Stack.java), [ArrayStringList.java](./pa4-written/ArrayStringList.java) and [LinkedStringList.java](./pa4-written/LinkedStringList.java). You can veiw all of the files here: [pa4-written](https://github.com/ucsd-cse12-ss22/ucsd-cse12-ss22.github.io/tree/main/pa4/pa4-written)
+Consider the four files [QueueStringAL.java](./pa4-written/QueueStringAL.java),
+[StackStringAL.java](./pa4-written/StackStringAL.java), [ArrayStringList.java](./pa4-written/ArrayStringList.java) and [LinkedStringList.java](./pa4-written/LinkedStringList.java). You can veiw all of the files here: [pa4-written](https://github.com/ucsd-cse12-ss22/ucsd-cse12-ss22.github.io/tree/main/pa4/pa4-written)
 
 Answer the following questions, and justify them with one or two sentences
 each:
