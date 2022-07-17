@@ -260,7 +260,7 @@ Seats will be assigned for all exam sessions and announced beforehand, and you m
 
 This means that each test contributes to your final exam score, but if you miss or do poorly on a test you can always make up the credit by doing well on the corresponding section of the final exam. 
 
-**Example:** A student scores 50%, 60%, 0%, and 80% on the four tests. On the final exam, they score 10/25, 20/25, 20/25, 15/25 on each of the four sections. Their final exam score would be (10 + 5) + (20 + 6) + (20 + 0) + (15 + 8) for a total of 84/100 on the exam.
+**Example:** A student scores 50%, 60%, 0%, and 80% on the four tests. On the final exam, they score 10/25, 20/25, 20/25, 15/25 on each of the four sections. Their final exam score would be (10 + 5) + (20 + 6) + (20 + 0) + (15 + 8) for a total of 83/100 on the exam.
 
 **Example:** A student scores 60%, 70%, 80%, and 90% on the tests, and then skips the final. Their final exam grade will be 55%.
 
