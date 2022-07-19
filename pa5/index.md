@@ -236,6 +236,7 @@ Comparator: https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html
 Comparable: https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html
 
 
+---
 #### Methods to be completed for Hash Map implementation (**TODO** - 8 points)
 ---
 
@@ -258,6 +259,7 @@ This method should create a FileData object with the given file information and 
 This method should return a single FileData object with the given name and directory. You should not modify the HashMapFileSystem itself. Return null if such a file does not exist.  
 
 
+---
 #### Methods to be completed for BST implementation (**TODO** - 8 points)
 ---
 
