@@ -159,6 +159,7 @@ A method that returns the string representation of FileData by displaying the fi
 `HashMapFileSystem` and `BSTFileSystem` classes are used to represent the entire structure of the Hash Map/BST implementations of our file system. You should store file's information in the instance variables provided corresponding to each of the Hash Map/BST implementations (shown below) to ensure that the look up times are as efficient as possible. You are **NOT ALLOWED** to add any additional instance variables or include any additional imports in `HashMapFileSystem.java` or `BSTFileSystem.java`.
 
 #### Instance Variables for Hash Map Implementation
+---
 
 ##### `nameMap`
 
@@ -180,6 +181,7 @@ A MyHashMap that uses file's date as the key and a list of FileData as the value
 
 
 #### Instance Variables for BST Implementation
+---
 
 ##### `nameTree`
 
@@ -235,6 +237,7 @@ Comparable: https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html
 
 
 #### Methods to be completed for Hash Map implementation (**TODO** - 8 points)
+---
 
 In `HashMapFileSystem.java`, you will implement and thoroughly test the following methods:
 
@@ -256,6 +259,7 @@ This method should return a single FileData object with the given name and direc
 
 
 #### Methods to be completed for BST implementation (**TODO** - 8 points)
+---
 
 In `BSTFileSystem.java`, you will implement and thoroughly test the following methods:
 
@@ -292,10 +296,10 @@ It returns a **BSTFileSystem** with a `dateTree` that looks like the following (
 <!-- ![](https://i.imgur.com/jDzGOt0.png) -->
 
 
-## Testing (3 points)
+## Testing (2 points)
 ---
 
-In the starter code, there are two files where you may add tests:
+In the starter code, there are two files where you will add tests:
 - MyHashMapTest.java
 - BSTTest.java
 
@@ -353,7 +357,7 @@ The easiest way to submit your files is to drag them individually into the submi
 Please submit your answers to the questions from part 3 on the Gradescope assignment: **PA5-written**. You may submit as many times as you like till the deadline.
 
 
-## Scoring (60 points total)
+## Scoring (67 points total)
 
 - 18 points: HashMap implementation of `DefaultMap` [automatically graded]
 - 18 points: BST implementation of `DefaultMap` [automatically graded]
