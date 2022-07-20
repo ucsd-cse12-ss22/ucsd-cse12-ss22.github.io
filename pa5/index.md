@@ -218,7 +218,7 @@ Additionally, please note that `Comparator` and `Comparable` are **not** the sam
 Comparator: https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html 
 Comparable: https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html
 
-## BSTFileSystem Methods
+### BSTFileSystem Methods
 
 In `BSTFileSystem.java`, you will implement and thoroughly test the following methods:
 
@@ -281,7 +281,8 @@ Assume the given parameter is valid and non-null.
 
 Example: Let's call `filter("mySam")` on a `BSTFileSystem` with the following `nameTree`:  
 
-![](https://i.imgur.com/YBsdlMK.png)  
+<!-- ![](https://i.imgur.com/YBsdlMK.png)  -->
+<img src="https://i.imgur.com/YBsdlMK.png" height="400px"/> 
 
 
 
