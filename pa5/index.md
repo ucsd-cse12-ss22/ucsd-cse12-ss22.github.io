@@ -30,41 +30,41 @@ The starter code is in the Github repository that you are currently looking at. 
 If you are unsure or have questions about how to get the starter code, feel free to make a Piazza post or ask a tutor for help.
 
 
-## Part 1: HashMap File System Implementation (16 points)
+# Part 1: HashMap File System Implementation (16 points)
 You are asked to implement a basic unix file system structure to support files look up methods. It is shown in the log history that users tend to search files either by their names, their directories, or their modified dates. You think that a hash map will be a perfect data structure for this task to perform these searches in an efficient way. Your task is to design a simplified file system structure with a hash map that can support users defined filtering methods while making sure that those filtering methods are performed in an efficient way.
 
 You should only modify `HashMapFileSystem.java` for implementation of the file system. 
 
 *Note*: It's likely that you need to store multiple files with the same name in your computer, therefore our file system support duplicate files with the same name or date in different directories. However, the name should always be unique in each directory.
 
-### FileData
+## FileData
 In our file system, a file is represented as a `FileData` object which contains the information of its name, directory, and last modified date. 
-#### Instance Variables
-##### `name`
+### Instance Variables
+#### `name`
 The name of the given file in string format.
-##### `dir`
+#### `dir`
 The directory of where the file is stored in, represented in a string format.
-##### `lastModifiedDate`
+#### `lastModifiedDate`
 The date of when the file is last modified, represented in a string format.
 
 
-### HashMapFileSystem
+## HashMapFileSystem
 
 In our file system, HashMapFileSystem class will be used to represent the entire structure of the file system. You should store file's information in the instance variable provided to ensure that the look up times are as efficient as possible.  You are **NOT ALLOWED** to add any additional instance variables or to include any additional imports in `HashMapFileSystem.java`.
 
-#### Instance Variables
-##### `nameMap`
+### Instance Variables
+#### `nameMap`
 A HashMap that uses file name as the key and a list of FileData as the value.
 ![](https://i.imgur.com/S2bucAA.png)
 **Illustration to show that "test.txt" is an entry within nameMap that uses filename (String) as a key that maps to an arraylist of all fileData with the same filename but in a different directory.*
 
-##### `dateMap`
+#### `dateMap`
 A HashMap that uses file's date as the key and a list of FileData as the value.
 ![](https://i.imgur.com/DSqDRBz.png)
 **Illustration to show that "02/01/2021" is an entry within nameMap that uses file's lastModifiedDate (String) as a key that maps to an arraylist of all fileData with the same lastModifiedDate.*
 
 
-#### Methods
+### Methods
 In `HashMapFileSystem.java`, you will implement and thoroughly test the following methods:
 
 - `public HashMapFileSystem()`
@@ -118,7 +118,7 @@ This method should remove a certain file with the given name and directory. Retu
 
 
 
-## Part 2: An Implementation of `DefaultMap` (18 points)
+# Part 2: An Implementation of `DefaultMap` (18 points)
 
 You’ll provide a fast implementation of an interface called `DefaultMap` in `BST.java`.  
 
@@ -145,26 +145,24 @@ The specifications for the other methods are defined in header comments in the `
 
 Your implementation of `DefaultMap` will be graded automatically by tests that we provide. We’ll provide a very minimal sanity check in the grader. DO NOT rely on it for testing!
 
-## Part 3: File System Filtering (16 points)
+# Part 3: File System Filtering (16 points)
 
- <hr />
-
-### FileData 
+## FileData 
 
  <hr />
 
 In our file system, a file is represented as a `FileData` object which contains the information of its name, directory, and last modified date. This is the same FileData from above.
 
 
-### BSTFileSystem
+## BSTFileSystem
 
  <hr />
 
 The BSTFileSystem class will be used to represent the entire structure of the file system. You should store the file information in the instance variables provided to ensure that the lookup times are as efficient as possible.  You are **NOT ALLOWED** to add any additional instance variables or include any additional imports in `BSTFileSystem.java`.
 
-## Instance Variables
+### Instance Variables
 
-##### `nameTree`
+#### `nameTree`
 
 A BST that uses the file name as the key and the `FileData` as the value.  
 
@@ -173,7 +171,7 @@ A BST that uses the file name as the key and the `FileData` as the value.
 
 
 
-##### `dateTree`
+#### `dateTree`
 
 A BST that uses the file date in a different format (format: yyyy/mm/dd) as the key and a list of FileData as the value. This list should keep track of the files in the order that they arrive in.   
 
@@ -183,11 +181,11 @@ A BST that uses the file date in a different format (format: yyyy/mm/dd) as the 
 
 
 
-##### `dc`
+#### `dc`
 
 A `DateComparator` that will be used to compare the date on the files (See section below).
 
-## Inner Class `DateComparator`  
+### Inner Class `DateComparator`  
 
 At times, we may want to create custom ways to compare two objects. 
 To support this, Java has a built-in interface called Comparator that expresses this idea of user-defined comparisons. An implementatation of Comparator provides a single method, called compare, that takes two elements of a particular type and returns a negative number if the first is “smaller” than the second, 0 if they are equal, and a positive number if the first is “larger” than the second.
@@ -340,7 +338,7 @@ Example Output:
 
  <hr />
 
-## Part 4: Gradescope Assignment (9 points)
+# Part 4: Gradescope Assignment (9 points)
 
 Respond to the following prompts in *pa5-written*:
 
@@ -359,7 +357,7 @@ For this PA, your unit tests will be graded for completion only, however, we **s
 
 The easiest way to submit your files is to drag them individually into the submit box and upload that to Gradescope. You may submit as many times as you like till the deadline. 
 
-### Style (5 points)
+### Style (4 points)
 The following files will be graded on style:
 * HashMapFileSystem.java
 * BST.java
@@ -382,9 +380,9 @@ On this PA, **all guidelines must be followed**, they are summarized below:
 - no magic numbers
 
 
-## Submitting
+# Submitting
 
-#### Part 1, 2 & 3
+### Part 1, 2 & 3
 On the Gradescope assignment **PA5-code** please submit the following files:
 
 * HashMapFileSystem.java
@@ -396,10 +394,10 @@ On the Gradescope assignment **PA5-code** please submit the following files:
 
 The easiest way to submit your files is to drag them individually into the submit box and upload that to Gradescope. You may submit as many times as you like till the deadline. 
 
-#### Part 4
+### Part 4
 On the Gradescope assignment **PA5-written** please submit the following files
 
-## Scoring (50 points total)
+# Scoring (68 points total)
 
 - 16 points: implemetnation of `HashMapFileSystem` [automatically graded]
 - 3 point: HashMapFileSystemTest graded on completition [manually graded]
@@ -407,7 +405,7 @@ On the Gradescope assignment **PA5-written** please submit the following files
 - 16 points: implementation of `BSTFileSystem` [automatically graded]
 - 2 point: BSTTest and BSTFileSystemTest graded on completition [manually graded]
 - 9 points: Gradescope Questions [manually graded]
-- 5 points: Style [manually graded]
+- 4 points: Style [manually graded]
 
 There is no bad implementation testing on this PA. However, we highly recommend you use the practices you know from testing to thoroughly check that everything you wrote works as expected.
 
