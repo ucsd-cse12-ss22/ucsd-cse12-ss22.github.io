@@ -110,16 +110,16 @@ The specifications for the other methods are defined in header comments in the `
 Your implementation of `DefaultMap` will be graded automatically by tests that we provide. We’ll provide a very minimal sanity check in the grader. DO NOT rely on it for testing!
 
 
-## Part 2: File System Implementation (8 points)
+## Part 2: File System Implementation (16 points)
 ---
 
-In part 2, we implement a basic unix file system structure to support file look up methods. It is shown in the log history that users tend to search files either by their names, their directories, or their modified dates. After implementing `MyHashMap.java` and `BST.java` in part 1, you think that either of Hash Map or Binary Search Tree will be a perfect data structure for this task to perform these searches in an efficient way. We design a simplified file system structure with a Hash map and a Binary Search Tree that can support user defined filtering methods while making sure that those filtering methods are performed in an efficient way.
+In part 2, you are asked to implement a basic unix file system structure to support file look up methods. It is shown in the log history that users tend to search files either by their names, their directories, or their modified dates. After implementing `MyHashMap.java` and `BST.java` in part 1, you think that Hash Map and Binary Search Tree will be perfect data structures for this task to perform these searches in an efficient way. Your task is to design a simplified file system structure with a Hash Map and a Binary Search Tree that can support user defined filtering methods while making sure that those filtering methods are performed in an efficient way.
 
-You should **only modify** `FileData.java` for implementation of the file system, `FileSystem.java` has already been implemented. 
+You should **only modify** `HashMapFileSystem.java` and `BSTFileSystem.java` for Hash Map and BST based implementations of the file system, `FileData.java` has already been implemented for you.
 
 *Note*: It's likely that you need to store multiple files with the same name in your computer, therefore our file system supports duplicate files with the same name or date in different directories. However, the name should always be unique in each directory.
 
-### FileData (**TODO** - 8 points)
+### FileData (**Already Implemented**)
 ---
 In our file system, a file is represented as a `FileData` object which contains the information of its name, directory, and last modified date. 
 
@@ -139,26 +139,27 @@ The date of when the file is last modified, represented in a string format.
 
 #### Methods
 
-In FileData.java, you will implement and thoroughly test the following methods:
+In FileData.class, the following methods have already been implemented:
 
 - `public FileData(String name, String directory, String modifiedDate)`
 - `public String toString()`
 
 ##### `public FileData(String name, String directory, String modifiedDate)`
 
-A *Constructor* that creates an instance of `FileData` object by intializing its instance variables with the given parameters. You may assume that the parameters passed in to the constructor will be non-null.
+A *Constructor* that creates an instance of `FileData` object by intializing its instance variables with the given parameters. It is assumed that the parameters passed in to the constructor will be non-null.
 
 ##### `public String toString()`
 
-A method that returns the string representation of FileData by displaying the file information. It should strictly follow the format of `{Name: file_name, Directory: dir_name,  Modified Date: date}`.
+A method that returns the string representation of FileData by displaying the file information. It strictly follows the format of `{Name: file_name, Directory: dir_name,  Modified Date: date}`.
 
 
-### FileSystem (**Already Implemented**)
+### FileSystem (**TODO** - 16 points)
 ---
 
-In our file system, `FileSystem` class is used to represent the entire structure of the file system. We store file's information in the instance variables corresponding to each of the Hash Map/BST implementations (shown below) to ensure that the look up times are as efficient as possible. You **DO NOT** need to add any code for this sub-section, the logic has already been implemented in the `FileSystem.class` file, this sub-section explains how Hash Map and BST implementations of `DefaultMap` (that you created in part 1) are used to implement our unix based file system.
+`HashMapFileSystem` and `BSTFileSystem` classes are used to represent the entire structure of the Hash Map/BST implementations of our file system. You should store file's information in the instance variables provided corresponding to each of the Hash Map/BST implementations (shown below) to ensure that the look up times are as efficient as possible. You are **NOT ALLOWED** to add any additional instance variables or include any additional imports in `HashMapFileSystem.java` or `BSTFileSystem.java`.
 
 #### Instance Variables for Hash Map Implementation
+---
 
 ##### `nameMap`
 
@@ -180,6 +181,7 @@ A MyHashMap that uses file's date as the key and a list of FileData as the value
 
 
 #### Instance Variables for BST Implementation
+---
 
 ##### `nameTree`
 
@@ -201,39 +203,107 @@ A BST that uses the file date in a different format (format: yyyy/mm/dd) as the 
 
 A `DateComparator` that is used to compare the date on the files.
 
-#### Methods
-In `FileSystem.class`, the following methods have been implemented (you would need to refer to them for answering the third Gradescope Question; you can refer to their detailed descriptions, for both HashMap and BST implementations, in Appendix):
+#### Inner Class `DateComparator` (specific to BST Implementation only) 
 
-**Methods implemented for Hash Map implementation**
-- `public FileSystem()`
-- `public FileSystem(String fileInfo)`
-- `public boolean add(String fileName, String directory, String modifiedDate)`
-- `public FileData findFile(String name, String directory)`
-- `public ArrayList<String> findAllFilesName()`
-- `public ArrayList<FileData> findFilesByName(String name)`
-- `public ArrayList<FileData> findFilesByName(String modifiedDate)`
-- `public ArrayList<FileData> findFilesInMultDir(String modifiedDate)`
-- `public boolean removeByName(String name)`
-- `public boolean removeFile(String name, String directory)`
+At times, we may want to create custom ways to compare two objects. To support this, Java has a built-in interface called Comparator that expresses this idea of user-defined comparisons. An implementatation of Comparator provides a single method, called compare, that takes two elements of a particular type and returns a negative number if the first is “smaller” than the second, 0 if they are equal, and a positive number if the first is “larger” than the second.
 
-**Methods implemented for BST implementation**
-- `public FileSystem()`
-- `public FileSystem(String inputFile)`
-- `public void add(String name, String dir, String date)`
-- `public ArrayList<String> findFileNamesByDate(String date)`
-- `public FileSystem filter(String startDate, String endDate)`
-- `public FileSystem filter(String wildCard)`
-- `public List<String> outputNameTree()`
-- `public List<String> outputDateTree()`
+Comparators can be particularly useful when we may want to compare items by different criteria. For example, we may have a class defining a person:
+
+```
+class Person { String name; int age; }
+And sometimes we want to order People by name, and other times by age. We could define a Comparator for each of those cases:
+
+class AgeComparator implements Comparator<Person> {
+  public int compare(Person p1, Person p2) { return p1.age - p2.age; }
+}
+class NameComparator implements Comparator<Person> {
+  public int compare(Person p1, Person p2) { return p1.name.compareTo(p2.name); }
+}
+```
+
+For our purposes, we want to be able to easily compare the last modified date without worrying about the format. To do this, we will create a class called `DateComparator` inside of `BSTFileSystem.java` that will switch the given dates to the correct format and then compare them. 
+
+##### `compare` Method
+
+`public int compare(String date1, String date2)`  
+Given two strings that contain the last modifed date, if `date1` is more recent than `date2` return 1, if `date1` is less recent than `date2` return -1 and if `date1` is equal to `date2` return 0. For example, `01/01/2021` is less recent than `01/02/2021` - thus `compare("01/01/2021", "01/02/2021")` should return -1. Similarly, `12/01/2020` is less recent than `01/01/2021` and should return -1. You can assume that none of the inputs are null.
+
+Hint: You might want to change the format of the dates   
+
+Additionally, please note that `Comparator` and `Comparable` are **not** the same thing. If you are curious, here are the links to the Java docs: 
+
+Comparator: https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html 
+Comparable: https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html
 
 
-## Testing (3 points)
+---
+#### Methods to be completed for Hash Map implementation (**TODO** - 8 points)
 ---
 
-In the starter code, there are three files where you may add tests:
+In `HashMapFileSystem.java`, you will implement and thoroughly test the following methods:
+
+##### `public HashMapFileSystem()`
+
+Default constructor that creates a new `HashMapFileSystem` object and initializes its instance variables.
+
+##### `public HashMapFileSystem(String inputFile)`
+
+*Constructor* that creates a new `HashMapFileSystem` object with the given `inputFile` that contains the Hash Map based file system information. We have provided some skeleton code for reading the contents of the text file. You will need to initialize HashMapFileSystem's instance variables and populate HashMapFileSystem with each file's information. Each file information is represented by a line formatted as `filename, directory, date` within the content of `inputFile`. For example, it could be `mySample.txt, /home, 02/01/2021`. (Note that since it is a unix type file system, forward slashes are used to represent directory hierarchy). We have also provided a sample file, `input.txt`, to show how each file information is represented within the inputFile. Feel free to add more data to the file to test your HashMapFileSystem implementation thoroughly. You may assume that `inputFile` parameter is properly formatted and is non-null.
+
+##### `public boolean add(String fileName, String directory, String modifiedDate)`
+
+This method should create a FileData object with the given file information and add it to the instance variables of HashMapFileSystem. This method should return true if the file is successfully added to the HashMapFileSystem, and false if a file with the same name already exists in that directory. The default values for `filenName`, `dir`, and `modifiedDate` are `""`, `"/"`, `"01/01/2021"` in case any of these variables is null.
+
+##### `public FileData findFile(String name, String directory)`
+
+This method should return a single FileData object with the given name and directory. You should not modify the HashMapFileSystem itself. Return null if such a file does not exist.  
+
+
+---
+#### Methods to be completed for BST implementation (**TODO** - 8 points)
+---
+
+In `BSTFileSystem.java`, you will implement and thoroughly test the following methods:
+
+##### `public BSTFileSystem()`
+
+Default constructor that creates a new `BSTFileSystem` object and initializes its instance variables.
+
+##### `public BSTFileSystem(String inputFile)`
+
+*Constructor* that creates a new `BSTFileSystem` object with the given `inputFile` that contains the BST based file system information. We have provided some skeleton code for reading the contents of the text file. You will need to initailizes BSTFileSystem's instance variables and populate BSTFileSystem with each file's information. Each file information is represented by a line formatted as `filename, directory, date` within the content of `inputFile`. For example, it could be `mySample.txt, /home, 02/01/2021`. (Note that since it is a unix type file system, forward slashes are used to represent directory hierarchy). We have also provided a sample file, `input.txt`, to show how each file information is represented within the inputFile. Feel free to add more data to the file to test your BSTFileSystem implementation thoroughly. You may assume that `inputFile` parameter is properly formatted and is non-null.
+
+##### `public void add(String name, String dir, String date)`
+
+This method should create a FileData object with the given file information and add it to the instance variables of BSTFileSystem. If there is a duplicate file name, then the FileData with the most recent date should be used. For example, if the first FileData stored in the trees is `test.txt, /home, 01/01/2021` and the next FileData is `test.txt, /home, 01/02/2021`, the second FileData should *replace* the first FileData stored in the trees. If the `name`, `dir`, or `date` is `null`, then do not add anything to the BSTFileSystem.
+
+##### `public ArrayList<String> findFileNamesByDate(String date)`
+
+Given a `date` (format: mm/dd/yyyy), return an ArrayList of file names that correspond to this date. This list should have the file names in the order that they were added. If the `date` given is `null`, return `null`.
+
+##### `public BSTFileSystem filter(String startDate, String endDate)`
+
+Given a `startDate` and an `endDate` (format: mm/dd/yyyy), returns a new BSTFileSystem that contains only the files that are within the range (`startDate` is inclusive, `endDate` is exclusive). Assumes the given parameters are valid and non-null.  
+
+Example: Let's call `filter("01/20/2021", "02/02/2021")` on a `BSTFileSystem` with the following `dateTree`:   
+
+<img src="https://i.imgur.com/dlQBJfT.png" width="450">
+
+<!-- ![](https://i.imgur.com/dlQBJfT.png) -->
+
+It returns a **BSTFileSystem** with a `dateTree` that looks like the following (note: there should be a populated `nameTree` with the same entries):   
+
+<img src="https://i.imgur.com/jDzGOt0.png" width="450">
+
+<!-- ![](https://i.imgur.com/jDzGOt0.png) -->
+
+
+## Testing (2 points)
+---
+
+In the starter code, there are two files where you will add tests:
 - MyHashMapTest.java
 - BSTTest.java
-- FileDataTest.java
 
 Write at least **two** tests per file and submit these to Gradescope along with your implementations. This section will be graded based on completion. 
 
@@ -254,7 +324,8 @@ Respond to the following prompts in the Gradescope assignment: **PA5-written**:
 The following files will be graded on style:
 * MyHashMap.java
 * BST.java
-* FileData.java
+* HashMapFileSystem.java
+* BSTFileSystem.java
 
 On this PA, **all guidelines must be followed**, the guidelines are summarized below: 
 
@@ -270,7 +341,7 @@ On this PA, **all guidelines must be followed**, the guidelines are summarized b
 
 ## Submitting
 
-#### Part 1 & 2
+### Part 1 & 2
 
 On the Gradescope assignment: **PA5-code** please submit the following files:
 
@@ -278,154 +349,24 @@ On the Gradescope assignment: **PA5-code** please submit the following files:
 * MyHashMapTest.java
 * BST.java
 * BSTTest.java
-* FileData.java
-* FileDataTest.java
+* HashMapFileSystem.java
+* BSTFileSystem.java
 
 The easiest way to submit your files is to drag them individually into the submit box and upload that to Gradescope. You may submit as many times as you like till the deadline. 
 
-#### Part 3
+### Part 3
 
 Please submit your answers to the questions from part 3 on the Gradescope assignment: **PA5-written**. You may submit as many times as you like till the deadline.
 
 
-## Scoring (60 points total)
+## Scoring (67 points total)
 
 - 18 points: HashMap implementation of `DefaultMap` [automatically graded]
 - 18 points: BST implementation of `DefaultMap` [automatically graded]
-- 8 points: implementation of `FileData` [automatically graded]
-- 3 point: MyHashMapTest, BSTTest, and FileDataTest graded on completion [manually graded]
+- 8 points: Implementation of `HashMapFileSystem` [automatically graded]
+- 8 points: Implementation of `BSTFileSystem` [automatically graded]
+- 2 points: MyHashMapTest and BSTTest graded on completion [manually graded]
 - 9 points: Gradescope Questions [manually graded]
 - 4 points: Style [manually graded]
 
-There is no bad implementation testing on this PA. However, we highly recommend you use the practices you know from testing to thoroughly check that `MyHashMap` and the `BST` you wrote work as expected.
-
-
-## Appendix
-
-### Methods implemented for Hash Map implementation
-
-#### `public FileSystem()`
-
-Default constructor that creates a new `FileSystem` object and initializes its instance variable.
-
-#### `public FileSystem(String inputFile)`
-
-*Constructor* that creates a new `FileSystem` object with the given `inputFile` that contains the file system information. The method initializes FileSystem's instance variables and populates FileSystem with each file's information. Each file information is represented by a line formatted as `filename, directory, date` within the content of `inputFile`. For example, it could be `mySample.txt, /home, 02/01/2021`. (Note that since it is a unix type file system, forward slashes are used to represent directory hierarchy). We have provided a sample file, `input.txt`, to show how each file information is represented within the inputFile. 
-
-#### `public boolean add(String fileName, String directory, String modifiedDate)`
-
-This method creates a FileData object with the given file information and adds it to the instance variables of FileSystem. This method returns true if the file is successfully added to the FileSystem, and false if a file with the same name already exists in that directory. The default values for `filenName`, `dir`, and `modifiedDate` are `""`, `"/"`, `"01/01/2021"` in case any of these variables is null.
-
-#### `public FileData findFile(String name, String directory)`
-This method returns a single FileData object with the given name and directory. It returns null if such a file does not exist. 
-
-#### `public ArrayList<String> findAllFilesName()`
-
-This method returns an array list of string that represents all unique file names across all directories within the fileSystem. It returns an empty array list if there is no file in the file system yet.
-
-#### `public ArrayList<FileData> findFilesByName(String name)`
-
-The find method returns a list of FileData with the given name. It returns an empty list if such a file does not exist. 
-
-#### `public ArrayList<FileData> findFilesByDate(String modifiedDate)`
-
-This find method returns a list of FileData with the given modifiedDate. It returns an empty list if such a file does not exist. 
-
-#### `public ArrayList<FileData> findFilesInMultDir(String modifiedDate)`
-
-This find method returns a list of FileData with the given modifiedDate that has at least another file with the same file name in a different directory. It returns an empty list if such a file does not exist. 
-
-#### `public boolean removeByName(String name)`
-
-This method removes all the files with the given name in the FileSystem. It returns true if success, false otherwise. It removes the entry in the hashmap if necessary.
-
-#### `public boolean removeFile(String name, String directory)`
-
-This method removes a certain file with the given name and directory. It returns true if success, false otherwise. It removes the entry in the hashmap if necessary.
-
-
-### Methods implemented for BST implementation
-
-#### `public FileSystem()`
-
-Default constructor that creates a new `FileSystem` object and initializes its instance variable.
-
-#### `public FileSystem(String inputFile)`
-
-*Constructor* that creates a new `FileSystem` object with the given `inputFile` that contains the file system information. It initializes FileSystem's instance variables and populates FileSystem with each file's information. Each file information is represented by a line formatted as `filename, directory, date` within the content of `inputFile`. For example, it could be `mySample.txt, /home, 02/01/2021`. (Note that since it is a unix type file system, forward slashes are used to represent directory hierarchy). We have provided a sample file, `input.txt`, to show how each file information is represented within the inputFile.
-
-#### `public void add(String name, String dir, String date)`
-
-This method creates a FileData object with the given file information and adds it to the instance variables of FileSystem. If there is a duplicate file name, then the FileData with the most recent date is used. For example, if the first FileData stored in the trees is `test.txt, /home, 01/01/2021` and the next FileData is `test.txt, /home, 01/02/2021`, the second FileData *replaces* the first FileData stored in the trees. If the `name`, `dir`, or `date` is `null`, then nothing is added to the FileSystem.
-
-#### `public ArrayList<String> findFileNamesByDate(String date)`
-
-Given a `date` (format: mm/dd/yyyy), returns an ArrayList of file names that correspond to this date. This list has the file names in the order that they were added. If the `date` given is `null`, returns `null`.
-
-#### `public FileSystem filter(String startDate, String endDate)`
-
-Given a `startDate` and an `endDate` (format: mm/dd/yyyy), returns a new FileSystem that contains only the files that are within the range (`startDate` is inclusive, `endDate` is exclusive). Assumes the given parameters are valid and non-null.  
-
-Example: Let's call `filter("01/20/2021", "02/02/2021")` on a `FileSystem` with the following `dateTree`:   
-
-<img src="https://i.imgur.com/dlQBJfT.png" width="450">
-
-<!-- ![](https://i.imgur.com/dlQBJfT.png) -->
-
-It returns a **FileSystem** with a `dateTree` that looks like the following (note: there should be a populated `nameTree` with the same entries):   
-
-<img src="https://i.imgur.com/jDzGOt0.png" width="450">
-
-<!-- ![](https://i.imgur.com/jDzGOt0.png) -->
-
-#### `public FileSystem filter(String wildCard)`
-
-Given a string `wildCard`, returns a new FileSystem that contains only the files with names that contain the `wildCard` string. Note that this wildcard can be found anywhere in the file name (if the wild card is `test`, then `test.txt`, `thistest.txt` and `thistest` would all be files that are selected in the filter). Assumes the given parameter is valid and non-null. 
-
-Example: Let's call `filter("mySam")` on a `FileSystem` with the following `nameTree`:  
-
-<img src="https://i.imgur.com/YBsdlMK.png" width="450">
-
-<!-- ![](https://i.imgur.com/YBsdlMK.png)   -->
-Returns a **FileSystem** with a `nameTree` that looks like the following (note: there should be a populated `dateTree` as well - it is not shown here):   
-
-<img src="https://i.imgur.com/MuJ6PM0.png" width="450">
-
-<!-- ![](https://i.imgur.com/MuJ6PM0.png) -->
-
-#### `public List<String> outputNameTree()`
-
-Returns a List<String> that contains the `nameTree` where each entry is formatted as: "<file name>: <FileData toString()>". This list is in alphabetical order.   
-
-Input file: 
-```
-mySample.txt, /home, 02/01/2021
-mySample1.txt, /root, 02/01/2021
-mySample2.txt, /user, 02/06/2021
-```
-
-Example Output: 
-```
-["mySample.txt: {Name: mySample.txt, Directory: /home, Modified Date: 02/01/2021}", 
-"mySample1.txt: {Name: mySample1.txt, Directory: /root, Modified Date: 02/01/2021}", 
-"mySample2.txt: {Name: mySample2.txt, Directory: /user, Modified Date: 02/06/2021}"]
-
-```
-
-#### `public List<String> outputDateTree()`
-
-Returns a List<String> that contains the `dateTree` where each entry is formatted as: "<date>: <FileData toString()>". The List is in order from most recent to oldest. If there are multiple files associated with the same date, they are added to the List in reverse order in comparison to how they were added into the ArrayList (see example below).
-
-Input file: 
-```
-mySample.txt, /home, 02/01/2021
-mySample1.txt, /root, 02/01/2021
-mySample2.txt, /user, 02/06/2021
-```
-
-Example Output:
-```
-["02/06/2021: {Name: mySample2.txt, Directory: /user, Modified Date: 02/06/2021}", 
-"02/01/2021: {Name: mySample1.txt, Directory: /root, Modified Date: 02/01/2021}", 
-"02/01/2021: {Name: mySample.txt, Directory: /home, Modified Date: 02/01/2021}"]
-```
+There is no bad implementation testing on this PA. However, we highly recommend you use the practices you know from testing to thoroughly check that `MyHashMap.java`, `BST.java`, `HashMapFileSystem.java`, and `BSTFileSystem.java` you wrote work as expected.
