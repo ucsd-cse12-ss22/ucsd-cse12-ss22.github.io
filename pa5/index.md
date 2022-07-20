@@ -1,5 +1,10 @@
 ---
-# PA5: FileSystem(open)
+layout: pa
+title: "PA5: FileSystem"
+doodle: "../doodle.png"
+---
+---
+# PA5: FileSystem
 ---
 
 This assignment will teach you how to use Hash Maps and Binary Search Trees (BSTs) and apply them to implement two basic file searching systems.
