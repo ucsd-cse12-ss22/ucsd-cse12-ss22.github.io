@@ -30,10 +30,10 @@ The starter code is in the Github repository that you are currently looking at. 
 If you are unsure or have questions about how to get the starter code, feel free to make a Piazza post or ask a tutor for help.
 
 
-# Part 1: HashMap File System Implementation (16 points)
+# Part 1: File System Implementation (16 points)
 You are asked to implement a basic unix file system structure to support files look up methods. It is shown in the log history that users tend to search files either by their names, their directories, or their modified dates. You think that a hash map will be a perfect data structure for this task to perform these searches in an efficient way. Your task is to design a simplified file system structure with a hash map that can support users defined filtering methods while making sure that those filtering methods are performed in an efficient way.
 
-You should only modify `HashMapFileSystem.java` for implementation of the file system. 
+You should only modify `FileSystem.java` for implementation of the file system. 
 
 *Note*: It's likely that you need to store multiple files with the same name in your computer, therefore our file system support duplicate files with the same name or date in different directories. However, the name should always be unique in each directory.
 
@@ -48,9 +48,9 @@ The directory of where the file is stored in, represented in a string format.
 The date of when the file is last modified, represented in a string format.
 
 
-## HashMapFileSystem
+## FileSystem
 
-In our file system, HashMapFileSystem class will be used to represent the entire structure of the file system. You should store file's information in the instance variable provided to ensure that the look up times are as efficient as possible.  You are **NOT ALLOWED** to add any additional instance variables or to include any additional imports in `HashMapFileSystem.java`.
+In our file system, FileSystem class will be used to represent the entire structure of the file system. You should store file's information in the instance variable provided to ensure that the look up times are as efficient as possible.  You are **NOT ALLOWED** to add any additional instance variables or to include any additional imports in `FileSystem.java`.
 
 ### Instance Variables
 #### `nameMap`
@@ -65,10 +65,10 @@ A HashMap that uses file's date as the key and a list of FileData as the value.
 
 
 ### Methods
-In `HashMapFileSystem.java`, you will implement and thoroughly test the following methods:
+In `FileSystem.java`, you will implement and thoroughly test the following methods:
 
-- `public HashMapFileSystem()`
-- `public HashMapFileSystem(String fileInfo)`
+- `public FileSystem()`
+- `public FileSystem(String fileInfo)`
 - `public boolean add(String fileName, String directory, String modifiedDate)`
 - `public FileData findFile(String name, String directory)`
 - `public ArrayList<String> findAllFilesName()`
@@ -78,38 +78,38 @@ In `HashMapFileSystem.java`, you will implement and thoroughly test the followin
 - `public boolean removeByName(String name)`
 - `public boolean removeFile(String name, String directory)`
 
-#### `public HashMapFileSystem()`
-Default constructor that creates a new `HashMapFileSystem` object and initializes its instance variable.
+#### `public FileSystem()`
+Default constructor that creates a new `FileSystem` object and initializes its instance variable.
 
-#### `public HashMapFileSystem(String inputFile)`
+#### `public FileSystem(String inputFile)`
 
-*Constructor* that creates a new `HashMapFileSystem` object with the given `inputFile` that contains the file system information. We have provided some skeleton code for reading the contents of the text file. You will need to initailizes HashMapFileSystem's instance variables and populate HashMapFileSystem with each file's information. Each file information is represented by a line formatted as `filename, directory, date` within the content of `inputFile`. For example, it could be `mySample.txt, /home, 02/01/2021`. (Note that since it is a unix type file system, forward slashes are used to represent directory hierarchy). We have also provided a sample file, `input.txt`, to show how each file information is represented within the inputFile. Feel free to add more data to the file to test your HashMapFileSystem implementation thoroughly. You may assume that `inputFile` parameter is properly formatted and is non-null.
+*Constructor* that creates a new `FileSystem` object with the given `inputFile` that contains the file system information. We have provided some skeleton code for reading the contents of the text file. You will need to initailizes FileSystem's instance variables and populate FileSystem with each file's information. Each file information is represented by a line formatted as `filename, directory, date` within the content of `inputFile`. For example, it could be `mySample.txt, /home, 02/01/2021`. (Note that since it is a unix type file system, forward slashes are used to represent directory hierarchy). We have also provided a sample file, `input.txt`, to show how each file information is represented within the inputFile. Feel free to add more data to the file to test your FileSystem implementation thoroughly. You may assume that `inputFile` parameter is properly formatted and is non-null.
 
 
 #### `public boolean add(String fileName, String directory, String modifiedDate)`
 
-This method should create a FileData object with the given file information and add it to the instance variables of HashMapFileSystem. This method should return true if the file is successfully added to the HashMapFileSystem, and false if a file with the same name already exists in that directory. The default values for `filenName`, `dir`, and `modifiedDate` are `""`, `"/"`, `"01/01/2021"` in case any of these variables is null.
+This method should create a FileData object with the given file information and add it to the instance variables of FileSystem. This method should return true if the file is successfully added to the FileSystem, and false if a file with the same name already exists in that directory. The default values for `filenName`, `dir`, and `modifiedDate` are `""`, `"/"`, `"01/01/2021"` in case any of these variables is null.
 
 
 #### `public FileData findFile(String name, String directory)`
-This method should return a single FileData object with the given name and directory. You should not modify the HashMapFileSystem itself. Return null if such a file does not exist. 
+This method should return a single FileData object with the given name and directory. You should not modify the FileSystem itself. Return null if such a file does not exist. 
 
 #### `public ArrayList<String> findAllFilesName()`
 
-This method should return an array list of string that represents all unique file names across all directories within the HashMapFileSystem. You should not modify the HashMapFileSystem itself. Return an empty array list if there is no file in the file system yet.
+This method should return an array list of string that represents all unique file names across all directories within the FileSystem. You should not modify the FileSystem itself. Return an empty array list if there is no file in the file system yet.
 
 #### `public ArrayList<FileData> findFilesByName(String name)`
 
-The find method should return a list of FileData with the given name. You should not modify the HashMapFileSystem itself. Return an empty list if such a file does not exist. 
+The find method should return a list of FileData with the given name. You should not modify the FileSystem itself. Return an empty list if such a file does not exist. 
 
 #### `public ArrayList<FileData> findFilesByDate(String modifiedDate)`
-This find method should return a list of FileData with the given modifiedDate. You should not modify the HashMapFileSystem itself. Return an empty list if such a file does not exist. 
+This find method should return a list of FileData with the given modifiedDate. You should not modify the FileSystem itself. Return an empty list if such a file does not exist. 
 
 #### `public ArrayList<FileData> findFilesInMultDir(String modifiedDate)`
-This find method should return a list of FileData with the given modifiedDate that has at least another file with the same file name in a different directory. You should not modify the HashMapFileSystem itself. Return an empty list if such a file does not exist. 
+This find method should return a list of FileData with the given modifiedDate that has at least another file with the same file name in a different directory. You should not modify the FileSystem itself. Return an empty list if such a file does not exist. 
 
 #### `public boolean removeByName(String name)`
-This method should remove all the files with the given name in the HashMapFileSystem. Return true if success, false otherwise. Remove the entry in the hashmap if necessary.
+This method should remove all the files with the given name in the FileSystem. Return true if success, false otherwise. Remove the entry in the hashmap if necessary.
 
 #### `public boolean removeFile(String name, String directory)`
 
@@ -156,7 +156,7 @@ Respond to the following prompts in *pa5-written*:
 
 ## Testing (3 points)
 In the starter code, there are three files where you may add tests:
-- HashMapFileSystemTest.java
+- FileSystem.java
 - BSTTest.java
 
 For this PA, your unit tests will be graded for completion only, however, we **strongly** encourage you to thoroughly test every public method in your class (helper methods you create should inherently be *private*). You are required to have at least **two unique unit tests for each method** written by yourself. 
@@ -165,7 +165,7 @@ The easiest way to submit your files is to drag them individually into the submi
 
 ### Style (4 points)
 The following files will be graded on style:
-* HashMapFileSystem.java
+* FileSystem.java
 * BST.java
 * BSTTest.java
 
@@ -189,8 +189,8 @@ On this PA, **all guidelines must be followed**, they are summarized below:
 ### Part 1, 2 
 On the Gradescope assignment **PA5-code** please submit the following files:
 
-* HashMapFileSystem.java
-* HashMapFileSystemTest.java
+* FileSystem.java
+* FileSystem.java
 * BST.java
 * BSTTest.java
 
@@ -199,8 +199,8 @@ On the Gradescope assignment **PA5-written** please submit the following files
 
 # Scoring (52 points total)
 
-- 16 points: implemetnation of `HashMapFileSystem` [automatically graded]
-- 3 point: HashMapFileSystemTest graded on completition [manually graded]
+- 16 points: implemetnation of `FileSystem` [automatically graded]
+- 3 point: FileSystem graded on completition [manually graded]
 - 18 points: implementation of `DefaultMap` as `BST.java`[automatically graded]
 - 2 point: BSTTest graded on completition [manually graded]
 - 9 points: Gradescope Questions [manually graded]
