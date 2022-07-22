@@ -154,7 +154,7 @@ Respond to the following prompts in *pa5-written*:
 2. Justify the runtime bounds (worst case) for the methods you wrote in `BST`.
 
 
-## Testing (3 points)
+# Testing (3 points)
 In the starter code, there are three files where you may add tests:
 - FileSystem.java
 - BSTTest.java
@@ -163,7 +163,7 @@ For this PA, your unit tests will be graded for completion only, however, we **s
 
 The easiest way to submit your files is to drag them individually into the submit box and upload that to Gradescope. You may submit as many times as you like till the deadline. 
 
-### Style (4 points)
+# Style (4 points)
 The following files will be graded on style:
 * FileSystem.java
 * BST.java
@@ -186,7 +186,7 @@ On this PA, **all guidelines must be followed**, they are summarized below:
 
 # Submitting
 
-### Part 1, 2 
+## Part 1, 2 
 On the Gradescope assignment **PA5-code** please submit the following files:
 
 * FileSystem.java
@@ -194,7 +194,7 @@ On the Gradescope assignment **PA5-code** please submit the following files:
 * BST.java
 * BSTTest.java
 
-### Part 3
+## Part 3
 On the Gradescope assignment **PA5-written** please submit the following files
 
 # Scoring (52 points total)
