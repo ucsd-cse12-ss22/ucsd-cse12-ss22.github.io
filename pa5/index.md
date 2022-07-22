@@ -55,12 +55,12 @@ In our file system, FileSystem class will be used to represent the entire struct
 ### Instance Variables
 #### `nameMap`
 A HashMap that uses file name as the key and a list of FileData as the value.
-![](https://i.imgur.com/S2bucAA.png)
+<img src=https://i.imgur.com/S2bucAA.png height="600px"/>
 **Illustration to show that "test.txt" is an entry within nameMap that uses filename (String) as a key that maps to an arraylist of all fileData with the same filename but in a different directory.*
 
 #### `dateMap`
 A HashMap that uses file's date as the key and a list of FileData as the value.
-![](https://i.imgur.com/DSqDRBz.png)
+<img src=https://i.imgur.com/DSqDRBz.png height="600px"/>
 **Illustration to show that "02/01/2021" is an entry within nameMap that uses file's lastModifiedDate (String) as a key that maps to an arraylist of all fileData with the same lastModifiedDate.*
 
 
