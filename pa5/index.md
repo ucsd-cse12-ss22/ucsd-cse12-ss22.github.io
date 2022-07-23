@@ -103,13 +103,13 @@ On this PA, **all guidelines must be followed**, they are summarized below:
 
 # Submitting
 
-## Part 1, 2 
+## Part 1
 On the Gradescope assignment **PA5-code** please submit the following files:
 
 * BST.java
 * BSTTest.java
 
-## Part 3
+## Part 2
 On the Gradescope assignment **PA5-written** please submit a pdf with your answers to the questions
 
 # Scoring (38 points total)
