@@ -110,7 +110,7 @@ On the Gradescope assignment **PA5-code** please submit the following files:
 * BSTTest.java
 
 ## Part 2
-On the Gradescope assignment **PA5-written** please submit a pdf with your answers to the questions
+On the Gradescope assignment **PA5-written** please submit your answers to the questions. This is the same format as pa4.
 
 # Scoring (38 points total)
 
