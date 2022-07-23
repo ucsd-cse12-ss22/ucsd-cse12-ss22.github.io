@@ -1,13 +1,13 @@
 ---
 layout: pa
-title: "PA5: HashMap FileSystem and BST Implementation"
+title: "PA5: BST Implementation"
 doodle: "../doodle.png"
 ---
 ---
-# PA5: HashMap FileSystem and BST Implementation
+# PA5: BST Implementation
 ---
 
-This assignment will teach you how to use a Hash Map to implement a basic file searching system and how to implement a Binary Search Tree (BST).
+This assignment will teach you how to implement a Binary Search Tree (BST).
 
 This PA is due on ** **Thursday, January 28th at 11:00pm** **  
 
@@ -31,96 +31,7 @@ The starter code is in the Github repository that you are currently looking at. 
     
 If you are unsure or have questions about how to get the starter code, feel free to make a Piazza post or ask a tutor for help.
 
-
-# Part 1: File System Implementation (16 points)
-You are asked to implement a basic unix file system structure to support files look up methods. It is shown in the log history that users tend to search files either by their names, their directories, or their modified dates. You think that a hash map will be a perfect data structure for this task to perform these searches in an efficient way. Your task is to design a simplified file system structure with a hash map that can support users defined filtering methods while making sure that those filtering methods are performed in an efficient way.
-
-You should only modify `FileSystem.java` for implementation of the file system. 
-
-*Note*: It's likely that you need to store multiple files with the same name in your computer, therefore our file system support duplicate files with the same name or date in different directories. However, the name should always be unique in each directory.
-
-## FileData
-In our file system, a file is represented as a `FileData` object which contains the information of its name, directory, and last modified date (MM/DD/YYYY). 
-### Instance Variables
-#### `name`
-The name of the given file in string format.
-#### `dir`
-The directory of where the file is stored in, represented in a string format.
-#### `lastModifiedDate`
-The date of when the file is last modified, represented in a string format.
-
-
-## FileSystem
-
-In our file system, FileSystem class will be used to represent the entire structure of the file system. You should store file's information in the instance variable provided to ensure that the look up times are as efficient as possible.  You are **NOT ALLOWED** to add any additional instance variables or to include any additional imports in `FileSystem.java`.
-
-### Instance Variables
-#### `nameMap`
-A HashMap that uses file name as the key and a list of FileData as the value.
-<img src="https://i.imgur.com/S2bucAA.png" height="600px"/>
-**Illustration to show that "test.txt" is an entry within nameMap that uses filename (String) as a key that maps to an arraylist of all fileData with the same filename but in a different directory.*
-
-#### `dateMap`
-A HashMap that uses file's date as the key and a list of FileData as the value.
-<img src="https://i.imgur.com/DSqDRBz.png" height="600px"/>
-**Illustration to show that "02/01/2021" is an entry within nameMap that uses file's lastModifiedDate (String) as a key that maps to an arraylist of all fileData with the same lastModifiedDate.*
-
-
-### Methods
-In `FileSystem.java`, you will implement and thoroughly test the following methods:
-
-- `public FileSystem()`
-- `public FileSystem(String fileInfo)`
-- `public boolean add(String fileName, String directory, String modifiedDate)`
-- `public FileData findFile(String name, String directory)`
-- `public ArrayList<String> findAllFileNames()`
-- `public ArrayList<FileData> findFilesByName(String name)`
-- `public ArrayList<FileData> findFilesByName(String modifiedDate)`
-- `public ArrayList<FileData> findFilesInMultDir(String modifiedDate)`
-- `public boolean removeByName(String name)`
-- `public boolean removeFile(String name, String directory)`
-
-#### `public FileSystem()`
-Default constructor that creates a new `FileSystem` object and initializes its instance variables.
-
-#### `public FileSystem(String inputFile)`
-
-*Constructor* that creates a new `FileSystem` object with the given `inputFile` that contains the file system information. We have provided some skeleton code for reading the contents of the text file. You will need to initailizes FileSystem's instance variables and populate FileSystem with each file's information. Each file information is represented by a line formatted as `filename, directory, date` within the content of `inputFile`. For example, it could be `mySample.txt, /home, 02/01/2021`. (Note that since it is a unix type file system, forward slashes are used to represent directory hierarchy). We have also provided a sample file, `input.txt`, to show how each file information is represented within the inputFile. Feel free to add more data to the file to test your FileSystem implementation thoroughly. You may assume that `inputFile` parameter is properly formatted and is non-null.
-
-
-#### `public boolean add(String name, String directory, String modifiedDate)`
-
-This method should create a FileData object with the given file information and add it to the instance variables of FileSystem. This method should return true if the file is successfully added to the FileSystem, and false if a file with the same name already exists in that directory. The default values for `name`, `dir`, and `modifiedDate` are `""`, `"/"`, `"01/01/2021"` in case any of these variables is null.
-
-
-#### `public FileData findFile(String name, String directory)`
-This method should return a single FileData object with the given name and directory. You should not modify the FileSystem itself. Return null if such a file does not exist. 
-
-#### `public ArrayList<String> findAllFileNames()`
-
-This method should return an array list of strings that represents all unique file names across all directories within the FileSystem. You should not modify the FileSystem itself. Return an empty array list if there is no file in the file system yet.
-
-#### `public ArrayList<FileData> findFilesByName(String name)`
-
-The find method should return a list of FileData with the given name. You should not modify the FileSystem itself. Return an empty list if such a file does not exist. 
-
-#### `public ArrayList<FileData> findFilesByDate(String modifiedDate)`
-This find method should return a list of FileData with the given modifiedDate. You should not modify the FileSystem itself. Return an empty list if such a file does not exist. 
-
-#### `public ArrayList<FileData> findFilesInMultDir(String modifiedDate)`
-This find method should return a list of FileData with the given modifiedDate that has at least another file with the same file name in a different directory. You should not modify the FileSystem itself. Return an empty list if such a file does not exist. 
-
-#### `public boolean removeByName(String name)`
-This method should remove all the files with the given name in the FileSystem. Return true if success, false otherwise. Remove the entry in the hashmap if necessary.
-
-#### `public boolean removeFile(String name, String directory)`
-
-This method should remove a certain file with the given name and directory. Return true if success, false otherwise. Remove the entry in the hashmap if necessary.
-
-
-
-
-# Part 2: An Implementation of `DefaultMap` as a BST (18 points)
+# Part 1: An Implementation of `DefaultMap` as a BST (18 points)
 
 You’ll provide a fast implementation of an interface called `DefaultMap` in `BST.java`.  `BST.java` implements the `DefaultMap` interface.
 
@@ -148,17 +59,21 @@ The specifications for the other methods are defined in header comments in the `
 Your implementation of `DefaultMap` will be graded automatically by tests that we provide.
 
 
-# Part 3: Gradescope Assignment (9 points)
+# Part 2: Gradescope Assignment (12 points)
 
 Respond to the following prompts in *pa5-written*:
 
 1. Describe what the best case would be for a non-empty BST, specifically, what does the tree look like? How is this the best case? What methods benefit from the best case scenario? 
 2. Justify the runtime bounds (worst case) for the methods you wrote in `BST`.
+3. Now that we have implemented a BST you may be wondering how they are used in the real world. Spend some time reading about BSTs and write 3-5 sentences on a real world use of BSTs.
+4. Finally, as we are coming to the end of the course we would like to know what your favorite data structure (that you have learned about in CSE 12 and that isn't a BST) is. Write up 3-5 sentences explaining why it is your favorite and giving an example of a real world use for it.
+
+For both 3 and 4 please list any sources you used to come up with your real world examples.
 
 
 # Testing (4 points)
-In the starter code, there are two files where you may add tests:
-- FileSystemTest.java
+In the starter code, there is the following file where you may add tests:
+
 - BSTTest.java
 
 For this PA, your unit tests will be graded for completion only, however, we **strongly** encourage you to thoroughly test every public method in your class (helper methods you create should inherently be *private*). You are required to have at least **two unique unit tests for each method** written by yourself. 
@@ -167,8 +82,7 @@ The easiest way to submit your files is to drag them individually into the submi
 
 # Style (4 points)
 The following files will be graded on style:
-* FileSystem.java
-* FileSystemTest.java
+
 * BST.java
 * BSTTest.java
 
@@ -192,20 +106,17 @@ On this PA, **all guidelines must be followed**, they are summarized below:
 ## Part 1, 2 
 On the Gradescope assignment **PA5-code** please submit the following files:
 
-* FileSystem.java
-* FileSystemTest.java
 * BST.java
 * BSTTest.java
 
 ## Part 3
 On the Gradescope assignment **PA5-written** please submit the following files
 
-# Scoring (51 points total)
+# Scoring (38 points total)
 
-- 16 points: implementation of `FileSystem` [automatically graded]
 - 18 points: implementation of `DefaultMap` as `BST.java`[automatically graded]
-- 4 point: BSTTest and FileSystemTest graded on completition [manually graded]
-- 9 points: Gradescope Questions [manually graded]
+- 4 points: BSTTest graded on completition [manually graded]
+- 12 points: Gradescope Questions [manually graded]
 - 4 points: Style [manually graded]
 
 There is no bad implementation testing on this PA. However, we highly recommend you use the practices you know from testing to thoroughly check that everything you wrote works as expected.
