@@ -156,8 +156,8 @@ Respond to the following prompts in *pa5-written*:
 2. Justify the runtime bounds (worst case) for the methods you wrote in `BST`.
 
 
-# Testing (3 points)
-In the starter code, there are three files where you may add tests:
+# Testing (4 points)
+In the starter code, there are two files where you may add tests:
 - FileSystemTest.java
 - BSTTest.java
 
@@ -200,12 +200,11 @@ On the Gradescope assignment **PA5-code** please submit the following files:
 ## Part 3
 On the Gradescope assignment **PA5-written** please submit the following files
 
-# Scoring (52 points total)
+# Scoring (51 points total)
 
 - 16 points: implementation of `FileSystem` [automatically graded]
-- 3 point: FileSystemTest graded on completition [manually graded]
 - 18 points: implementation of `DefaultMap` as `BST.java`[automatically graded]
-- 2 point: BSTTest graded on completition [manually graded]
+- 4 point: BSTTest and FileSystemTest graded on completition [manually graded]
 - 9 points: Gradescope Questions [manually graded]
 - 4 points: Style [manually graded]
 
