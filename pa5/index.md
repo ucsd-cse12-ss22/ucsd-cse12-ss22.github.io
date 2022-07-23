@@ -145,7 +145,7 @@ The specifications for the other methods are defined in header comments in the `
 
 ***Note:*** You are not allowed to use the java `SortedMap` interface or `Collections.sort`, or any other implementations of BSTs or sorting!!!
 
-Your implementation of `DefaultMap` will be graded automatically by tests that we provide. We’ll provide a very minimal sanity check in the grader. DO NOT rely on it for testing!
+Your implementation of `DefaultMap` will be graded automatically by tests that we provide.
 
 
 # Part 3: Gradescope Assignment (9 points)
@@ -158,7 +158,7 @@ Respond to the following prompts in *pa5-written*:
 
 # Testing (3 points)
 In the starter code, there are three files where you may add tests:
-- FileSystem.java
+- FileSystemTest.java
 - BSTTest.java
 
 For this PA, your unit tests will be graded for completion only, however, we **strongly** encourage you to thoroughly test every public method in your class (helper methods you create should inherently be *private*). You are required to have at least **two unique unit tests for each method** written by yourself. 
@@ -168,6 +168,7 @@ The easiest way to submit your files is to drag them individually into the submi
 # Style (4 points)
 The following files will be graded on style:
 * FileSystem.java
+* FileSystemTest.java
 * BST.java
 * BSTTest.java
 
@@ -192,7 +193,7 @@ On this PA, **all guidelines must be followed**, they are summarized below:
 On the Gradescope assignment **PA5-code** please submit the following files:
 
 * FileSystem.java
-* FileSystem.java
+* FileSystemTest.java
 * BST.java
 * BSTTest.java
 
@@ -201,8 +202,8 @@ On the Gradescope assignment **PA5-written** please submit the following files
 
 # Scoring (52 points total)
 
-- 16 points: implemetnation of `FileSystem` [automatically graded]
-- 3 point: FileSystem graded on completition [manually graded]
+- 16 points: implementation of `FileSystem` [automatically graded]
+- 3 point: FileSystemTest graded on completition [manually graded]
 - 18 points: implementation of `DefaultMap` as `BST.java`[automatically graded]
 - 2 point: BSTTest graded on completition [manually graded]
 - 9 points: Gradescope Questions [manually graded]
