@@ -1,15 +1,17 @@
 ---
 layout: pa
-title: "PA5: FileSystem"
+title: "PA5: HashMap FileSystem and BST Implementation"
 doodle: "../doodle.png"
 ---
 ---
-# PA5: FileSystem
+# PA5: HashMap FileSystem and BST Implementation
 ---
 
 This assignment will teach you how to use a Hash Map to implement a basic file searching system and how to implement a Binary Search Tree (BST).
 
 This PA is due on ** **Thursday, January 28th at 11:00pm** **  
+
+We would also like to remind you that you will **NOT** be able to resubmit for this assignment as our course ends on Friday, though because of this we will not have any hidden tests.
 
 
 ## CSE Mantra: *Start early, start often!*
@@ -17,7 +19,7 @@ This PA is due on ** **Thursday, January 28th at 11:00pm** **
 *You will notice throughout the quarter that the PAs get harder and harder. By starting the quarter off with good habits, you can prepare yourself for future PAs that might take more time than the earlier ones.*
 
 ## Getting the Code
-The starter code is in the Github repository that you are currently looking at. If you are not familiar with Github, here are two easy ways to get your code.
+The starter code is in the Github repository that you are currently looking at. If you are not familiar with Github, here are two easy ways to get your code. (starter code: [https://github.com/ucsd-cse12-ss22/PA5_starter_code](https://github.com/ucsd-cse12-ss22/PA5_starter_code))
 
 1. Download as a ZIP folder 
 
@@ -38,7 +40,7 @@ You should only modify `FileSystem.java` for implementation of the file system.
 *Note*: It's likely that you need to store multiple files with the same name in your computer, therefore our file system support duplicate files with the same name or date in different directories. However, the name should always be unique in each directory.
 
 ## FileData
-In our file system, a file is represented as a `FileData` object which contains the information of its name, directory, and last modified date. 
+In our file system, a file is represented as a `FileData` object which contains the information of its name, directory, and last modified date (MM/DD/YYYY). 
 ### Instance Variables
 #### `name`
 The name of the given file in string format.
@@ -71,7 +73,7 @@ In `FileSystem.java`, you will implement and thoroughly test the following metho
 - `public FileSystem(String fileInfo)`
 - `public boolean add(String fileName, String directory, String modifiedDate)`
 - `public FileData findFile(String name, String directory)`
-- `public ArrayList<String> findAllFilesName()`
+- `public ArrayList<String> findAllFileNames()`
 - `public ArrayList<FileData> findFilesByName(String name)`
 - `public ArrayList<FileData> findFilesByName(String modifiedDate)`
 - `public ArrayList<FileData> findFilesInMultDir(String modifiedDate)`
@@ -79,24 +81,24 @@ In `FileSystem.java`, you will implement and thoroughly test the following metho
 - `public boolean removeFile(String name, String directory)`
 
 #### `public FileSystem()`
-Default constructor that creates a new `FileSystem` object and initializes its instance variable.
+Default constructor that creates a new `FileSystem` object and initializes its instance variables.
 
 #### `public FileSystem(String inputFile)`
 
 *Constructor* that creates a new `FileSystem` object with the given `inputFile` that contains the file system information. We have provided some skeleton code for reading the contents of the text file. You will need to initailizes FileSystem's instance variables and populate FileSystem with each file's information. Each file information is represented by a line formatted as `filename, directory, date` within the content of `inputFile`. For example, it could be `mySample.txt, /home, 02/01/2021`. (Note that since it is a unix type file system, forward slashes are used to represent directory hierarchy). We have also provided a sample file, `input.txt`, to show how each file information is represented within the inputFile. Feel free to add more data to the file to test your FileSystem implementation thoroughly. You may assume that `inputFile` parameter is properly formatted and is non-null.
 
 
-#### `public boolean add(String fileName, String directory, String modifiedDate)`
+#### `public boolean add(String name, String directory, String modifiedDate)`
 
-This method should create a FileData object with the given file information and add it to the instance variables of FileSystem. This method should return true if the file is successfully added to the FileSystem, and false if a file with the same name already exists in that directory. The default values for `filenName`, `dir`, and `modifiedDate` are `""`, `"/"`, `"01/01/2021"` in case any of these variables is null.
+This method should create a FileData object with the given file information and add it to the instance variables of FileSystem. This method should return true if the file is successfully added to the FileSystem, and false if a file with the same name already exists in that directory. The default values for `name`, `dir`, and `modifiedDate` are `""`, `"/"`, `"01/01/2021"` in case any of these variables is null.
 
 
 #### `public FileData findFile(String name, String directory)`
 This method should return a single FileData object with the given name and directory. You should not modify the FileSystem itself. Return null if such a file does not exist. 
 
-#### `public ArrayList<String> findAllFilesName()`
+#### `public ArrayList<String> findAllFileNames()`
 
-This method should return an array list of string that represents all unique file names across all directories within the FileSystem. You should not modify the FileSystem itself. Return an empty array list if there is no file in the file system yet.
+This method should return an array list of strings that represents all unique file names across all directories within the FileSystem. You should not modify the FileSystem itself. Return an empty array list if there is no file in the file system yet.
 
 #### `public ArrayList<FileData> findFilesByName(String name)`
 
@@ -120,7 +122,7 @@ This method should remove a certain file with the given name and directory. Retu
 
 # Part 2: An Implementation of `DefaultMap` as a BST (18 points)
 
-You’ll provide a fast implementation of an interface called `DefaultMap` in `BST.java`.  
+You’ll provide a fast implementation of an interface called `DefaultMap` in `BST.java`.  `BST.java` implements the `DefaultMap` interface.
 
 
 You will implement all the methods defined in the `DefaultMap` interface. You must ensure that each has the specified big-O bound in the **worst case**, and argue why based on the documentation of any libraries you use, or based on your implementation. Note that these are big-O bounds, so doing _better_ (like O(1) where O(log(n)) is required) is acceptable. In each, _n_ represents the number of entries in the map.
@@ -135,7 +137,7 @@ You will implement all the methods defined in the `DefaultMap` interface. You mu
 - `containsKey`, required _O(n)_
 - `keys`, required _O(n)_
 
-In `BST`, you will need come up with the proper instance variables to achieve the above runtime requirements.
+In `BST`, you will need come up with the proper instance variables to achieve the above runtime requirements. Note that this includes for the `Node` class and therefore you must also create the constructor.
 
 The specifications for the other methods are defined in header comments in the `DefaultMap.java` file, which you should follow. 
 
